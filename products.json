@@ -15,6 +15,11 @@
     "short": "٢٠٠×٢٤٠ سم + ٢ كيس مخدة ٦٥×٦٥",
     "desc": "غطاء سرير سميك وناعم متل البطانية، بيدفّي الغرفة كل الشتوية. معه كيسين مخدة بنفس اللون."
    },
+   "en": {
+    "name": "Sherpa bedspread, 3 pieces",
+    "short": "200×240 cm + 2 pillowcases 65×65",
+    "desc": "A thick bedspread as soft as a blanket, to keep the bedroom warm all winter. Comes with two matching pillowcases."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -27,7 +32,8 @@
      "fr": "Noir",
      "ar": "أسود",
      "hex": "#1d1b1a",
-     "img": "img/2.jpg"
+     "img": "img/2.jpg",
+     "en": "Black"
     }
    ],
    "stock": null,
@@ -48,6 +54,11 @@
     "short": "سرير مفرد · قطن ١٠٠٪",
     "desc": "طقم كامل لسرير مفرد: شرشف بمطاط، شرشف مسطح وكيس مخدة، قطن بيتنفس وبينعم مع كل غسلة."
    },
+   "en": {
+    "name": "3-piece bed linen set",
+    "short": "Single bed · 100% cotton",
+    "desc": "The complete set for a single bed: fitted sheet, flat sheet and pillowcase, in breathable cotton that gets softer with every wash."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -64,25 +75,29 @@
      "fr": "Vert",
      "ar": "أخضر",
      "hex": "#8fb79a",
-     "img": "img/14.jpg"
+     "img": "img/14.jpg",
+     "en": "Green"
     },
     {
      "fr": "Marron",
      "ar": "بني",
      "hex": "#5a3a2c",
-     "img": "img/58.jpg"
+     "img": "img/58.jpg",
+     "en": "Brown"
     },
     {
      "fr": "Rouge",
      "ar": "أحمر",
      "hex": "#d2402b",
-     "img": "img/70.jpg"
+     "img": "img/70.jpg",
+     "en": "Red"
     },
     {
      "fr": "Gris",
      "ar": "رمادي",
      "hex": "#9a9690",
-     "img": "img/75.jpg"
+     "img": "img/75.jpg",
+     "en": "Grey"
     }
    ],
    "stock": null,
@@ -103,6 +118,11 @@
     "short": "سرير مزدوج ١٤٠×١٩٠ · قطن ١٠٠٪",
     "desc": "شرشف بمطاط، شرشف مسطح وكيسين مخدة من القطن، بتصميم أحمر ورمادي بيعطي حياة للغرفة."
    },
+   "en": {
+    "name": "4-piece bed linen set",
+    "short": "Double 140×190 · 100% cotton",
+    "desc": "Fitted sheet, flat sheet and two pillowcases in cotton, with a red and grey graphic design that brightens up the bedroom."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -119,7 +139,8 @@
      "fr": "Rouge / gris",
      "ar": "أحمر / رمادي",
      "hex": "#d2402b",
-     "img": "img/62.jpg"
+     "img": "img/62.jpg",
+     "en": "Red / grey"
     }
    ],
    "stock": null,
@@ -140,6 +161,11 @@
     "short": "١٦٠×٢٠٠ · قطن ١٠٠٪",
     "desc": "للتخوت الكبيرة: طقم قطن بلون أخضر مائي ورمادي، منعش ومريح."
    },
+   "en": {
+    "name": "4-piece King bed linen set",
+    "short": "160×200 · 100% cotton",
+    "desc": "For large beds: a cotton set in fresh, calming aqua green and grey."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -156,7 +182,8 @@
      "fr": "Vert / gris",
      "ar": "أخضر / رمادي",
      "hex": "#a8cdb0",
-     "img": "img/72.jpg"
+     "img": "img/72.jpg",
+     "en": "Green / grey"
     }
    ],
    "stock": null,
@@ -176,6 +203,11 @@
     "short": "١٦٠×٢٠٠ · خطوط بارزة",
     "desc": "طقم بنسيج مخطط بارز، ناعم باللمس وسهل الكوي. أحسن خيار لتلبيس تخت كبير بسعر صغير."
    },
+   "en": {
+    "name": "Stripe 4-piece King set",
+    "short": "160×200 · embossed stripes",
+    "desc": "A set with an embossed striped weave, soft to the touch and easy to iron. A great deal for a large bed."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -192,25 +224,29 @@
      "fr": "Bleu marine",
      "ar": "كحلي",
      "hex": "#1c2b5a",
-     "img": "img/61.jpg"
+     "img": "img/61.jpg",
+     "en": "Navy blue"
     },
     {
      "fr": "Gris",
      "ar": "رمادي",
      "hex": "#77777a",
-     "img": "img/66.jpg"
+     "img": "img/66.jpg",
+     "en": "Grey"
     },
     {
      "fr": "Taupe",
      "ar": "بيج غامق",
      "hex": "#a48d7e",
-     "img": "img/69.jpg"
+     "img": "img/69.jpg",
+     "en": "Taupe"
     },
     {
      "fr": "Blanc",
      "ar": "أبيض",
      "hex": "#f4f2ee",
-     "img": "img/60.jpg"
+     "img": "img/60.jpg",
+     "en": "White"
     }
    ],
    "stock": null,
@@ -230,6 +266,11 @@
     "short": "١٤٠×١٩٠ · خطوط بارزة",
     "desc": "نسخة السرير المزدوج من طقم سترايب: خطوط بارزة، ملمس ناعم، وتنظيف سهل."
    },
+   "en": {
+    "name": "Stripe 4-piece set",
+    "short": "140×190 · embossed stripes",
+    "desc": "The double-bed version of our Stripe set: embossed stripes, soft feel, easy care."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -246,7 +287,8 @@
      "fr": "Gris",
      "ar": "رمادي",
      "hex": "#8d8d90",
-     "img": "img/68.jpg"
+     "img": "img/68.jpg",
+     "en": "Grey"
     }
    ],
    "stock": null,
@@ -266,6 +308,11 @@
     "short": "عمق ٢٥ سم · قطن ١٠٠٪",
     "desc": "شرشف بمطاط من القطن بعمق ٢٥ سم، بيثبت منيح على الفرشات السميكة."
    },
+   "en": {
+    "name": "Fitted sheet 140×190",
+    "short": "25 cm deep pocket · 100% cotton",
+    "desc": "A cotton fitted sheet with a deep 25 cm pocket that stays put on thick mattresses."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -282,13 +329,15 @@
      "fr": "Noir",
      "ar": "أسود",
      "hex": "#1d1b1a",
-     "img": "img/5.jpg"
+     "img": "img/5.jpg",
+     "en": "Black"
     },
     {
      "fr": "Orange",
      "ar": "برتقالي",
      "hex": "#e39a4a",
-     "img": "img/22.jpg"
+     "img": "img/22.jpg",
+     "en": "Orange"
     }
    ],
    "stock": null,
@@ -308,6 +357,11 @@
     "short": "عمق ٢٥ سم · قطن ١٠٠٪",
     "desc": "شرشف بمطاط لتخت كينغ، قطن، بعمق ٢٥ سم."
    },
+   "en": {
+    "name": "Fitted sheet 160×200 King",
+    "short": "25 cm deep pocket · 100% cotton",
+    "desc": "The fitted sheet for King beds, in cotton, with a 25 cm deep pocket."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -324,19 +378,22 @@
      "fr": "Bordeaux",
      "ar": "خمري",
      "hex": "#8f1d24",
-     "img": "img/12.jpg"
+     "img": "img/12.jpg",
+     "en": "Burgundy"
     },
     {
      "fr": "Noir",
      "ar": "أسود",
      "hex": "#1d1b1a",
-     "img": "img/16.jpg"
+     "img": "img/16.jpg",
+     "en": "Black"
     },
     {
      "fr": "Terracotta",
      "ar": "تيراكوتا",
      "hex": "#b4482f",
-     "img": "img/18.jpg"
+     "img": "img/18.jpg",
+     "en": "Terracotta"
     }
    ],
    "stock": null,
@@ -356,6 +413,11 @@
     "short": "عمق ٢٥ سم · قطن ١٠٠٪",
     "desc": "للتخوت الكبيرة كتير: شرشف بمطاط XL كينغ قطن، عمق ٢٥ سم."
    },
+   "en": {
+    "name": "Fitted sheet 180×200 XL King",
+    "short": "25 cm deep pocket · 100% cotton",
+    "desc": "For very large beds: XL King cotton fitted sheet, 25 cm deep pocket."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -372,19 +434,22 @@
      "fr": "Noir",
      "ar": "أسود",
      "hex": "#1d1b1a",
-     "img": "img/20.jpg"
+     "img": "img/20.jpg",
+     "en": "Black"
     },
     {
      "fr": "Terracotta",
      "ar": "تيراكوتا",
      "hex": "#b4482f",
-     "img": "img/24.jpg"
+     "img": "img/24.jpg",
+     "en": "Terracotta"
     },
     {
      "fr": "Ocre",
      "ar": "أصفر ترابي",
      "hex": "#e0a85a",
-     "img": "img/26.jpg"
+     "img": "img/26.jpg",
+     "en": "Ochre"
     }
    ],
    "stock": null,
@@ -404,6 +469,11 @@
     "short": "٧٠×١١٠ سم · ضد الانزلاق",
     "desc": "سجادة صلاة طرية بنقشة ورد، وظهرها منقّط ما بيزحط."
    },
+   "en": {
+    "name": "Prayer rug",
+    "short": "70×110 cm · non-slip back",
+    "desc": "A plush prayer rug with a floral pattern and a dotted back that doesn't slip."
+   },
    "brand": "Amphora",
    "specs": [
     {
@@ -420,7 +490,8 @@
      "fr": "Bordeaux fleuri",
      "ar": "خمري مورّد",
      "hex": "#8f1d24",
-     "img": "img/0.jpg"
+     "img": "img/0.jpg",
+     "en": "Burgundy floral"
     }
    ],
    "stock": null,
@@ -441,6 +512,11 @@
     "short": "قطن ١٠٠٪ · ٤٥٠ غ/م²",
     "desc": "منشفة سميكة بتنشّف منيح وبتضل ناعمة. سبع ألوان لتنسّق حمّامك."
    },
+   "en": {
+    "name": "Hand towel 50×90",
+    "short": "450 g/m² terry · 100% cotton",
+    "desc": "A thick terry towel that absorbs well and stays soft. Seven colours to style your bathroom."
+   },
    "specs": [
     {
      "label": "Dimensions",
@@ -456,43 +532,50 @@
      "fr": "Bleu",
      "ar": "أزرق",
      "hex": "#3aa9d6",
-     "img": "img/73.jpg"
+     "img": "img/73.jpg",
+     "en": "Blue"
     },
     {
      "fr": "Vert",
      "ar": "أخضر",
      "hex": "#3fb39a",
-     "img": "img/73.jpg"
+     "img": "img/73.jpg",
+     "en": "Green"
     },
     {
      "fr": "Fuchsia",
      "ar": "فوشيا",
      "hex": "#d6347a",
-     "img": "img/73.jpg"
+     "img": "img/73.jpg",
+     "en": "Fuchsia"
     },
     {
      "fr": "Rose",
      "ar": "زهري",
      "hex": "#ee9bb3",
-     "img": "img/73.jpg"
+     "img": "img/73.jpg",
+     "en": "Pink"
     },
     {
      "fr": "Gris",
      "ar": "رمادي",
      "hex": "#a3a3a3",
-     "img": "img/73.jpg"
+     "img": "img/73.jpg",
+     "en": "Grey"
     },
     {
      "fr": "Blanc",
      "ar": "أبيض",
      "hex": "#f7f5f1",
-     "img": "img/76.jpg"
+     "img": "img/76.jpg",
+     "en": "White"
     },
     {
      "fr": "Beige",
      "ar": "بيج",
      "hex": "#d8c2a0",
-     "img": "img/74.jpg"
+     "img": "img/74.jpg",
+     "en": "Beige"
     }
    ],
    "stock": null,
@@ -512,6 +595,11 @@
     "short": "قطن ١٠٠٪ · ٤٥٠ غ/م²",
     "desc": "القياس الكبير لتتلفلف فيه بعد الدوش، بنفس قماش مناشفنا السميك."
    },
+   "en": {
+    "name": "Bath sheet 90×150",
+    "short": "450 g/m² terry · 100% cotton",
+    "desc": "The large size to wrap yourself in after the shower, in the same thick terry as our towels."
+   },
    "specs": [
     {
      "label": "Dimensions",
@@ -527,31 +615,36 @@
      "fr": "Beige",
      "ar": "بيج",
      "hex": "#d8c2a0",
-     "img": "img/74.jpg"
+     "img": "img/74.jpg",
+     "en": "Beige"
     },
     {
      "fr": "Blanc",
      "ar": "أبيض",
      "hex": "#f7f5f1",
-     "img": "img/76.jpg"
+     "img": "img/76.jpg",
+     "en": "White"
     },
     {
      "fr": "Bleu",
      "ar": "أزرق",
      "hex": "#3aa9d6",
-     "img": "img/73.jpg"
+     "img": "img/73.jpg",
+     "en": "Blue"
     },
     {
      "fr": "Rose",
      "ar": "زهري",
      "hex": "#ee9bb3",
-     "img": "img/73.jpg"
+     "img": "img/73.jpg",
+     "en": "Pink"
     },
     {
      "fr": "Gris",
      "ar": "رمادي",
      "hex": "#a3a3a3",
-     "img": "img/73.jpg"
+     "img": "img/73.jpg",
+     "en": "Grey"
     }
    ],
    "stock": null,
@@ -572,6 +665,11 @@
     "short": "مستطيل · ضد البقع",
     "desc": "مفرش مطبوع ومعالج ضد البقع: بتمسحه وبيرجع نضيف. خمس نقشات لكل الفصول."
    },
+   "en": {
+    "name": "Terra tablecloth 140×240",
+    "short": "Rectangular · stain-resistant",
+    "desc": "A printed tablecloth with a stain-resistant finish: just wipe and it's clean. Five patterns for every season."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -588,31 +686,36 @@
      "fr": "Fleurs",
      "ar": "ورود",
      "hex": "#f1cf4a",
-     "img": "img/28.jpg"
+     "img": "img/28.jpg",
+     "en": "Flowers"
     },
     {
      "fr": "Feuillage",
      "ar": "أوراق",
      "hex": "#c08455",
-     "img": "img/32.jpg"
+     "img": "img/32.jpg",
+     "en": "Leaves"
     },
     {
      "fr": "Cœurs",
      "ar": "قلوب",
      "hex": "#c25b7a",
-     "img": "img/34.jpg"
+     "img": "img/34.jpg",
+     "en": "Hearts"
     },
     {
      "fr": "Café",
      "ar": "قهوة",
      "hex": "#6b4226",
-     "img": "img/37.jpg"
+     "img": "img/37.jpg",
+     "en": "Coffee"
     },
     {
      "fr": "Vichy bleu",
      "ar": "مربعات زرقا",
      "hex": "#2b3f86",
-     "img": "img/11.jpg"
+     "img": "img/11.jpg",
+     "en": "Blue gingham"
     }
    ],
    "stock": null,
@@ -632,6 +735,11 @@
     "short": "مدوّر · ضد البقع",
     "desc": "مفرش مدوّر ضد البقع لطاولات ٤ لـ ٦ أشخاص."
    },
+   "en": {
+    "name": "Terra round tablecloth Ø180",
+    "short": "Round · stain-resistant",
+    "desc": "The stain-resistant round tablecloth for tables seating 4 to 6."
+   },
    "brand": "Gérard Pasquier",
    "specs": [
     {
@@ -648,25 +756,29 @@
      "fr": "Café",
      "ar": "قهوة",
      "hex": "#6b4226",
-     "img": "img/38.jpg"
+     "img": "img/38.jpg",
+     "en": "Coffee"
     },
     {
      "fr": "Mosaïque",
      "ar": "موزاييك",
      "hex": "#4a4d57",
-     "img": "img/30.jpg"
+     "img": "img/30.jpg",
+     "en": "Mosaic"
     },
     {
      "fr": "Cœurs",
      "ar": "قلوب",
      "hex": "#c25b7a",
-     "img": "img/35.jpg"
+     "img": "img/35.jpg",
+     "en": "Hearts"
     },
     {
      "fr": "Vichy bleu",
      "ar": "مربعات زرقا",
      "hex": "#2b3f86",
-     "img": "img/6.jpg"
+     "img": "img/6.jpg",
+     "en": "Blue gingham"
     }
    ],
    "stock": null,
@@ -686,6 +798,11 @@
     "short": "PVC · بينمسح بالإسفنجة",
     "desc": "مفرش عملي لكل يوم: ما بيمرّق مي، وبينضف بمسحة إسفنجة."
    },
+   "en": {
+    "name": "Round oilcloth Ø180",
+    "short": "PVC · wipe clean",
+    "desc": "The practical everyday tablecloth: waterproof, it cleans with one wipe of a sponge."
+   },
    "brand": "Amphora",
    "specs": [
     {
@@ -702,13 +819,15 @@
      "fr": "Petit-déjeuner",
      "ar": "فطور",
      "hex": "#b9a27e",
-     "img": "img/56.jpg"
+     "img": "img/56.jpg",
+     "en": "Breakfast"
     },
     {
      "fr": "Cercles rouges",
      "ar": "دواير حمرا",
      "hex": "#d8352a",
-     "img": "img/52.jpg"
+     "img": "img/52.jpg",
+     "en": "Red circles"
     }
    ],
    "stock": null,
@@ -727,6 +846,11 @@
     "name": "مناشف مطبخ بريست ٥٠×٧٠",
     "short": "قطن ١٠٠٪ · ٣ بـ ٥ €",
     "desc": "مناشف مطبخ قطن مربعات، قوية وبتنشّف، للصحون وللإيدين."
+   },
+   "en": {
+    "name": "Brest tea towels 50×70",
+    "short": "100% cotton · 3 for €5",
+    "desc": "Sturdy, absorbent checked cotton tea towels, for dishes and hands alike."
    },
    "brand": "Amphora",
    "specs": [
@@ -748,7 +872,8 @@
      "fr": "Carreaux rouges",
      "ar": "مربعات حمرا",
      "hex": "#c8302c",
-     "img": "img/9.jpg"
+     "img": "img/9.jpg",
+     "en": "Red check"
     }
    ],
    "stock": null,
@@ -767,6 +892,11 @@
     "name": "فوط مايكروفايبر",
     "short": "لكل الاستعمالات · ٣ بـ ٢ €",
     "desc": "فوط مايكروفايبر بتلقط الغبرة والدهن بلا منظفات. للمطبخ والحمّام والسيارة."
+   },
+   "en": {
+    "name": "Microfibre cloths",
+    "short": "Multi-purpose · 3 for €2",
+    "desc": "Microfibre cloths that pick up dust and grease without any product. For the kitchen, bathroom or car."
    },
    "brand": "Hygie",
    "specs": [
@@ -788,7 +918,8 @@
      "fr": "Assorties",
      "ar": "ألوان متنوعة",
      "hex": "#9fc6e0",
-     "img": "img/10.jpg"
+     "img": "img/10.jpg",
+     "en": "Assorted"
     }
    ],
    "stock": null,
@@ -809,6 +940,11 @@
     "short": "جاهزة للتركيب · حلقات معدن",
     "desc": "ستارة جاكار بنقشة منسوجة ناعمة، بتفلتر الضو بأناقة. بتتركب بدقيقتين بفضل الحلقات."
    },
+   "en": {
+    "name": "Jacquard curtain 140×240",
+    "short": "Ready to hang · metal eyelets",
+    "desc": "A jacquard curtain with a subtle woven pattern that filters light elegantly. Hangs in two minutes thanks to its eyelets."
+   },
    "specs": [
     {
      "label": "Dimensions",
@@ -828,19 +964,22 @@
      "fr": "Blanc",
      "ar": "أبيض",
      "hex": "#f2f1ec",
-     "img": "img/40.jpg"
+     "img": "img/40.jpg",
+     "en": "White"
     },
     {
      "fr": "Argent",
      "ar": "فضي",
      "hex": "#c9c9c6",
-     "img": "img/48.jpg"
+     "img": "img/48.jpg",
+     "en": "Silver"
     },
     {
      "fr": "Vert d'eau",
      "ar": "أخضر مائي",
      "hex": "#9fcfc0",
-     "img": "img/43.jpg"
+     "img": "img/43.jpg",
+     "en": "Aqua green"
     }
    ],
    "stock": null,
@@ -859,6 +998,11 @@
     "name": "ستارة شيفون رافل ١٤٠×٢٤٠",
     "short": "شفافة · حلقات معدن",
     "desc": "ستارة خفيفة مخططة، بتفوّت الضو وبتحافظ على الخصوصية."
+   },
+   "en": {
+    "name": "Ruffle voile 140×240",
+    "short": "Sheer · metal eyelets",
+    "desc": "A light striped sheer curtain that lets light in while keeping your privacy."
    },
    "brand": "Gérard Pasquier",
    "specs": [
@@ -880,7 +1024,8 @@
      "fr": "Gris rayé",
      "ar": "رمادي مخطط",
      "hex": "#6e6e70",
-     "img": "img/50.jpg"
+     "img": "img/50.jpg",
+     "en": "Grey stripe"
     }
    ],
    "extraImgs": [

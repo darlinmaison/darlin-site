@@ -10,7 +10,8 @@
    "qty": 3,
    "price": 2,
    "label_fr": "3 pour 2 €",
-   "label_ar": "٣ بـ ٢ €"
+   "label_ar": "٣ بـ ٢ €",
+   "label_en": "3 for €2"
   },
   {
    "id": "lot-torchons",
@@ -22,7 +23,8 @@
    "qty": 3,
    "price": 5,
    "label_fr": "3 pour 5 €",
-   "label_ar": "٣ بـ ٥ €"
+   "label_ar": "٣ بـ ٥ €",
+   "label_en": "3 for €5"
   },
   {
    "id": "lot-serviettes",
@@ -34,7 +36,8 @@
    "qty": 2,
    "price": 5,
    "label_fr": "2 pour 5 €",
-   "label_ar": "٢ بـ ٥ €"
+   "label_ar": "٢ بـ ٥ €",
+   "label_en": "2 for €5"
   },
   {
    "id": "parures-2-moins-10",
@@ -46,7 +49,8 @@
    "minQty": 2,
    "percent": 10,
    "label_fr": "-10 % dès 2 articles",
-   "label_ar": "خصم ١٠٪ من قطعتين"
+   "label_ar": "خصم ١٠٪ من قطعتين",
+   "label_en": "10% off from 2 items"
   },
   {
    "id": "draps-housse-2-1",
@@ -60,7 +64,8 @@
    "buy": 2,
    "get": 1,
    "label_fr": "2 achetés = 1 offert",
-   "label_ar": "اشتري ٢ والتالت مجاناً"
+   "label_ar": "اشتري ٢ والتالت مجاناً",
+   "label_en": "Buy 2, get 1 free"
   },
   {
    "id": "bienvenue",
@@ -70,7 +75,8 @@
    "percent": 5,
    "minOrder": 20,
    "label_fr": "Code BIENVENUE5 : -5 %",
-   "label_ar": "كود BIENVENUE5 : خصم ٥٪"
+   "label_ar": "كود BIENVENUE5 : خصم ٥٪",
+   "label_en": "Code BIENVENUE5: 5% off"
   },
   {
    "id": "merci10",
@@ -80,7 +86,8 @@
    "percent": 10,
    "minOrder": 20,
    "label_fr": "Code MERCI10 : -10 %",
-   "label_ar": "كود MERCI10 : خصم ١٠٪"
+   "label_ar": "كود MERCI10 : خصم ١٠٪",
+   "label_en": "Code MERCI10: 10% off"
   }
  ]
 }

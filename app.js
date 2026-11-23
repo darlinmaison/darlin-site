@@ -63,6 +63,55 @@ const T = {
     thanks_h:"Merci pour votre commande !", thanks_p:"Votre paiement est bien reçu (réf. {ref}). Envoyez-nous la commande sur WhatsApp pour convenir du retrait ou de la livraison.", thanks_wa:"Envoyer ma commande sur WhatsApp",
     legal_ar:""
   },
+  en: {
+    top1:"Free pickup at the Amiens market", top2:"Home delivery in Amiens", top3:"Easy ordering on WhatsApp",
+    nav_chambre:"Bedroom", nav_bain:"Bathroom", nav_table:"Table & kitchen", nav_rideaux:"Curtains", nav_affaires:"Small prices", nav_marche:"Find us",
+    search:"Search a product (sheet, tablecloth, towel…)", cart:"Cart", menu:"Menu", lang:"English",
+    hero_eyebrow:"Home linen · Amiens",
+    hero_h:"Sleep well,<br><em>live softly.</em>",
+    hero_p:"Bed linen, sheets, towels, tablecloths and curtains from trusted brands, at small prices.",
+    hero_cta:"Shop now", hero_cta2:"Order on WhatsApp", hero_cap:"",
+    cats_eyebrow:"Our collections", cats_h:"The whole home, room by room", items:"items",
+    best_eyebrow:"Favourites", best_h:"Most requested at the market", see_all:"See all",
+    small_eyebrow:"Small prices", small_h:"Under €5",
+    why_eyebrow:"Why Dar Lin",
+    why1_h:"Trusted brands", why1_p:"Gérard Pasquier, Amphora, Hygie: quality home linen, brand new and in its packaging.",
+    why2_h:"Small prices", why2_p:"Fair prices all year round, and bundle deals on everyday items.",
+    why3_h:"Pickup or delivery", why3_p:"Free pickup at the market or home delivery in Amiens.",
+    why4_h:"14 days to change your mind", why4_p:"Item new and still packed? We exchange it or refund you.",
+    mk_eyebrow:"See you at the market", mk_day:"Sunday", mk_h:"Amiens Nord market", mk_p:"Find the whole Dar Lin stall every Sunday morning. Order online and we set your parcel aside: you drop by, pay and go.",
+    mk_list1:"Order before Saturday 8 pm", mk_list2:"Your order waits for you at the stall", mk_list3:"Pay on the spot",
+    mk_map:"Open in Google Maps",
+    join_h:"New arrivals first on WhatsApp", join_p:"New stock, bundles, one-off pieces: send us “New” and get the photos before everyone else.",
+    join_btn:"Send “New”",
+    f_shop:"Shop", f_help:"Help", f_legal:"Legal information", f_contact:"Contact",
+    f_about:"Dar Lin, the home of linen. A family shop from Amiens, at the markets and online.",
+    f_rights:"All rights reserved", f_vat:"Prices in euros, all taxes included.",
+    faq:"FAQ", livraison:"Delivery & pickup", retours:"Returns & exchanges", about:"About us", contact_us:"Contact us",
+    mentions:"Legal notice", cgv:"Terms of sale", privacy:"Privacy",
+    add:"Add to cart", added:"Added to cart", wa_order:"Order on WhatsApp", colour:"Colour", qty:"Quantity",
+    perk1:"Free pickup at the Amiens Nord market", perk2:"Home delivery in Amiens: {fee}, free from {free}", perk3:"Return or exchange within 14 days", perk4:"Brand new, original packaging",
+    details:"Details", also:"You may also like", brand:"Brand",
+    pack:"Bundle of {n}: {p}",
+    all:"All", sort:"Sort", sort_pop:"Most popular", sort_up:"Price: low to high", sort_down:"Price: high to low",
+    all_products:"All products", affaires_p:"Everyday linen under €5, and even smarter bundles.",
+    results:"Results for “{q}”", no_results:"No product found. Try “sheet”, “tablecloth” or “towel”.",
+    cart_empty:"Your cart is empty.", continue:"Continue shopping", subtotal:"Subtotal", pack_saving:"Bundle discount", checkout:"Checkout", remove:"Remove",
+    co_h:"My order", co_mode:"How would you like to receive it?", co_market:"Pickup at the Amiens Nord market", co_market_s:"Free · Sunday morning, at the Dar Lin stall",
+    co_home:"Home delivery (Amiens)", co_home_s:"{fee} · free from {free} · within 48 working hours",
+    co_you:"Your details", co_name:"First and last name", co_phone:"Phone (WhatsApp preferred)", co_addr:"Delivery address", co_note:"A message for us? (optional)",
+    co_pay:"Payment", co_pay_txt:"You pay when you receive your order: cash or card.", co_card_soon:"Online card payment: coming soon.", co_card:"Pay by card online",
+    co_delivery:"Delivery", co_free:"Free", co_total:"Total", co_send:"Send my order on WhatsApp",
+    co_after:"WhatsApp opens with your order already written: just press Send. We confirm availability the same day.",
+    co_agree:"I have read and accept the terms of sale.", co_fill:"Fill in the fields in orange to continue.",
+    co_wa_hidden:"If WhatsApp doesn't open, message us at {tel} and copy this text:", copy:"Copy", copied:"Copied",
+    order_hello:"Bonjour Dar Lin, je souhaite commander :",
+    low:"Only {n} left", co_pickup:"Market pickup", soldout:"Sold out", code:"Promo code", apply:"Apply", code_ok:"Code applied ✓", code_bad:"This code doesn't exist or has expired.", code_min:"This code is valid from {m}.",
+    pay_card:"Pay now by card", pay_card_s:"Bank card, Apple Pay or Google Pay · secure payment by SumUp", pay_cash:"Pay on delivery", pay_now:"Pay by card",
+    pay_after:"Secure payment by SumUp: Dar Lin never sees your card details.", pay_loading:"Preparing payment…", pay_error:"Payment could not start. Try again or order on WhatsApp.",
+    thanks_h:"Thank you for your order!", thanks_p:"We've received your payment (ref. {ref}). Send us the order on WhatsApp to arrange pickup or delivery.", thanks_wa:"Send my order on WhatsApp",
+    legal_ar:"These legal texts are in French, the official language of contracts in France."
+  },
   ar: {
     top1:"استلام مجاني من سوق أميان", top2:"توصيل للبيت داخل أميان", top3:"اطلب بسهولة عن طريق واتساب",
     nav_chambre:"غرفة النوم", nav_bain:"الحمّام", nav_table:"السفرة والمطبخ", nav_rideaux:"الستائر", nav_affaires:"أسعار صغيرة", nav_marche:"وين تلاقينا",
@@ -120,6 +169,101 @@ const eur = c => (c/100).toLocaleString(lang==="ar" ? "fr-FR" : "fr-FR", {style:
 const img = n => /[\/.]/.test(String(n)) ? String(n) : "img/" + n + ".jpg";
 const waURL = text => "https://wa.me/" + C.whatsapp + "?text=" + encodeURIComponent(text);
 
+/* textes ajoutés : confiance, entretien, tailles, assistant */
+const X = {
+  fr: {
+    tr1_h:"Livraison sur Amiens", tr1_p:"Sous 48 h, offerte dès {free}",
+    tr2_h:"Paiement sécurisé", tr2_p:"Carte, Apple Pay, Google Pay",
+    tr3_h:"Retrait gratuit", tr3_p:"Au marché d'Amiens Nord",
+    tr4_h:"14 jours pour changer d'avis", tr4_p:"Échange ou remboursement",
+    care_h:"Conseils d'entretien", size_h:"Guide des tailles", pay_h:"Paiement 100 % sécurisé",
+    pay_list:"Carte bancaire · Apple Pay · Google Pay · espèces au retrait",
+    photo_note:"Photo du produit réel dans son emballage d'origine.",
+    chat_open:"Une question ?", chat_title:"Assistant Dar Lin", chat_hi:"Bonjour 👋 Je réponds tout de suite aux questions les plus fréquentes. Choisissez un sujet :",
+    chat_more:"Autre question", chat_wa:"Parler à Ahmad sur WhatsApp", chat_back:"Autres questions",
+    lang_name:"Français"
+  },
+  en: {
+    tr1_h:"Delivery in Amiens", tr1_p:"Within 48 h, free from {free}",
+    tr2_h:"Secure payment", tr2_p:"Card, Apple Pay, Google Pay",
+    tr3_h:"Free pickup", tr3_p:"At the Amiens Nord market",
+    tr4_h:"14 days to change your mind", tr4_p:"Exchange or refund",
+    care_h:"Care guide", size_h:"Size guide", pay_h:"100% secure payment",
+    pay_list:"Bank card · Apple Pay · Google Pay · cash on pickup",
+    photo_note:"Photo of the real product in its original packaging.",
+    chat_open:"A question?", chat_title:"Dar Lin assistant", chat_hi:"Hello 👋 I can answer the most common questions right away. Pick a topic:",
+    chat_more:"Something else", chat_wa:"Talk to Ahmad on WhatsApp", chat_back:"Other questions",
+    lang_name:"English"
+  },
+  ar: {
+    tr1_h:"توصيل بأميان", tr1_p:"خلال ٤٨ ساعة، مجاني من {free}",
+    tr2_h:"دفع آمن", tr2_p:"بطاقة، Apple Pay، Google Pay",
+    tr3_h:"استلام مجاني", tr3_p:"من سوق أميان الشمالية",
+    tr4_h:"١٤ يوم لتغيّر رأيك", tr4_p:"تبديل أو استرجاع المصاري",
+    care_h:"نصائح الغسيل", size_h:"دليل المقاسات", pay_h:"دفع آمن ١٠٠٪",
+    pay_list:"بطاقة بنكية · Apple Pay · Google Pay · كاش وقت الاستلام",
+    photo_note:"صورة المنتج الحقيقي بكرتونته الأصلية.",
+    chat_open:"عندك سؤال؟", chat_title:"مساعد دار لين", chat_hi:"أهلاً 👋 بجاوبك فوراً على الأسئلة المتكررة. اختار موضوع:",
+    chat_more:"سؤال تاني", chat_wa:"احكي مع أحمد على واتساب", chat_back:"أسئلة تانية",
+    lang_name:"العربية"
+  }
+};
+for(const k in X) Object.assign(T[k], X[k]);
+T.fr.lang = "Français"; T.ar.lang = "العربية"; T.en.lang = "English";
+const LANGS = [["fr","FR"],["en","EN"],["ar","ع"]];
+const LBL = (o, key) => (o && (o[key+"_"+lang] || o[key+"_fr"] || o[key+"_ar"])) || "";
+const SPEC = {en:{"Dimensions":"Size","Contenu":"Contents","Matière":"Material","Dos":"Back","Format":"Size","Offre":"Offer","Pose":"Hanging"},
+  ar:{"Dimensions":"المقاسات","Contenu":"المحتوى","Matière":"القماش","Dos":"الظهر","Format":"الحجم","Offre":"العرض","Pose":"التركيب"}};
+const specLabel = l => (SPEC[lang] && SPEC[lang][l]) || l;
+/* entretien par catégorie */
+const CARE = {
+  fr:{chambre:["Lavez avant la première utilisation.","Coton : 40 °C, couleurs séparées. Polyester : 30 °C.","Séchage à basse température, retirez vite pour éviter les plis.","Repassage doux, de préférence légèrement humide."],
+      bain:["Lavez 2 ou 3 fois avant la 1re utilisation : l'éponge devient plus absorbante.","Lavage à 40 °C, sans adoucissant (il bouche les fibres).","Séchage en machine à basse température pour un toucher moelleux.","Ne pas repasser."],
+      table:["Nappes anti-taches : essuyez avec une éponge humide.","Lavage à 30 °C, pas d'eau de Javel.","Nappe cirée : nettoyage à l'éponge uniquement, ne pas laver en machine.","Torchons et lavettes : 60 °C pour une hygiène parfaite."],
+      rideaux:["Lavage délicat à 30 °C, essorage léger.","Suspendez encore humide : les plis tombent tout seuls.","Repassage doux si besoin, sur l'envers.","Retirez les œillets du tambour avec un filet de lavage."]},
+  en:{chambre:["Wash before first use.","Cotton: 40 °C, colours separately. Polyester: 30 °C.","Tumble dry low and remove quickly to avoid creases.","Iron gently, ideally while slightly damp."],
+      bain:["Wash 2 or 3 times before first use: terry becomes more absorbent.","Wash at 40 °C without fabric softener (it clogs the fibres).","Tumble dry low for a fluffy feel.","Do not iron."],
+      table:["Stain-resistant tablecloths: wipe with a damp sponge.","Wash at 30 °C, no bleach.","Oilcloth: sponge clean only, do not machine wash.","Tea towels and cloths: 60 °C for perfect hygiene."],
+      rideaux:["Gentle wash at 30 °C, light spin.","Hang while still damp: creases fall out on their own.","Iron gently on the reverse if needed.","Use a laundry bag to protect the eyelets."]},
+  ar:{chambre:["اغسله قبل أول استعمال.","القطن: ٤٠ درجة، والألوان لحال. البوليستر: ٣٠ درجة.","نشّف على حرارة خفيفة وطلّعه بسرعة لما يتكرمش.","كوي خفيف، ويفضّل وهو رطب شوي."],
+      bain:["اغسل المنشفة ٢ أو ٣ مرات قبل أول استعمال: بتصير تنشّف أحسن.","غسيل على ٤٠ درجة بدون منعّم (بيسكّر الخيوط).","نشّف بالنشافة على حرارة خفيفة لتضل ناعمة.","لا تكويها."],
+      table:["المفارش ضد البقع: امسحها بإسفنجة رطبة.","غسيل على ٣٠ درجة، بدون كلور.","المفرش المشمّع: بالإسفنجة بس، لا تحطه بالغسالة.","الفوط والممسحات: ٦٠ درجة لنظافة كاملة."],
+      rideaux:["غسيل خفيف على ٣٠ درجة وعصر خفيف.","علّقها وهي رطبة: الكرمشة بتروح لحالها.","كوي خفيف عالقفا إذا لزم.","حطها بكيس غسيل لتحمي الحلقات."]}
+};
+const SIZES = {
+  fr:"<tr><th>Lit 1 place (90×190)</th><td>Drap housse 90×190 · drap plat 180×290</td></tr><tr><th>Lit 2 places (140×190)</th><td>Drap housse 140×190 · drap plat 240×300</td></tr><tr><th>King (160×200)</th><td>Drap housse 160×200 · drap plat 240×300</td></tr><tr><th>XL King (180×200)</th><td>Drap housse 180×200 · drap plat 270×300</td></tr><tr><th>Matelas épais</th><td>Bonnet 25 cm : tient jusqu'à 25 cm d'épaisseur</td></tr>",
+  en:"<tr><th>Single (90×190)</th><td>Fitted sheet 90×190 · flat sheet 180×290</td></tr><tr><th>Double (140×190)</th><td>Fitted sheet 140×190 · flat sheet 240×300</td></tr><tr><th>King (160×200)</th><td>Fitted sheet 160×200 · flat sheet 240×300</td></tr><tr><th>XL King (180×200)</th><td>Fitted sheet 180×200 · flat sheet 270×300</td></tr><tr><th>Thick mattress</th><td>25 cm pocket: fits mattresses up to 25 cm</td></tr>",
+  ar:"<tr><th>تخت مفرد (90×190)</th><td>شرشف مطاط 90×190 · شرشف عادي 180×290</td></tr><tr><th>تخت مزدوج (140×190)</th><td>شرشف مطاط 140×190 · شرشف عادي 240×300</td></tr><tr><th>كينغ (160×200)</th><td>شرشف مطاط 160×200 · شرشف عادي 240×300</td></tr><tr><th>XL كينغ (180×200)</th><td>شرشف مطاط 180×200 · شرشف عادي 270×300</td></tr><tr><th>فرشة سميكة</th><td>جيب ٢٥ سم: بيركب على فرشة لحد ٢٥ سم</td></tr>"
+};
+/* questions fréquentes : page FAQ + assistant */
+const FAQ = {
+  fr:[["Comment se passe la livraison ?","Nous livrons nous-mêmes à Amiens et dans les communes voisines, sous 48 h ouvrées. Frais : {fee}, offerts dès {free}. Vous pouvez aussi retirer gratuitement votre commande au marché d'Amiens Nord le dimanche matin."],
+      ["Comment payer ?","En ligne par carte bancaire, Apple Pay ou Google Pay (paiement sécurisé SumUp), ou à la remise de la commande en espèces ou par carte."],
+      ["Les produits sont-ils neufs ?","Oui. Tous nos articles sont neufs, dans leur emballage d'origine de marque (Gérard Pasquier, Amphora, Hygie…)."],
+      ["Quelle taille de drap housse choisir ?","Mesurez votre matelas : 140×190 pour un lit 2 places classique, 160×200 pour un King, 180×200 pour un XL King. Nos draps housse ont un bonnet de 25 cm, idéal pour les matelas épais."],
+      ["Puis-je retourner un article ?","Oui, vous avez 14 jours pour l'échanger ou être remboursé, s'il est neuf et dans son emballage."],
+      ["Où vous trouver ?","Chaque dimanche matin au marché d'Amiens Nord (Le Colvert). Commandez avant samedi 20 h et votre commande vous attend au stand."],
+      ["Avez-vous un code promo ?","Oui : MERCI10 donne -10 % dès 20 € d'achat. Des lots (2 serviettes pour 5 €, 3 torchons pour 5 €…) s'appliquent automatiquement au panier."],
+      ["Parlez-vous arabe ?","Oui ! نعم، منحكي عربي. Écrivez-nous dans la langue que vous préférez."]],
+  en:[["How does delivery work?","We deliver ourselves in Amiens and nearby towns within 48 working hours. Fee: {fee}, free from {free}. You can also collect your order for free at the Amiens Nord market on Sunday morning."],
+      ["How can I pay?","Online by bank card, Apple Pay or Google Pay (secure SumUp payment), or on delivery in cash or by card."],
+      ["Are the products new?","Yes. All our items are brand new, in their original branded packaging (Gérard Pasquier, Amphora, Hygie…)."],
+      ["Which fitted sheet size should I choose?","Measure your mattress: 140×190 for a standard double, 160×200 for a King, 180×200 for an XL King. Our fitted sheets have a 25 cm pocket, ideal for thick mattresses."],
+      ["Can I return an item?","Yes, you have 14 days to exchange it or get a refund, if it is new and in its packaging."],
+      ["Where can I find you?","Every Sunday morning at the Amiens Nord market (Le Colvert). Order before Saturday 8 pm and your order will be waiting at the stall."],
+      ["Do you have a promo code?","Yes: MERCI10 gives 10% off from €20. Bundles (2 towels for €5, 3 tea towels for €5…) apply automatically in the cart."],
+      ["Do you speak other languages?","Yes! French, English and Arabic. Write to us in the language you prefer."]],
+  ar:[["كيف بيصير التوصيل؟","منوصّل بنفسنا بأميان والضيع اللي حولها خلال ٤٨ ساعة عمل. التوصيل {fee}، ومجاني من {free}. فيك كمان تستلم طلبك ببلاش من سوق أميان الشمالية يوم الأحد الصبح."],
+      ["كيف بدفع؟","أونلاين بالبطاقة البنكية أو Apple Pay أو Google Pay (دفع آمن عبر SumUp)، أو وقت الاستلام كاش أو بطاقة."],
+      ["البضاعة جديدة؟","أكيد. كل منتجاتنا جديدة وبكرتونتها الأصلية من الماركة (Gérard Pasquier، Amphora، Hygie…)."],
+      ["أي مقاس شرشف مطاط آخد؟","قيس فرشتك: 140×190 للتخت المزدوج العادي، 160×200 للكينغ، 180×200 للـ XL كينغ. الشراشف عنا جيبها ٢٥ سم، منيحة للفرشات السميكة."],
+      ["فيني رجّع شي؟","أكيد، عندك ١٤ يوم لتبدّله أو تسترجع مصاريك، إذا كان جديد وبكرتونته."],
+      ["وين بلاقيكم؟","كل أحد الصبح بسوق أميان الشمالية (Le Colvert). اطلب قبل السبت الساعة ٨ المسا وطلبك بيستناك عالبسطة."],
+      ["في كود خصم؟","إيه: MERCI10 بيعطيك خصم ١٠٪ من ٢٠ € وطالع. والعروض (منشفتين بـ ٥ €، ٣ فوط بـ ٥ €…) بتنحسب لحالها بالسلة."],
+      ["بتحكوا عربي؟","أكيد! منحكي عربي وفرنساوي وإنكليزي. ابعتلنا باللغة اللي بتريحك."]]
+};
+const faqList = () => FAQ[lang].map(([q,a]) => [q, a.replace("{fee}", eur(C.deliveryFee)).replace("{free}", eur(C.freeDeliveryFrom))]);
+
 /* ---------- icônes ---------- */
 const I = {
   bag:'<svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
@@ -150,7 +294,7 @@ function cartCount(){ return cart.reduce((a,l)=>a+l.q,0); }
 function lineTotal(l){ const p = byId(l.id); return p ? pc(p)*l.q : 0; }
 let promoCode = store.get("dl_code", "");
 function calc(mode){ return E.compute(cart, {products:P, promos:PROMOS, settings:S}, {mode: mode || "market", code: promoCode}); }
-const promoLabel = d => esc(lang==="ar" ? (d.label_ar || d.label_fr) : (d.label_fr || d.label_ar));
+const promoLabel = d => esc((PROMOS.find(x=>x.id===d.id) && LBL(PROMOS.find(x=>x.id===d.id),"label")) || LBL(d,"label"));
 function sumRows(r, withDelivery){
   return `<div class="sum"><span>${t("subtotal")}</span><span>${eur(r.sub)}</span></div>
     ${r.discounts.map(d=>`<div class="sum ok"><span>${promoLabel(d)}</span><span>−${eur(d.amount)}</span></div>`).join("")}
@@ -179,7 +323,7 @@ function shell(){
     <a class="logo" href="#accueil" aria-label="Dar Lin">${LOGO}<span><b>Dar Lin</b><small>LINGE DE MAISON</small></span></a>
     <nav class="nav" aria-label="Principal">${nav.map(([h,k])=>`<a href="#${h}" data-nav="${h}">${t(k)}</a>`).join("")}</nav>
     <div class="hdr-actions">
-      <button class="lang" id="langBtn" type="button">${t("lang")}</button>
+      <div class="langs" role="group" aria-label="Langue / Language / اللغة">${LANGS.map(([k,l])=>`<button type="button" data-lang="${k}" aria-pressed="${k===lang}" lang="${k}" title="${T[k].lang_name}">${l}</button>`).join("")}</div>
       <button class="icon-btn" id="searchBtn" type="button" aria-label="${t("search")}">${I.search}</button>
       <button class="icon-btn" id="cartBtn" type="button" aria-label="${t("cart")}">${I.bag}<span class="badge" id="badge" hidden>0</span></button>
       <button class="icon-btn burger" id="burger" type="button" aria-label="${t("menu")}" aria-expanded="false">${I.menu}</button>
@@ -189,9 +333,16 @@ function shell(){
   </header>
   <main id="view"></main>
   ${footer()}
-  <a class="fab" href="${waURL(t("order_hello").replace(":", "."))}" target="_blank" rel="noopener" aria-label="WhatsApp">${I.wa}</a>
+  <div class="chat" id="chat">
+    <div class="chat-panel" id="chatPanel" hidden role="dialog" aria-label="${t("chat_title")}">
+      <div class="chat-h"><span class="chat-av">${LOGO.replace(/var\(--accent\)/g,"#F4ECE1")}</span><div><b>${t("chat_title")}</b><small>WhatsApp · ${C.phoneDisplay}</small></div><button type="button" class="icon-btn" id="chatClose" aria-label="×">${I.close}</button></div>
+      <div class="chat-b" id="chatBody"></div>
+    </div>
+    <button type="button" class="chat-btn" id="chatBtn" aria-expanded="false"><span class="chat-label">${t("chat_open")}</span><span class="chat-ic">${I.wa}</span></button>
+  </div>
   <div id="drawerRoot"></div><div id="toastRoot" aria-live="polite"></div>`;
-  $("#langBtn").onclick = () => { lang = lang==="fr" ? "ar" : "fr"; store.set("dl_lang", lang); shell(); route(); };
+  document.querySelectorAll("[data-lang]").forEach(b => b.onclick = () => { lang = b.dataset.lang; store.set("dl_lang", lang); shell(); route(); });
+  bindChat();
   $("#cartBtn").onclick = openDrawer;
   $("#burger").onclick = e => { const m = $("#mnav"); m.hidden = !m.hidden; e.currentTarget.setAttribute("aria-expanded", String(!m.hidden)); };
   $("#searchBtn").onclick = () => { const s = $("#searchBar"); s.hidden = !s.hidden; if(!s.hidden) $("#q").focus(); };
@@ -199,6 +350,23 @@ function shell(){
   renderBadge();
 }
 function renderBadge(){ const b = $("#badge"); if(!b) return; const n = cartCount(); b.textContent = n; b.hidden = n===0; }
+/* ---------- assistant (questions fréquentes, puis WhatsApp) ---------- */
+function bindChat(){
+  const panel = $("#chatPanel"), btn = $("#chatBtn"), body = $("#chatBody"); if(!panel) return;
+  const waLink = q => `<a class="btn wa block" href="${waURL((lang==="ar"?"مرحبا دار لين، عندي سؤال: ":lang==="en"?"Hello Dar Lin, I have a question: ":"Bonjour Dar Lin, j'ai une question : ") + (q||""))}" target="_blank" rel="noopener">${I.wa} ${t("chat_wa")}</a>`;
+  const menu = () => {
+    body.innerHTML = `<div class="msg bot">${t("chat_hi")}</div><div class="qs">${faqList().map(([q],i)=>`<button type="button" data-q="${i}">${esc(q)}</button>`).join("")}</div>${waLink("")}`;
+    body.querySelectorAll("[data-q]").forEach(b => b.onclick = () => answer(+b.dataset.q));
+  };
+  const answer = i => {
+    const [q,a] = faqList()[i];
+    body.innerHTML = `<div class="msg me">${esc(q)}</div><div class="msg bot">${esc(a)}</div><button type="button" class="chat-more" id="chatMore">← ${t("chat_back")}</button>${waLink(q)}`;
+    $("#chatMore").onclick = menu; body.scrollTop = 0;
+  };
+  const open = v => { panel.hidden = !v; btn.setAttribute("aria-expanded", String(v)); btn.classList.toggle("on", v); if(v) menu(); };
+  btn.onclick = () => open(panel.hidden);
+  $("#chatClose").onclick = () => open(false);
+}
 function footer(){
   return `<footer><div class="wrap">
     <div class="fgrid">
@@ -221,7 +389,7 @@ function footer(){
 function card(p){
   const v0 = p.variants[0];
   const pr = E.promosFor(p, PROMOS)[0];
-  const tag = pr ? `<span class="tag promo">${esc(lang==="ar"?pr.label_ar:pr.label_fr)}</span>` : (p.star ? `<span class="tag">${t("best_eyebrow")}</span>` : "");
+  const tag = pr ? `<span class="tag promo">${esc(LBL(pr,"label"))}</span>` : (p.star ? `<span class="tag">${t("best_eyebrow")}</span>` : "");
   const low = p.stock!=null && p.stock>0 && p.stock<=3 ? `<span class="tag low">${t("low",{n:p.stock})}</span>` : (p.stock===0 ? `<span class="tag low">${t("soldout")}</span>` : "");
   return `<a class="pc" href="#p-${p.id}">
     <div class="pc-img"><img src="${img(v0.img)}" alt="${esc(L(p).name)}" loading="lazy">${tag}${low}</div>
@@ -237,18 +405,20 @@ function home(){
   const stars = P.filter(p=>p.star).slice(0,8);
   const small = P.filter(p=>p.price<=5).sort((a,b)=>a.price-b.price);
   return `
-  <section class="hero"><div class="wrap">
-    <div class="reveal">
+  <section class="hero2" style="--hero:url('${img(S.hero.image1)}')"><div class="wrap">
+    <div class="hero2-txt reveal">
       <div class="eyebrow">${t("hero_eyebrow")}</div>
-      <h1 style="margin-top:14px">${lang==="ar"?S.hero.title_ar:S.hero.title_fr}</h1>
-      <p>${esc(lang==="ar"?S.hero.text_ar:S.hero.text_fr)}</p>
-      <div class="hero-ctas"><a class="btn" href="#tout">${t("hero_cta")}</a><a class="btn ghost" href="${waURL(t("order_hello").replace(":", "."))}" target="_blank" rel="noopener">${t("hero_cta2")}</a></div>
+      <h1>${LBL(S.hero,"title")}</h1>
+      <p>${esc(LBL(S.hero,"text"))}</p>
+      <div class="hero-ctas"><a class="btn light" href="#tout">${t("hero_cta")}</a><a class="btn ghost-light" href="${waURL(t("order_hello").replace(":", "."))}" target="_blank" rel="noopener">${I.wa} ${t("hero_cta2")}</a></div>
+      ${LBL(S.hero,"caption")?`<span class="hero2-cap">${esc(LBL(S.hero,"caption"))}</span>`:""}
     </div>
-    <div class="stack" aria-hidden="true">
-      <figure class="s1"><img src="${img(S.hero.image1)}" alt="">${(lang==="ar"?S.hero.caption_ar:S.hero.caption_fr)?`<figcaption>${esc(lang==="ar"?S.hero.caption_ar:S.hero.caption_fr)}</figcaption>`:""}</figure>
-      <figure class="s2"><img src="${img(S.hero.image2)}" alt=""></figure>
-      <figure class="s3"><img src="${img(S.hero.image3)}" alt=""></figure>
-    </div>
+  </div></section>
+  <section class="trust" aria-label="${t("why_eyebrow")}"><div class="wrap">
+    <div>${I.truck}<span><b>${t("tr1_h")}</b><small>${t("tr1_p",{free:eur(C.freeDeliveryFrom)})}</small></span></div>
+    <div>${I.card}<span><b>${t("tr2_h")}</b><small>${t("tr2_p")}</small></span></div>
+    <div>${I.pin}<span><b>${t("tr3_h")}</b><small>${t("tr3_p")}</small></span></div>
+    <div>${I.back}<span><b>${t("tr4_h")}</b><small>${t("tr4_p")}</small></span></div>
   </div></section>
 
   <section class="sec"><div class="wrap">
@@ -281,7 +451,7 @@ function home(){
   <section class="sec" style="padding-top:0"><div class="wrap">
     <div class="join">
       <div><h2 class="h-sec" style="font-size:clamp(1.8rem,3.4vw,2.6rem); color:var(--accent)">${t("join_h")}</h2><p class="lede">${t("join_p")}</p></div>
-      <div><a class="btn wa block" href="${waURL(lang==="ar"?"جديد":"Nouveautés")}" target="_blank" rel="noopener">${I.wa} ${t("join_btn")}</a><p class="note" style="text-align:center; margin:10px 0 0">WhatsApp · <span dir="ltr" style="user-select:all">${C.phoneDisplay}</span></p></div>
+      <div><a class="btn wa block" href="${waURL(lang==="ar"?"جديد":lang==="en"?"New arrivals":"Nouveautés")}" target="_blank" rel="noopener">${I.wa} ${t("join_btn")}</a><p class="note" style="text-align:center; margin:10px 0 0">WhatsApp · <span dir="ltr" style="user-select:all">${C.phoneDisplay}</span></p></div>
     </div>
   </div></section>`;
 }
@@ -351,8 +521,14 @@ function product(id){
         </ul>
         <table class="specs"><caption class="sr">${t("details")}</caption><tbody>
           ${p.brand?`<tr><th scope="row">${t("brand")}</th><td>${esc(p.brand)}</td></tr>`:""}
-          ${(p.specs||[]).map(x=>`<tr><th scope="row">${esc(x.label)}</th><td>${esc(x.value)}</td></tr>`).join("")}
+          ${(p.specs||[]).map(x=>`<tr><th scope="row">${esc(specLabel(x.label))}</th><td dir="ltr">${esc(x.value)}</td></tr>`).join("")}
         </tbody></table>
+        <div class="acc">
+          <details><summary>${t("care_h")}</summary><ul>${(CARE[lang][p.cat]||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></details>
+          ${p.cat==="chambre"?`<details><summary>${t("size_h")}</summary><table class="specs">${SIZES[lang]}</table></details>`:""}
+          <details><summary>${t("pay_h")}</summary><p>${t("pay_list")}</p><p class="note">${t("pay_after")}</p></details>
+        </div>
+        <p class="note" style="margin-top:14px">${t("photo_note")}</p>
       </div>
     </div>
     ${similar.length?`<section class="sec" style="padding-top:24px"><div class="sec-head"><h2 class="h-sec">${t("also")}</h2></div>${grid(similar)}</section>`:""}
@@ -476,7 +652,7 @@ async function startCardPayment(){
     if(!res.ok || !data.checkoutId) throw new Error(data.error || "checkout");
     await loadSumUp();
     $("#sumupBox").hidden = false; btn.hidden = true;
-    window.SumUpCard.mount({ id: "sumup-card", checkoutId: data.checkoutId, locale: lang==="ar" ? "en-GB" : "fr-FR", currency: "EUR", amount: (data.total/100).toFixed(2),
+    window.SumUpCard.mount({ id: "sumup-card", checkoutId: data.checkoutId, locale: lang==="fr" ? "fr-FR" : "en-GB", currency: "EUR", amount: (data.total/100).toFixed(2),
       onResponse: async (type) => {
         if(type !== "success") return;
         const st = await fetch("/api/status?id=" + encodeURIComponent(data.checkoutId)).then(r => r.json()).catch(() => ({}));
@@ -552,18 +728,10 @@ const PAGES = {
     <h2>Conditions</h2><p>Pour des raisons d'hygiène, le linge doit être retourné neuf, non lavé, dans son emballage d'origine. Les articles abîmés ou utilisés ne peuvent pas être repris, sauf défaut de fabrication.</p>
     <h2>Article défectueux</h2><p>Un défaut ? Envoyez-nous une photo : nous remplaçons ou remboursons l'article au titre de la garantie légale de conformité.</p>`),
   "faq": () => `<div class="wrap prose"><div class="page-head" style="padding-inline:0"><h1>${t("faq")}</h1></div>
-    ${[
-      ["Les produits sont-ils neufs ?","Oui. Tous nos articles sont neufs, dans leur emballage d'origine de marque."],
-      ["Comment passer commande ?","Ajoutez vos articles au panier puis validez : WhatsApp s'ouvre avec votre commande déjà écrite. Vous pouvez aussi nous écrire directement sur WhatsApp au "+C.phoneDisplay+"."],
-      ["Comment payer ?","Au moment du retrait ou de la livraison, en espèces ou par carte. Le paiement en ligne par carte arrive très bientôt."],
-      ["Quelle taille de drap housse choisir ?","Mesurez votre matelas : 140×190 pour un lit 2 places classique, 160×200 pour un lit King, 180×200 pour un XL King. Nos draps housse ont un bonnet de 25 cm, idéal pour les matelas épais."],
-      ["Puis-je réserver un article et le prendre au marché ?","Oui, c'est même le plus simple. Commandez avant samedi 20 h et votre commande vous attend le dimanche."],
-      ["Que faire si l'article ne me convient pas ?","Vous avez 14 jours pour l'échanger ou être remboursé, s'il est neuf et dans son emballage. Voir la page Retours."],
-      ["Parlez-vous arabe ?","Oui ! نعم، منحكي عربي. Écrivez-nous dans la langue que vous préférez."]
-    ].map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>`,
+    ${faqList().map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>`,
   "mentions-legales": () => textPage(t("mentions"), `
     <h2>Éditeur du site</h2><p>Dar Lin – Ahmad TAMIM, entrepreneur individuel (EI)<br>Siège : ${ADDR}<br>SIRET : 938 397 502 00023 – RCS Amiens 938 397 502<br>TVA : ${TODO("TVA non applicable, art. 293 B du CGI (à confirmer selon votre régime)")}<br>Téléphone : ${C.phoneDisplay} – E-mail : ${C.email}<br>Directeur de la publication : Ahmad TAMIM</p>
-    <h2>Hébergement</h2><p>Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis – vercel.com</p>
+    <h2>Hébergement</h2><p>Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis – cloudflare.com</p>
     <h2>Propriété intellectuelle</h2><p>Les textes, photos, logo et la marque Dar Lin sont la propriété de l'éditeur. Toute reproduction sans autorisation est interdite. Les marques citées (Gérard Pasquier, Amphora, Hygie) appartiennent à leurs titulaires respectifs.</p>
     <h2>Données personnelles</h2><p>Voir la page <a href="#confidentialite">Confidentialité</a>.</p>`),
   "cgv": () => textPage(t("cgv"), `
@@ -573,7 +741,7 @@ const PAGES = {
     <h2>3. Produits</h2><p>Linge de maison neuf, présenté avec photos et caractéristiques principales. Les couleurs peuvent légèrement varier selon l'écran. Offre valable dans la limite des stocks disponibles.</p>
     <h2>4. Prix</h2><p>Prix en euros, toutes taxes comprises, hors frais de livraison éventuels indiqués avant la validation. Les offres par lot (ex. 3 torchons pour 5 €) s'appliquent automatiquement au panier.</p>
     <h2>5. Commande</h2><p>Le client sélectionne ses articles, choisit le mode de réception, renseigne ses coordonnées et accepte les présentes CGV, puis envoie sa commande via WhatsApp. Le contrat est conclu à la confirmation écrite de Dar Lin (disponibilité et total), envoyée par WhatsApp.</p>
-    <h2>6. Paiement</h2><p>Paiement à la remise de la commande (retrait au marché ou livraison) en espèces ou carte bancaire. Lorsque le paiement en ligne sera ouvert, il sera traité de façon sécurisée par Stripe ; Dar Lin n'a jamais accès à vos données bancaires.</p>
+    <h2>6. Paiement</h2><p>Paiement en ligne par carte bancaire, Apple Pay ou Google Pay, traité de façon sécurisée par SumUp (Dar Lin n'a jamais accès à vos données bancaires), ou paiement à la remise de la commande (retrait au marché ou livraison) en espèces ou carte bancaire.</p>
     <h2>7. Réception</h2><p>Retrait gratuit au marché d'Amiens Nord le dimanche matin, ou livraison à domicile à Amiens et environs sous 48 h ouvrées (${eur(C.deliveryFee)}, offerte dès ${eur(C.freeDeliveryFrom)}). Le risque de perte est transféré au client à la remise du colis.</p>
     <h2>8. Droit de rétractation</h2><p>Le client dispose de 14 jours à compter de la réception pour se rétracter sans motif (art. L221-18 du Code de la consommation), en informant Dar Lin par WhatsApp ou e-mail. Les articles sont retournés neufs, non lavés et dans leur emballage d'origine. Le remboursement intervient sous 14 jours par le même moyen de paiement.</p>
     <h2>9. Garanties</h2><p>Les produits bénéficient de la garantie légale de conformité (art. L217-3 et suivants du Code de la consommation) pendant 2 ans à compter de la délivrance, et de la garantie des vices cachés (art. 1641 et suivants du Code civil).</p>
@@ -589,13 +757,13 @@ const PAGES = {
     <h2>Vos droits</h2><p>Accès, rectification, effacement, opposition, limitation et portabilité : écrivez à ${C.email}. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>`)
 };
 function textPage(title, html){
-  return `<div class="wrap prose"><div class="page-head" style="padding-inline:0"><h1>${title}</h1></div>${lang==="ar"&&t("legal_ar")?`<p class="ar-note">${t("legal_ar")}</p>`:""}<div dir="ltr" lang="fr" style="text-align:start">${html}</div></div>`;
+  return `<div class="wrap prose"><div class="page-head" style="padding-inline:0"><h1>${title}</h1></div>${lang!=="fr"&&t("legal_ar")?`<p class="ar-note">${t("legal_ar")}</p>`:""}<div dir="ltr" lang="fr" style="text-align:start">${html}</div></div>`;
 }
 
 function renderSearch(q){
   const n = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
   const qq = n(q);
-  const res = P.filter(p => n([p.fr.name,p.fr.short,p.ar.name,p.ar.short,p.brand||"",...p.variants.map(v=>v.fr+" "+v.ar)].join(" ")).includes(qq));
+  const res = P.filter(p => n([p.fr.name,p.fr.short,p.ar.name,p.ar.short,(p.en||{}).name||"",(p.en||{}).short||"",p.brand||"",...p.variants.map(v=>v.fr+" "+v.ar+" "+(v.en||""))].join(" ")).includes(qq));
   $("#view").innerHTML = `<div class="wrap"><div class="page-head"><h1 style="font-size:2.2rem">${esc(t("results",{q}))}</h1></div>${res.length?grid(res):`<p class="empty">${t("no_results")}</p>`}</div>`;
 }
 
