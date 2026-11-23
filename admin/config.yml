@@ -1,8 +1,7 @@
 # Panneau d'administration Dar Lin (Sveltia CMS, compatible Decap CMS)
-# À remplacer : GITHUB_USER par le nom d'utilisateur GitHub d'Ahmad.
 backend:
   name: github
-  repo: GITHUB_USER/darlin-site
+  repo: darlinmaison/darlin-site
   branch: main
   commit_messages:
     update: "Mise à jour : {{slug}}"
@@ -17,7 +16,7 @@ collections:
     files:
       - name: catalogue
         label: "Catalogue des produits"
-        file: data/products.json
+        file: products.json
         format: json
         fields:
           - name: products
@@ -83,7 +82,7 @@ collections:
     files:
       - name: promos
         label: "Offres et codes promo"
-        file: data/promos.json
+        file: promos.json
         format: json
         fields:
           - name: promos
@@ -139,7 +138,7 @@ collections:
     files:
       - name: settings
         label: "Couleurs, police, bannière, livraison"
-        file: data/settings.json
+        file: settings.json
         format: json
         fields:
           - name: theme
