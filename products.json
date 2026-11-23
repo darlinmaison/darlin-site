@@ -1,0 +1,893 @@
+{
+ "products": [
+  {
+   "id": "couvre-lit-sherpa",
+   "cat": "chambre",
+   "price": 35,
+   "star": true,
+   "fr": {
+    "name": "Couvre-lit Sherpa 3 pièces",
+    "short": "200×240 cm + 2 taies 65×65",
+    "desc": "Un couvre-lit épais et doux comme une couverture, pour réchauffer la chambre tout l'hiver. Livré avec ses deux taies assorties."
+   },
+   "ar": {
+    "name": "غطاء سرير شيربا ٣ قطع",
+    "short": "٢٠٠×٢٤٠ سم + ٢ كيس مخدة ٦٥×٦٥",
+    "desc": "غطاء سرير سميك وناعم متل البطانية، بيدفّي الغرفة كل الشتوية. معه كيسين مخدة بنفس اللون."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "Couvre-lit 200×240 cm · 2 taies 65×65 cm"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Noir",
+     "ar": "أسود",
+     "hex": "#1d1b1a",
+     "img": "img/2.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "parure-3-pieces",
+   "cat": "chambre",
+   "price": 25,
+   "star": true,
+   "fr": {
+    "name": "Parure de draps 3 pièces",
+    "short": "1 place · 100 % coton",
+    "desc": "La parure complète pour un lit 1 place : drap housse, drap plat et taie, en coton qui respire et s'adoucit à chaque lavage."
+   },
+   "ar": {
+    "name": "طقم شراشف ٣ قطع",
+    "short": "سرير مفرد · قطن ١٠٠٪",
+    "desc": "طقم كامل لسرير مفرد: شرشف بمطاط، شرشف مسطح وكيس مخدة، قطن بيتنفس وبينعم مع كل غسلة."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Contenu",
+     "value": "Drap plat 180×290 · drap housse 90×190 (bonnet 25 cm) · taie 65×65"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % coton"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Vert",
+     "ar": "أخضر",
+     "hex": "#8fb79a",
+     "img": "img/14.jpg"
+    },
+    {
+     "fr": "Marron",
+     "ar": "بني",
+     "hex": "#5a3a2c",
+     "img": "img/58.jpg"
+    },
+    {
+     "fr": "Rouge",
+     "ar": "أحمر",
+     "hex": "#d2402b",
+     "img": "img/70.jpg"
+    },
+    {
+     "fr": "Gris",
+     "ar": "رمادي",
+     "hex": "#9a9690",
+     "img": "img/75.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "parure-4-pieces",
+   "cat": "chambre",
+   "price": 25,
+   "star": true,
+   "fr": {
+    "name": "Parure de draps 4 pièces",
+    "short": "2 places 140×190 · 100 % coton",
+    "desc": "Drap housse, drap plat et deux taies en coton, dans un graphisme rouge et gris qui réveille la chambre."
+   },
+   "ar": {
+    "name": "طقم شراشف ٤ قطع",
+    "short": "سرير مزدوج ١٤٠×١٩٠ · قطن ١٠٠٪",
+    "desc": "شرشف بمطاط، شرشف مسطح وكيسين مخدة من القطن، بتصميم أحمر ورمادي بيعطي حياة للغرفة."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Contenu",
+     "value": "Drap plat 240×300 · drap housse 140×190 (bonnet 25 cm) · 2 taies 65×65"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % coton"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Rouge / gris",
+     "ar": "أحمر / رمادي",
+     "hex": "#d2402b",
+     "img": "img/62.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "parure-king",
+   "cat": "chambre",
+   "price": 25,
+   "star": true,
+   "fr": {
+    "name": "Parure de draps 4 pièces King",
+    "short": "160×200 · 100 % coton",
+    "desc": "Pour les grands lits : une parure en coton aux tons vert d'eau et gris, fraîche et apaisante."
+   },
+   "ar": {
+    "name": "طقم شراشف ٤ قطع كينغ",
+    "short": "١٦٠×٢٠٠ · قطن ١٠٠٪",
+    "desc": "للتخوت الكبيرة: طقم قطن بلون أخضر مائي ورمادي، منعش ومريح."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Contenu",
+     "value": "Drap plat 240×300 · drap housse 160×200 (bonnet 25 cm) · 2 taies 65×65"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % coton"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Vert / gris",
+     "ar": "أخضر / رمادي",
+     "hex": "#a8cdb0",
+     "img": "img/72.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "parure-stripe-king",
+   "cat": "chambre",
+   "price": 14,
+   "fr": {
+    "name": "Parure Stripe 4 pièces King",
+    "short": "160×200 · rayures en relief",
+    "desc": "Une parure au tissage rayé en relief, douce au toucher et facile à repasser. Le bon plan pour habiller un grand lit."
+   },
+   "ar": {
+    "name": "طقم سترايب ٤ قطع كينغ",
+    "short": "١٦٠×٢٠٠ · خطوط بارزة",
+    "desc": "طقم بنسيج مخطط بارز، ناعم باللمس وسهل الكوي. أحسن خيار لتلبيس تخت كبير بسعر صغير."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Contenu",
+     "value": "Drap plat 240×300 · drap housse 160×200 (bonnet 25 cm) · 2 taies 65×65"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester 75 g/m², motif rayé 2,5 cm"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Bleu marine",
+     "ar": "كحلي",
+     "hex": "#1c2b5a",
+     "img": "img/61.jpg"
+    },
+    {
+     "fr": "Gris",
+     "ar": "رمادي",
+     "hex": "#77777a",
+     "img": "img/66.jpg"
+    },
+    {
+     "fr": "Taupe",
+     "ar": "بيج غامق",
+     "hex": "#a48d7e",
+     "img": "img/69.jpg"
+    },
+    {
+     "fr": "Blanc",
+     "ar": "أبيض",
+     "hex": "#f4f2ee",
+     "img": "img/60.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "parure-stripe-140",
+   "cat": "chambre",
+   "price": 14,
+   "fr": {
+    "name": "Parure Stripe 4 pièces",
+    "short": "140×190 · rayures en relief",
+    "desc": "La version 2 places de notre parure Stripe : rayures en relief, toucher doux, entretien facile."
+   },
+   "ar": {
+    "name": "طقم سترايب ٤ قطع",
+    "short": "١٤٠×١٩٠ · خطوط بارزة",
+    "desc": "نسخة السرير المزدوج من طقم سترايب: خطوط بارزة، ملمس ناعم، وتنظيف سهل."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Contenu",
+     "value": "Drap plat 240×300 · drap housse 140×190 (bonnet 25 cm) · 2 taies 65×65"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester 75 g/m²"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Gris",
+     "ar": "رمادي",
+     "hex": "#8d8d90",
+     "img": "img/68.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "drap-housse-140",
+   "cat": "chambre",
+   "price": 7,
+   "fr": {
+    "name": "Drap housse 140×190",
+    "short": "Bonnet 25 cm · 100 % coton",
+    "desc": "Un drap housse en coton au bonnet profond de 25 cm, qui tient bien sur les matelas épais."
+   },
+   "ar": {
+    "name": "شرشف بمطاط ١٤٠×١٩٠",
+    "short": "عمق ٢٥ سم · قطن ١٠٠٪",
+    "desc": "شرشف بمطاط من القطن بعمق ٢٥ سم، بيثبت منيح على الفرشات السميكة."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "140×190 cm, bonnet 25 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % coton 57 fils"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Noir",
+     "ar": "أسود",
+     "hex": "#1d1b1a",
+     "img": "img/5.jpg"
+    },
+    {
+     "fr": "Orange",
+     "ar": "برتقالي",
+     "hex": "#e39a4a",
+     "img": "img/22.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "drap-housse-160",
+   "cat": "chambre",
+   "price": 9,
+   "fr": {
+    "name": "Drap housse 160×200 King",
+    "short": "Bonnet 25 cm · 100 % coton",
+    "desc": "Le drap housse pour lit King, en coton, avec un bonnet de 25 cm."
+   },
+   "ar": {
+    "name": "شرشف بمطاط ١٦٠×٢٠٠ كينغ",
+    "short": "عمق ٢٥ سم · قطن ١٠٠٪",
+    "desc": "شرشف بمطاط لتخت كينغ، قطن، بعمق ٢٥ سم."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "160×200 cm, bonnet 25 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % coton 57 fils"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Bordeaux",
+     "ar": "خمري",
+     "hex": "#8f1d24",
+     "img": "img/12.jpg"
+    },
+    {
+     "fr": "Noir",
+     "ar": "أسود",
+     "hex": "#1d1b1a",
+     "img": "img/16.jpg"
+    },
+    {
+     "fr": "Terracotta",
+     "ar": "تيراكوتا",
+     "hex": "#b4482f",
+     "img": "img/18.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "drap-housse-180",
+   "cat": "chambre",
+   "price": 11,
+   "fr": {
+    "name": "Drap housse 180×200 XL King",
+    "short": "Bonnet 25 cm · 100 % coton",
+    "desc": "Pour les très grands lits : drap housse XL King en coton, bonnet 25 cm."
+   },
+   "ar": {
+    "name": "شرشف بمطاط ١٨٠×٢٠٠ XL كينغ",
+    "short": "عمق ٢٥ سم · قطن ١٠٠٪",
+    "desc": "للتخوت الكبيرة كتير: شرشف بمطاط XL كينغ قطن، عمق ٢٥ سم."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "180×200 cm, bonnet 25 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % coton 57 fils"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Noir",
+     "ar": "أسود",
+     "hex": "#1d1b1a",
+     "img": "img/20.jpg"
+    },
+    {
+     "fr": "Terracotta",
+     "ar": "تيراكوتا",
+     "hex": "#b4482f",
+     "img": "img/24.jpg"
+    },
+    {
+     "fr": "Ocre",
+     "ar": "أصفر ترابي",
+     "hex": "#e0a85a",
+     "img": "img/26.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "tapis-de-priere",
+   "cat": "chambre",
+   "price": 5,
+   "fr": {
+    "name": "Tapis de prière",
+    "short": "70×110 cm · dos antidérapant",
+    "desc": "Un tapis de prière moelleux au motif floral, avec un dos picoté qui ne glisse pas."
+   },
+   "ar": {
+    "name": "سجادة صلاة",
+    "short": "٧٠×١١٠ سم · ضد الانزلاق",
+    "desc": "سجادة صلاة طرية بنقشة ورد، وظهرها منقّط ما بيزحط."
+   },
+   "brand": "Amphora",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "70×110 cm"
+    },
+    {
+     "label": "Dos",
+     "value": "Picots antidérapants"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Bordeaux fleuri",
+     "ar": "خمري مورّد",
+     "hex": "#8f1d24",
+     "img": "img/0.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "serviette-50x90",
+   "cat": "bain",
+   "price": 3,
+   "star": true,
+   "fr": {
+    "name": "Serviette de toilette 50×90",
+    "short": "Éponge 450 g/m² · 100 % coton",
+    "desc": "Une serviette en éponge épaisse, qui absorbe bien et reste douce. Sept coloris pour composer votre salle de bain."
+   },
+   "ar": {
+    "name": "منشفة ٥٠×٩٠",
+    "short": "قطن ١٠٠٪ · ٤٥٠ غ/م²",
+    "desc": "منشفة سميكة بتنشّف منيح وبتضل ناعمة. سبع ألوان لتنسّق حمّامك."
+   },
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "50×90 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "Éponge 100 % coton 450 g/m², bande satin"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Bleu",
+     "ar": "أزرق",
+     "hex": "#3aa9d6",
+     "img": "img/73.jpg"
+    },
+    {
+     "fr": "Vert",
+     "ar": "أخضر",
+     "hex": "#3fb39a",
+     "img": "img/73.jpg"
+    },
+    {
+     "fr": "Fuchsia",
+     "ar": "فوشيا",
+     "hex": "#d6347a",
+     "img": "img/73.jpg"
+    },
+    {
+     "fr": "Rose",
+     "ar": "زهري",
+     "hex": "#ee9bb3",
+     "img": "img/73.jpg"
+    },
+    {
+     "fr": "Gris",
+     "ar": "رمادي",
+     "hex": "#a3a3a3",
+     "img": "img/73.jpg"
+    },
+    {
+     "fr": "Blanc",
+     "ar": "أبيض",
+     "hex": "#f7f5f1",
+     "img": "img/76.jpg"
+    },
+    {
+     "fr": "Beige",
+     "ar": "بيج",
+     "hex": "#d8c2a0",
+     "img": "img/74.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "drap-de-bain",
+   "cat": "bain",
+   "price": 6,
+   "fr": {
+    "name": "Drap de bain 90×150",
+    "short": "Éponge 450 g/m² · 100 % coton",
+    "desc": "Le grand format pour s'envelopper en sortant de la douche, dans la même éponge épaisse que nos serviettes."
+   },
+   "ar": {
+    "name": "منشفة حمّام كبيرة ٩٠×١٥٠",
+    "short": "قطن ١٠٠٪ · ٤٥٠ غ/م²",
+    "desc": "القياس الكبير لتتلفلف فيه بعد الدوش، بنفس قماش مناشفنا السميك."
+   },
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "90×150 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "Éponge 100 % coton 450 g/m², bande satin"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Beige",
+     "ar": "بيج",
+     "hex": "#d8c2a0",
+     "img": "img/74.jpg"
+    },
+    {
+     "fr": "Blanc",
+     "ar": "أبيض",
+     "hex": "#f7f5f1",
+     "img": "img/76.jpg"
+    },
+    {
+     "fr": "Bleu",
+     "ar": "أزرق",
+     "hex": "#3aa9d6",
+     "img": "img/73.jpg"
+    },
+    {
+     "fr": "Rose",
+     "ar": "زهري",
+     "hex": "#ee9bb3",
+     "img": "img/73.jpg"
+    },
+    {
+     "fr": "Gris",
+     "ar": "رمادي",
+     "hex": "#a3a3a3",
+     "img": "img/73.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "nappe-terra-rectangle",
+   "cat": "table",
+   "price": 6,
+   "star": true,
+   "fr": {
+    "name": "Nappe Terra 140×240",
+    "short": "Rectangle · anti-taches",
+    "desc": "Une nappe imprimée traitée anti-taches : on essuie et c'est propre. Cinq motifs pour chaque saison."
+   },
+   "ar": {
+    "name": "مفرش طاولة تيرا ١٤٠×٢٤٠",
+    "short": "مستطيل · ضد البقع",
+    "desc": "مفرش مطبوع ومعالج ضد البقع: بتمسحه وبيرجع نضيف. خمس نقشات لكل الفصول."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "140×240 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester traité anti-taches"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Fleurs",
+     "ar": "ورود",
+     "hex": "#f1cf4a",
+     "img": "img/28.jpg"
+    },
+    {
+     "fr": "Feuillage",
+     "ar": "أوراق",
+     "hex": "#c08455",
+     "img": "img/32.jpg"
+    },
+    {
+     "fr": "Cœurs",
+     "ar": "قلوب",
+     "hex": "#c25b7a",
+     "img": "img/34.jpg"
+    },
+    {
+     "fr": "Café",
+     "ar": "قهوة",
+     "hex": "#6b4226",
+     "img": "img/37.jpg"
+    },
+    {
+     "fr": "Vichy bleu",
+     "ar": "مربعات زرقا",
+     "hex": "#2b3f86",
+     "img": "img/11.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "nappe-terra-ronde",
+   "cat": "table",
+   "price": 10,
+   "fr": {
+    "name": "Nappe Terra ronde Ø180",
+    "short": "Ronde · anti-taches",
+    "desc": "La nappe ronde anti-taches pour les tables de 4 à 6 personnes."
+   },
+   "ar": {
+    "name": "مفرش طاولة تيرا مدوّر Ø١٨٠",
+    "short": "مدوّر · ضد البقع",
+    "desc": "مفرش مدوّر ضد البقع لطاولات ٤ لـ ٦ أشخاص."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "Ø 180 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester traité anti-taches"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Café",
+     "ar": "قهوة",
+     "hex": "#6b4226",
+     "img": "img/38.jpg"
+    },
+    {
+     "fr": "Mosaïque",
+     "ar": "موزاييك",
+     "hex": "#4a4d57",
+     "img": "img/30.jpg"
+    },
+    {
+     "fr": "Cœurs",
+     "ar": "قلوب",
+     "hex": "#c25b7a",
+     "img": "img/35.jpg"
+    },
+    {
+     "fr": "Vichy bleu",
+     "ar": "مربعات زرقا",
+     "hex": "#2b3f86",
+     "img": "img/6.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "nappe-ciree-ronde",
+   "cat": "table",
+   "price": 7,
+   "fr": {
+    "name": "Nappe cirée ronde Ø180",
+    "short": "PVC · s'essuie d'un coup d'éponge",
+    "desc": "La nappe pratique du quotidien : imperméable, elle se nettoie d'un coup d'éponge."
+   },
+   "ar": {
+    "name": "مفرش نايلون مدوّر Ø١٨٠",
+    "short": "PVC · بينمسح بالإسفنجة",
+    "desc": "مفرش عملي لكل يوم: ما بيمرّق مي، وبينضف بمسحة إسفنجة."
+   },
+   "brand": "Amphora",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "Ø 180 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "PVC imprimé"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Petit-déjeuner",
+     "ar": "فطور",
+     "hex": "#b9a27e",
+     "img": "img/56.jpg"
+    },
+    {
+     "fr": "Cercles rouges",
+     "ar": "دواير حمرا",
+     "hex": "#d8352a",
+     "img": "img/52.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "torchons-brest",
+   "cat": "table",
+   "price": 2,
+   "fr": {
+    "name": "Torchons Brest 50×70",
+    "short": "100 % coton · 3 pour 5 €",
+    "desc": "Des torchons en coton à carreaux, solides et absorbants, pour la vaisselle comme pour les mains."
+   },
+   "ar": {
+    "name": "مناشف مطبخ بريست ٥٠×٧٠",
+    "short": "قطن ١٠٠٪ · ٣ بـ ٥ €",
+    "desc": "مناشف مطبخ قطن مربعات، قوية وبتنشّف، للصحون وللإيدين."
+   },
+   "brand": "Amphora",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "50×70 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % coton"
+    },
+    {
+     "label": "Offre",
+     "value": "3 torchons pour 5 €"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Carreaux rouges",
+     "ar": "مربعات حمرا",
+     "hex": "#c8302c",
+     "img": "img/9.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "lavettes-microfibre",
+   "cat": "table",
+   "price": 1,
+   "fr": {
+    "name": "Lavettes microfibre",
+    "short": "Multi-usages · 3 pour 2 €",
+    "desc": "Des lavettes microfibre qui attrapent la poussière et la graisse sans produit. Pour la cuisine, la salle de bain, la voiture."
+   },
+   "ar": {
+    "name": "فوط مايكروفايبر",
+    "short": "لكل الاستعمالات · ٣ بـ ٢ €",
+    "desc": "فوط مايكروفايبر بتلقط الغبرة والدهن بلا منظفات. للمطبخ والحمّام والسيارة."
+   },
+   "brand": "Hygie",
+   "specs": [
+    {
+     "label": "Format",
+     "value": "De 30×30 à 40×40 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "Microfibre"
+    },
+    {
+     "label": "Offre",
+     "value": "3 lavettes pour 2 €"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Assorties",
+     "ar": "ألوان متنوعة",
+     "hex": "#9fc6e0",
+     "img": "img/10.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "rideau-jacquard",
+   "cat": "rideaux",
+   "price": 9,
+   "star": true,
+   "fr": {
+    "name": "Rideau Jacquard 140×240",
+    "short": "Prêt-à-poser · œillets métal",
+    "desc": "Un rideau jacquard au motif tissé discret, qui filtre la lumière avec élégance. Il se pose en deux minutes grâce à ses œillets."
+   },
+   "ar": {
+    "name": "ستارة جاكار ١٤٠×٢٤٠",
+    "short": "جاهزة للتركيب · حلقات معدن",
+    "desc": "ستارة جاكار بنقشة منسوجة ناعمة، بتفلتر الضو بأناقة. بتتركب بدقيقتين بفضل الحلقات."
+   },
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "140×240 cm"
+    },
+    {
+     "label": "Pose",
+     "value": "Œillets métal"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Blanc",
+     "ar": "أبيض",
+     "hex": "#f2f1ec",
+     "img": "img/40.jpg"
+    },
+    {
+     "fr": "Argent",
+     "ar": "فضي",
+     "hex": "#c9c9c6",
+     "img": "img/48.jpg"
+    },
+    {
+     "fr": "Vert d'eau",
+     "ar": "أخضر مائي",
+     "hex": "#9fcfc0",
+     "img": "img/43.jpg"
+    }
+   ],
+   "stock": null,
+   "active": true
+  },
+  {
+   "id": "voile-ruffle",
+   "cat": "rideaux",
+   "price": 5,
+   "fr": {
+    "name": "Voile Ruffle 140×240",
+    "short": "Voilage · œillets métal",
+    "desc": "Un voilage léger à rayures, qui laisse passer la lumière tout en préservant l'intimité."
+   },
+   "ar": {
+    "name": "ستارة شيفون رافل ١٤٠×٢٤٠",
+    "short": "شفافة · حلقات معدن",
+    "desc": "ستارة خفيفة مخططة، بتفوّت الضو وبتحافظ على الخصوصية."
+   },
+   "brand": "Gérard Pasquier",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "140×240 cm"
+    },
+    {
+     "label": "Pose",
+     "value": "Œillets métal"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Gris rayé",
+     "ar": "رمادي مخطط",
+     "hex": "#6e6e70",
+     "img": "img/50.jpg"
+    }
+   ],
+   "extraImgs": [
+    "img/54.jpg"
+   ],
+   "stock": null,
+   "active": true
+  }
+ ]
+}

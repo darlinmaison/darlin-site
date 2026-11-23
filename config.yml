@@ -1,0 +1,199 @@
+# Panneau d'administration Dar Lin (Sveltia CMS, compatible Decap CMS)
+# À remplacer : GITHUB_USER par le nom d'utilisateur GitHub d'Ahmad.
+backend:
+  name: github
+  repo: GITHUB_USER/darlin-site
+  branch: main
+  commit_messages:
+    update: "Mise à jour : {{slug}}"
+
+locale: fr
+media_folder: img/uploads
+public_folder: img/uploads
+
+collections:
+  - name: produits
+    label: "🛏️ Produits"
+    files:
+      - name: catalogue
+        label: "Catalogue des produits"
+        file: data/products.json
+        format: json
+        fields:
+          - name: products
+            label: "Produits"
+            label_singular: "Produit"
+            widget: list
+            summary: "{{fields.fr.name}} – {{fields.price}} €"
+            fields:
+              - { name: id, label: "Identifiant (sans espace ni accent, ex : parure-king-bleue)", widget: string }
+              - { name: active, label: "En ligne", widget: boolean, default: true }
+              - name: cat
+                label: "Catégorie"
+                widget: select
+                options:
+                  - { label: "Chambre", value: chambre }
+                  - { label: "Salle de bain", value: bain }
+                  - { label: "Table & cuisine", value: table }
+                  - { label: "Rideaux", value: rideaux }
+              - { name: price, label: "Prix (€)", widget: number, value_type: float, min: 0, step: 0.5 }
+              - { name: stock, label: "Stock (laisser vide si on ne compte pas)", widget: number, value_type: int, required: false }
+              - { name: star, label: "Coup de cœur (affiché sur l'accueil)", widget: boolean, default: false, required: false }
+              - { name: brand, label: "Marque", widget: string, required: false }
+              - name: fr
+                label: "Texte en français"
+                widget: object
+                fields:
+                  - { name: name, label: "Nom", widget: string }
+                  - { name: short, label: "Sous-titre court", widget: string }
+                  - { name: desc, label: "Description", widget: text }
+              - name: ar
+                label: "النص بالعربي"
+                widget: object
+                fields:
+                  - { name: name, label: "الاسم", widget: string }
+                  - { name: short, label: "وصف قصير", widget: string }
+                  - { name: desc, label: "الوصف", widget: text }
+              - name: variants
+                label: "Couleurs / modèles"
+                label_singular: "Couleur"
+                widget: list
+                summary: "{{fields.fr}}"
+                fields:
+                  - { name: fr, label: "Nom (FR)", widget: string }
+                  - { name: ar, label: "الاسم (AR)", widget: string }
+                  - { name: hex, label: "Couleur de la pastille", widget: color }
+                  - { name: img, label: "Photo", widget: image }
+              - name: extraImgs
+                label: "Photos supplémentaires"
+                widget: list
+                required: false
+                field: { name: src, label: "Photo", widget: image }
+              - name: specs
+                label: "Caractéristiques"
+                widget: list
+                required: false
+                summary: "{{fields.label}} : {{fields.value}}"
+                fields:
+                  - { name: label, label: "Titre (ex : Dimensions)", widget: string }
+                  - { name: value, label: "Valeur (ex : 200×240 cm)", widget: string }
+
+  - name: promotions
+    label: "🏷️ Promotions"
+    files:
+      - name: promos
+        label: "Offres et codes promo"
+        file: data/promos.json
+        format: json
+        fields:
+          - name: promos
+            label: "Promotions"
+            label_singular: "Promotion"
+            widget: list
+            summary: "{{fields.label_fr}} ({{fields.type}})"
+            fields:
+              - { name: id, label: "Identifiant", widget: string }
+              - { name: active, label: "Activée", widget: boolean, default: true }
+              - name: type
+                label: "Type d'offre"
+                widget: select
+                options:
+                  - { label: "Lot : X articles pour Y € (ex : 3 pour 5 €)", value: pack }
+                  - { label: "X achetés = Y offerts (ex : 2 achetés = 1 offert)", value: bogo }
+                  - { label: "-X % dès N articles", value: percent_qty }
+                  - { label: "-X % simple", value: percent }
+                  - { label: "-X € dès N articles", value: amount_qty }
+                  - { label: "Code promo", value: code }
+              - { name: label_fr, label: "Texte affiché (FR)", widget: string }
+              - { name: label_ar, label: "النص المعروض (AR)", widget: string }
+              - name: products
+                label: "Produits concernés (vide = tous)"
+                widget: relation
+                collection: produits
+                file: catalogue
+                search_fields: ["products.*.fr.name"]
+                value_field: "products.*.id"
+                display_fields: ["products.*.fr.name"]
+                multiple: true
+                required: false
+              - name: categories
+                label: "Ou catégories concernées"
+                widget: select
+                multiple: true
+                required: false
+                options: [chambre, bain, table, rideaux]
+              - { name: qty, label: "Lot : nombre d'articles", widget: number, required: false }
+              - { name: price, label: "Lot : prix du lot (€)", widget: number, value_type: float, required: false }
+              - { name: buy, label: "Achetés", widget: number, required: false }
+              - { name: get, label: "Offerts", widget: number, required: false }
+              - { name: minQty, label: "À partir de N articles", widget: number, required: false }
+              - { name: percent, label: "Réduction (%)", widget: number, required: false }
+              - { name: amount, label: "Réduction (€)", widget: number, value_type: float, required: false }
+              - { name: code, label: "Code promo (ex : BIENVENUE5)", widget: string, required: false }
+              - { name: minOrder, label: "Code : commande minimum (€)", widget: number, value_type: float, required: false }
+              - { name: start, label: "Début (facultatif)", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+              - { name: end, label: "Fin (facultatif)", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+
+  - name: reglages
+    label: "🎨 Apparence et réglages"
+    files:
+      - name: settings
+        label: "Couleurs, police, bannière, livraison"
+        file: data/settings.json
+        format: json
+        fields:
+          - name: theme
+            label: "Couleurs, police et espaces"
+            widget: object
+            fields:
+              - { name: primary, label: "Couleur principale", widget: color }
+              - { name: secondary, label: "Couleur secondaire", widget: color }
+              - { name: sand, label: "Couleur sable", widget: color }
+              - { name: background, label: "Fond de page", widget: color }
+              - { name: surface, label: "Fond des encadrés", widget: color }
+              - { name: text, label: "Couleur du texte", widget: color }
+              - { name: fontTitles, label: "Police des titres (Google Fonts, ex : Cormorant Garamond, Playfair Display)", widget: string }
+              - { name: fontText, label: "Police du texte (ex : Jost, Poppins, Lato)", widget: string }
+              - { name: fontArabic, label: "Police arabe (ex : Amiri, Cairo, Tajawal)", widget: string }
+              - { name: radius, label: "Arrondi des coins (px)", widget: number }
+              - { name: spacing, label: "Espace entre les sections (px)", widget: number }
+          - name: hero
+            label: "Bannière d'accueil"
+            widget: object
+            fields:
+              - { name: title_fr, label: "Titre (FR) – <br> pour aller à la ligne, <em>…</em> pour l'italique", widget: string }
+              - { name: title_ar, label: "العنوان (AR)", widget: string }
+              - { name: text_fr, label: "Texte (FR)", widget: text }
+              - { name: text_ar, label: "النص (AR)", widget: text }
+              - { name: image1, label: "Grande photo", widget: image }
+              - { name: image2, label: "Photo 2", widget: image }
+              - { name: image3, label: "Photo 3", widget: image }
+              - { name: caption_fr, label: "Petite étiquette sur la photo (FR)", widget: string, required: false }
+              - { name: caption_ar, label: "الملصق على الصورة (AR)", widget: string, required: false }
+          - name: topbar
+            label: "Bandeau du haut"
+            widget: object
+            fields:
+              - { name: fr, label: "Messages (FR)", widget: list, field: { name: m, label: Message, widget: string } }
+              - { name: ar, label: "الرسائل (AR)", widget: list, field: { name: m, label: Message, widget: string } }
+          - name: shop
+            label: "Boutique, livraison et paiement"
+            widget: object
+            fields:
+              - { name: name, label: "Nom", widget: string }
+              - { name: whatsapp, label: "WhatsApp (format 33…, sans +)", widget: string }
+              - { name: phoneDisplay, label: "Téléphone affiché", widget: string }
+              - { name: email, label: "E-mail", widget: string }
+              - { name: instagram, label: "Lien Instagram", widget: string }
+              - { name: facebook, label: "Lien Facebook", widget: string }
+              - { name: deliveryFee, label: "Frais de livraison Amiens (€)", widget: number, value_type: float }
+              - { name: freeDeliveryFrom, label: "Livraison offerte dès (€)", widget: number, value_type: float }
+              - { name: cardPayment, label: "Paiement par carte SumUp activé", widget: boolean }
+          - name: categories
+            label: "Catégories (accueil)"
+            widget: list
+            fields:
+              - { name: id, label: "Identifiant", widget: string }
+              - { name: fr, label: "Nom (FR)", widget: string }
+              - { name: ar, label: "الاسم (AR)", widget: string }
+              - { name: img, label: "Photo", widget: image }

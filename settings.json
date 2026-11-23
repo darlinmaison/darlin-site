@@ -1,0 +1,75 @@
+{
+ "shop": {
+  "name": "Dar Lin",
+  "whatsapp": "33781055149",
+  "phoneDisplay": "07 81 05 51 49",
+  "email": "darlinmaison.amiens@gmail.com",
+  "instagram": "https://www.instagram.com/darlinmaison/",
+  "facebook": "https://www.facebook.com/darlinmaison",
+  "deliveryFee": 3,
+  "freeDeliveryFrom": 35,
+  "cardPayment": false
+ },
+ "theme": {
+  "primary": "#6B4226",
+  "secondary": "#C48A5A",
+  "sand": "#E3CBAA",
+  "background": "#FBF7F1",
+  "surface": "#F4ECE1",
+  "text": "#2E2118",
+  "fontTitles": "Cormorant Garamond",
+  "fontText": "Jost",
+  "fontArabic": "Amiri",
+  "radius": 14,
+  "spacing": 64
+ },
+ "hero": {
+  "title_fr": "Dormez bien,<br><em>vivez doux.</em>",
+  "title_ar": "نوم هني،<br><em>وحياة ناعمة.</em>",
+  "text_fr": "Parures, draps, serviettes, nappes et rideaux de grandes marques, à petits prix. À retirer au marché ou livrés chez vous à Amiens.",
+  "text_ar": "أطقم شراشف، مناشف، مفارش وستائر من ماركات معروفة وبأسعار صغيرة. استلمها من السوق أو منوصلها لبيتك بأميان.",
+  "image1": "img/14.jpg",
+  "image2": "img/28.jpg",
+  "image3": "img/73.jpg",
+  "caption_fr": "Parure 3 pièces · 25 €",
+  "caption_ar": "طقم ٣ قطع · ٢٥ €"
+ },
+ "topbar": {
+  "fr": [
+   "Retrait gratuit au marché d'Amiens",
+   "Livraison à domicile sur Amiens",
+   "Commande facile par WhatsApp"
+  ],
+  "ar": [
+   "استلام مجاني من سوق أميان",
+   "توصيل للبيت داخل أميان",
+   "اطلب بسهولة عن طريق واتساب"
+  ]
+ },
+ "categories": [
+  {
+   "id": "chambre",
+   "fr": "Chambre",
+   "ar": "غرفة النوم",
+   "img": "img/14.jpg"
+  },
+  {
+   "id": "bain",
+   "fr": "Salle de bain",
+   "ar": "الحمّام",
+   "img": "img/73.jpg"
+  },
+  {
+   "id": "table",
+   "fr": "Table & cuisine",
+   "ar": "السفرة والمطبخ",
+   "img": "img/28.jpg"
+  },
+  {
+   "id": "rideaux",
+   "fr": "Rideaux",
+   "ar": "الستائر",
+   "img": "img/50.jpg"
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{
+  "functions": { "api/*.js": { "includeFiles": "{data/**,engine.js}" } },
+  "headers": [ { "source": "/data/(.*)", "headers": [ { "key": "Cache-Control", "value": "no-cache" } ] } ]
+}

@@ -1,0 +1,76 @@
+{
+ "promos": [
+  {
+   "id": "lot-lavettes",
+   "active": true,
+   "type": "pack",
+   "products": [
+    "lavettes-microfibre"
+   ],
+   "qty": 3,
+   "price": 2,
+   "label_fr": "3 pour 2 €",
+   "label_ar": "٣ بـ ٢ €"
+  },
+  {
+   "id": "lot-torchons",
+   "active": true,
+   "type": "pack",
+   "products": [
+    "torchons-brest"
+   ],
+   "qty": 3,
+   "price": 5,
+   "label_fr": "3 pour 5 €",
+   "label_ar": "٣ بـ ٥ €"
+  },
+  {
+   "id": "lot-serviettes",
+   "active": true,
+   "type": "pack",
+   "products": [
+    "serviette-50x90"
+   ],
+   "qty": 2,
+   "price": 5,
+   "label_fr": "2 pour 5 €",
+   "label_ar": "٢ بـ ٥ €"
+  },
+  {
+   "id": "parures-2-moins-10",
+   "active": false,
+   "type": "percent_qty",
+   "categories": [
+    "chambre"
+   ],
+   "minQty": 2,
+   "percent": 10,
+   "label_fr": "-10 % dès 2 articles",
+   "label_ar": "خصم ١٠٪ من قطعتين"
+  },
+  {
+   "id": "draps-housse-2-1",
+   "active": false,
+   "type": "bogo",
+   "products": [
+    "drap-housse-140",
+    "drap-housse-160",
+    "drap-housse-180"
+   ],
+   "buy": 2,
+   "get": 1,
+   "label_fr": "2 achetés = 1 offert",
+   "label_ar": "اشتري ٢ والتالت مجاناً"
+  },
+  {
+   "id": "bienvenue",
+   "active": false,
+   "type": "code",
+   "code": "BIENVENUE5",
+   "percent": 5,
+   "minOrder": 20,
+   "label_fr": "Code BIENVENUE5 : -5 %",
+   "label_ar": "كود BIENVENUE5 : خصم ٥٪"
+  }
+ ]
+}
