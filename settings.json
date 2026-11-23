@@ -8,7 +8,7 @@
   "facebook": "https://www.facebook.com/darlinmaison",
   "deliveryFee": 3,
   "freeDeliveryFrom": 35,
-  "cardPayment": false
+  "cardPayment": true
  },
  "theme": {
   "primary": "#6B4226",
