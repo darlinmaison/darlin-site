@@ -211,3 +211,35 @@ collections:
               - { name: ar, label: "الاسم (AR)", widget: string }
               - { name: en, label: "Name (EN)", widget: string, required: false }
               - { name: img, label: "Photo", widget: image }
+
+  - name: avis
+    label: "⭐ Avis clients"
+    files:
+      - name: reviews
+        label: "Avis clients (uniquement des avis réels reçus)"
+        file: reviews.json
+        format: json
+        fields:
+          - name: reviews
+            label: "Avis"
+            label_singular: "Avis"
+            widget: list
+            summary: "{{fields.rating}}★ – {{fields.name}} : {{fields.text}}"
+            fields:
+              - { name: active, label: "Publié sur le site", widget: boolean, default: true }
+              - { name: rating, label: "Note (1 à 5)", widget: number, value_type: int, min: 1, max: 5, default: 5 }
+              - { name: name, label: "Prénom + initiale (ex : Samira B.)", widget: string }
+              - { name: city, label: "Ville (facultatif)", widget: string, required: false }
+              - { name: text, label: "Texte de l'avis (tel que reçu, sans le modifier)", widget: text }
+              - name: product
+                label: "Produit concerné (facultatif)"
+                widget: relation
+                collection: produits
+                file: catalogue
+                search_fields: ["products.*.fr.name"]
+                value_field: "products.*.id"
+                display_fields: ["products.*.fr.name"]
+                required: false
+              - { name: date, label: "Date", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { name: verified, label: "Achat vérifié (le client a vraiment acheté)", widget: boolean, default: true }
+
