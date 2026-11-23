@@ -8,7 +8,9 @@
   "facebook": "https://www.facebook.com/darlinmaison",
   "deliveryFee": 3,
   "freeDeliveryFrom": 35,
-  "cardPayment": true
+  "cardPayment": true,
+  "relayFee": 5.9,
+  "relayFreeFrom": 60
  },
  "theme": {
   "primary": "#6B4226",
@@ -40,20 +42,20 @@
  "topbar": {
   "fr": [
    "Livraison à domicile sur Amiens",
+   "Envoi partout en France en point relais",
    "Paiement sécurisé par carte",
-   "Retrait gratuit au marché",
    "-10 % avec le code MERCI10 dès 20 €"
   ],
   "ar": [
    "توصيل للبيت داخل أميان",
+   "شحن لكل فرنسا لنقاط الاستلام",
    "دفع آمن بالبطاقة",
-   "استلام مجاني من السوق",
    "خصم ١٠٪ بكود MERCI10 من ٢٠ €"
   ],
   "en": [
    "Home delivery in Amiens",
+   "Shipping all over France to pickup points",
    "Secure card payment",
-   "Free pickup at the market",
    "10% off with code MERCI10 from €20"
   ]
  },

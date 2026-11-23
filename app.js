@@ -2,7 +2,7 @@ window.DL_BOOT = function(DATA){
 "use strict";
 const S = DATA.settings, SHOP = S.shop, E = window.DLEngine;
 const P = DATA.products.filter(p => p.active !== false), CATS = S.categories, PROMOS = DATA.promos || [], REV = (DATA.reviews || []).slice().sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
-const C = { whatsapp: SHOP.whatsapp, phoneDisplay: SHOP.phoneDisplay, email: SHOP.email, instagram: SHOP.instagram, facebook: SHOP.facebook,
+const C = { relayFee: E.cents(SHOP.relayFee != null ? SHOP.relayFee : 5.9), relayFreeFrom: E.cents(SHOP.relayFreeFrom || 60), whatsapp: SHOP.whatsapp, phoneDisplay: SHOP.phoneDisplay, email: SHOP.email, instagram: SHOP.instagram, facebook: SHOP.facebook,
   deliveryFee: E.cents(SHOP.deliveryFee), freeDeliveryFrom: E.cents(SHOP.freeDeliveryFrom), cardPayment: !!SHOP.cardPayment };
 const pc = p => E.cents(p.price);
 const $ = (s, el=document) => el.querySelector(s);
@@ -50,6 +50,7 @@ const T = {
     cart_empty:"Votre panier est vide.", continue:"Continuer mes achats", subtotal:"Sous-total", pack_saving:"Remise lots", checkout:"Valider ma commande", remove:"Retirer",
     co_h:"Ma commande", co_mode:"Mode de réception", co_market:"Retrait au marché d'Amiens Nord", co_market_s:"Gratuit · dimanche matin, au stand Dar Lin",
     co_home:"Livraison à domicile (Amiens)", co_home_s:"{fee} · offerte dès {free} · sous 48 h ouvrées",
+    co_relay:"Point relais Mondial Relay (toute la France)", co_relay_s:"{fee} · offert dès {free} · expédié sous 48 h, livré en 3 à 5 jours", co_relay_addr:"Votre adresse complète (code postal + ville) : nous choisissons le point relais le plus proche et vous le confirmons sur WhatsApp",
     co_you:"Vos coordonnées", co_name:"Prénom et nom", co_phone:"Téléphone (WhatsApp de préférence)", co_addr:"Adresse de livraison", co_note:"Un message pour nous ? (facultatif)",
     co_pay:"Paiement", co_pay_txt:"Vous payez à la remise de la commande : espèces ou carte bancaire.", co_card_soon:"Paiement en ligne par carte : bientôt disponible.", co_card:"Payer par carte en ligne",
     co_delivery:"Livraison", co_free:"Offerte", co_total:"Total", co_send:"Envoyer ma commande sur WhatsApp",
@@ -99,6 +100,7 @@ const T = {
     cart_empty:"Your cart is empty.", continue:"Continue shopping", subtotal:"Subtotal", pack_saving:"Bundle discount", checkout:"Checkout", remove:"Remove",
     co_h:"My order", co_mode:"How would you like to receive it?", co_market:"Pickup at the Amiens Nord market", co_market_s:"Free · Sunday morning, at the Dar Lin stall",
     co_home:"Home delivery (Amiens)", co_home_s:"{fee} · free from {free} · within 48 working hours",
+    co_relay:"Mondial Relay pickup point (all of France)", co_relay_s:"{fee} · free from {free} · shipped within 48 h, delivered in 3–5 days", co_relay_addr:"Your full address (postcode + town): we pick the nearest pickup point and confirm it on WhatsApp",
     co_you:"Your details", co_name:"First and last name", co_phone:"Phone (WhatsApp preferred)", co_addr:"Delivery address", co_note:"A message for us? (optional)",
     co_pay:"Payment", co_pay_txt:"You pay when you receive your order: cash or card.", co_card_soon:"Online card payment: coming soon.", co_card:"Pay by card online",
     co_delivery:"Delivery", co_free:"Free", co_total:"Total", co_send:"Send my order on WhatsApp",
@@ -148,6 +150,7 @@ const T = {
     cart_empty:"سلتك فاضية.", continue:"كمّل تسوّق", subtotal:"المجموع", pack_saving:"خصم العروض", checkout:"أكّد الطلب", remove:"شيل",
     co_h:"طلبي", co_mode:"طريقة الاستلام", co_market:"استلام من سوق أميان الشمالية", co_market_s:"مجاني · الأحد الصبح عند بسطة دار لين",
     co_home:"توصيل للبيت (أميان)", co_home_s:"{fee} · مجاني من {free} · خلال ٤٨ ساعة عمل",
+    co_relay:"نقطة استلام Mondial Relay (كل فرنسا)", co_relay_s:"{fee} · مجاني من {free} · منبعته خلال ٤٨ ساعة وبيوصل بـ ٣ لـ ٥ أيام", co_relay_addr:"عنوانك الكامل (الرمز البريدي + المدينة): منختار أقرب نقطة استلام ومنأكدلك ياها عالواتساب",
     co_you:"معلوماتك", co_name:"الاسم والكنية", co_phone:"رقم التلفون (يفضّل واتساب)", co_addr:"عنوان التوصيل", co_note:"بدك تقلنا شي؟ (اختياري)",
     co_pay:"الدفع", co_pay_txt:"بتدفع وقت تستلم: كاش أو بطاقة بنكية.", co_card_soon:"الدفع بالبطاقة أونلاين: قريباً.", co_card:"ادفع بالبطاقة أونلاين",
     co_delivery:"التوصيل", co_free:"مجاني", co_total:"المجموع الكلي", co_send:"ابعت طلبي على واتساب",
@@ -270,7 +273,7 @@ const SIZES = {
 };
 /* questions fréquentes : page FAQ + assistant */
 const FAQ = {
-  fr:[["Comment se passe la livraison ?","Nous livrons nous-mêmes à Amiens et dans les communes voisines, sous 48 h ouvrées. Frais : {fee}, offerts dès {free}. Vous pouvez aussi retirer gratuitement votre commande au marché d'Amiens Nord le dimanche matin."],
+  fr:[["Comment se passe la livraison ?","Nous livrons nous-mêmes à Amiens et dans les communes voisines, sous 48 h ouvrées. Frais : {fee}, offerts dès {free}. Vous pouvez aussi retirer gratuitement votre commande au marché d'Amiens Nord le dimanche matin. Ailleurs en France : envoi en point relais Mondial Relay, livré en 3 à 5 jours."],
       ["Comment payer ?","En ligne par carte bancaire, Apple Pay ou Google Pay (paiement sécurisé SumUp), ou à la remise de la commande en espèces ou par carte."],
       ["Les produits sont-ils neufs ?","Oui. Tous nos articles sont neufs, dans leur emballage d'origine de marque (Gérard Pasquier, Amphora, Hygie…)."],
       ["Quelle taille de drap housse choisir ?","Mesurez votre matelas : 140×190 pour un lit 2 places classique, 160×200 pour un King, 180×200 pour un XL King. Nos draps housse ont un bonnet de 25 cm, idéal pour les matelas épais."],
@@ -278,7 +281,7 @@ const FAQ = {
       ["Où vous trouver ?","Chaque dimanche matin au marché d'Amiens Nord (Le Colvert). Commandez avant samedi 20 h et votre commande vous attend au stand."],
       ["Avez-vous un code promo ?","Oui : MERCI10 donne -10 % dès 20 € d'achat. Des lots (2 serviettes pour 5 €, 3 torchons pour 5 €…) s'appliquent automatiquement au panier."],
       ["Parlez-vous arabe ?","Oui ! نعم، منحكي عربي. Écrivez-nous dans la langue que vous préférez."]],
-  en:[["How does delivery work?","We deliver ourselves in Amiens and nearby towns within 48 working hours. Fee: {fee}, free from {free}. You can also collect your order for free at the Amiens Nord market on Sunday morning."],
+  en:[["How does delivery work?","We deliver ourselves in Amiens and nearby towns within 48 working hours. Fee: {fee}, free from {free}. You can also collect your order for free at the Amiens Nord market on Sunday morning. Elsewhere in France: Mondial Relay pickup point, delivered in 3–5 days."],
       ["How can I pay?","Online by bank card, Apple Pay or Google Pay (secure SumUp payment), or on delivery in cash or by card."],
       ["Are the products new?","Yes. All our items are brand new, in their original branded packaging (Gérard Pasquier, Amphora, Hygie…)."],
       ["Which fitted sheet size should I choose?","Measure your mattress: 140×190 for a standard double, 160×200 for a King, 180×200 for an XL King. Our fitted sheets have a 25 cm pocket, ideal for thick mattresses."],
@@ -286,7 +289,7 @@ const FAQ = {
       ["Where can I find you?","Every Sunday morning at the Amiens Nord market (Le Colvert). Order before Saturday 8 pm and your order will be waiting at the stall."],
       ["Do you have a promo code?","Yes: MERCI10 gives 10% off from €20. Bundles (2 towels for €5, 3 tea towels for €5…) apply automatically in the cart."],
       ["Do you speak other languages?","Yes! French, English and Arabic. Write to us in the language you prefer."]],
-  ar:[["كيف بيصير التوصيل؟","منوصّل بنفسنا بأميان والضيع اللي حولها خلال ٤٨ ساعة عمل. التوصيل {fee}، ومجاني من {free}. فيك كمان تستلم طلبك ببلاش من سوق أميان الشمالية يوم الأحد الصبح."],
+  ar:[["كيف بيصير التوصيل؟","منوصّل بنفسنا بأميان والضيع اللي حولها خلال ٤٨ ساعة عمل. التوصيل {fee}، ومجاني من {free}. فيك كمان تستلم طلبك ببلاش من سوق أميان الشمالية يوم الأحد الصبح. ولباقي فرنسا: منبعته لنقطة استلام Mondial Relay وبيوصل بـ ٣ لـ ٥ أيام."],
       ["كيف بدفع؟","أونلاين بالبطاقة البنكية أو Apple Pay أو Google Pay (دفع آمن عبر SumUp)، أو وقت الاستلام كاش أو بطاقة."],
       ["البضاعة جديدة؟","أكيد. كل منتجاتنا جديدة وبكرتونتها الأصلية من الماركة (Gérard Pasquier، Amphora، Hygie…)."],
       ["أي مقاس شرشف مطاط آخد؟","قيس فرشتك: 140×190 للتخت المزدوج العادي، 160×200 للكينغ، 180×200 للـ XL كينغ. الشراشف عنا جيبها ٢٥ سم، منيحة للفرشات السميكة."],
@@ -384,7 +387,7 @@ const promoLabel = d => esc((PROMOS.find(x=>x.id===d.id) && LBL(PROMOS.find(x=>x
 function sumRows(r, withDelivery){
   return `<div class="sum"><span>${t("subtotal")}</span><span>${eur(r.sub)}</span></div>
     ${r.discounts.map(d=>`<div class="sum ok"><span>${promoLabel(d)}</span><span>−${eur(d.amount)}</span></div>`).join("")}
-    ${withDelivery?`<div class="sum"><span>${r.mode==="home"?t("co_delivery"):t("co_pickup")}</span><span>${r.delivery?eur(r.delivery):t("co_free")}</span></div>`:""}
+    ${withDelivery?`<div class="sum"><span>${r.mode==="market"?t("co_pickup"):t("co_delivery")}</span><span>${r.delivery?eur(r.delivery):t("co_free")}</span></div>`:""}
     <div class="sum total"><span>${t("co_total")}</span><span>${eur(withDelivery?r.total:r.net)}</span></div>`;
 }
 
@@ -724,11 +727,12 @@ function checkout(){
       <div class="panel"><h2 style="font-size:1.6rem; margin-bottom:14px">${t("co_mode")}</h2>
         <label class="choice"><input type="radio" name="mode" value="market" ${co.mode==="market"?"checked":""}><div><b>${t("co_market")}</b><span>${t("co_market_s")}</span></div></label>
         <label class="choice"><input type="radio" name="mode" value="home" ${co.mode==="home"?"checked":""}><div><b>${t("co_home")}</b><span>${t("co_home_s",{fee:eur(C.deliveryFee), free:eur(C.freeDeliveryFrom)})}</span></div></label>
+        <label class="choice"><input type="radio" name="mode" value="relay" ${co.mode==="relay"?"checked":""}><div><b>${t("co_relay")}</b><span>${t("co_relay_s",{fee:eur(C.relayFee), free:eur(C.relayFreeFrom)})}</span></div></label>
       </div>
       <div class="panel" style="margin-top:16px"><h2 style="font-size:1.6rem; margin-bottom:14px">${t("co_you")}</h2>
         <div class="field"><label for="f-name">${t("co_name")}</label><input id="f-name" name="name" required autocomplete="name" placeholder=" " value="${esc(co.name)}"></div>
         <div class="field"><label for="f-phone">${t("co_phone")}</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9 +().-]{9,}" placeholder=" " value="${esc(co.phone)}" dir="ltr"></div>
-        <div class="field" id="addrField" ${co.mode==="home"?"":"hidden"}><label for="f-addr">${t("co_addr")}</label><textarea id="f-addr" name="addr" rows="2" autocomplete="street-address" placeholder=" ">${esc(co.addr)}</textarea></div>
+        <div class="field" id="addrField" ${co.mode!=="market"?"":"hidden"}><label for="f-addr" id="addrLabel">${co.mode==="relay"?t("co_relay_addr"):t("co_addr")}</label><textarea id="f-addr" name="addr" rows="2" autocomplete="street-address" placeholder=" ">${esc(co.addr)}</textarea></div>
         <div class="field"><label for="f-note">${t("co_note")}</label><textarea id="f-note" name="note" rows="2">${esc(co.note)}</textarea></div>
       </div>
       <div class="panel" style="margin-top:16px"><h2 style="font-size:1.6rem; margin-bottom:10px">${t("co_pay")}</h2>
@@ -759,9 +763,9 @@ function orderMessage(){
   const lines = r.lines.map(l=>`• ${l.product.fr.name} – ${l.variant.fr||""} × ${l.q} = ${eur(l.total)}`).join("\n");
   return [T.fr.order_hello, "", lines, "",
     ...r.discounts.map(d=>`${d.label_fr} : −${eur(d.amount)}`),
-    `Réception : ${co.mode==="home" ? "Livraison à domicile – " + (r.delivery ? eur(r.delivery) : "offerte") : "Retrait au marché (dimanche)"}`,
+    `Réception : ${co.mode==="home" ? "Livraison à domicile – " + (r.delivery ? eur(r.delivery) : "offerte") : co.mode==="relay" ? "POINT RELAIS Mondial Relay – " + (r.delivery ? eur(r.delivery) : "offert") : "Retrait au marché (dimanche)"}`,
     `TOTAL : ${eur(r.total)}`, paidRef ? `PAYÉ PAR CARTE ✅ (réf. ${paidRef})` : "Paiement à la remise", "",
-    `Nom : ${co.name}`, `Tél : ${co.phone}`, co.mode==="home" ? `Adresse : ${co.addr}` : null, co.note ? `Message : ${co.note}` : null,
+    `Nom : ${co.name}`, `Tél : ${co.phone}`, co.mode!=="market" ? `Adresse : ${co.addr}` : null, co.note ? `Message : ${co.note}` : null,
     "", "J'accepte les CGV de Dar Lin."].filter(x=>x!==null).join("\n");
 }
 let paidRef = "";
@@ -812,7 +816,7 @@ function bindCheckout(){
   };
   f.addEventListener("input", e => {
     const el = e.target;
-    if(el.name==="mode"){ co.mode = el.value; $("#addrField").hidden = co.mode!=="home"; redraw(); }
+    if(el.name==="mode"){ co.mode = el.value; $("#addrField").hidden = co.mode==="market"; $("#addrLabel").textContent = co.mode==="relay" ? t("co_relay_addr") : t("co_addr"); redraw(); }
     else if(el.name==="pay"){ co.pay = el.value; const card = co.pay!=="cash"; $("#payBtn").hidden = !card; $("#waSend").hidden = card; $("#coAfter").textContent = card ? t("pay_after") : t("co_after"); }
     else if(el.name==="code"){ return; }
     else if(el.name in co){ co[el.name] = el.value; }
@@ -820,7 +824,7 @@ function bindCheckout(){
   });
   f.addEventListener("submit", e => {
     e.preventDefault();
-    const need = [$("#f-name"), $("#f-phone")]; if(co.mode==="home") need.push($("#f-addr"));
+    const need = [$("#f-name"), $("#f-phone")]; if(co.mode!=="market") need.push($("#f-addr"));
     let ok = true;
     need.forEach(el => { const bad = !el.value.trim() || (el.validity && !el.validity.valid); el.style.borderColor = bad ? "var(--warn)" : ""; if(bad) ok = false; });
     const cg = $("#f-cgv"); if(!cg.checked){ ok = false; cg.parentElement.style.color = "var(--warn)"; } else cg.parentElement.style.color = "";
@@ -849,7 +853,7 @@ const PAGES = {
   "livraison": () => textPage(t("livraison"), `
     <h2>Retrait au marché, gratuit</h2><p>Commandez sur le site ou sur WhatsApp. Nous confirmons la disponibilité, puis votre commande vous attend au stand Dar Lin du marché d'Amiens Nord le dimanche matin. Vous réglez sur place, en espèces ou par carte.</p>
     <h2>Livraison à domicile sur Amiens</h2><p>Nous livrons nous-mêmes à Amiens et dans les communes voisines, sous 48 heures ouvrées après confirmation. Frais : ${eur(C.deliveryFee)}, offerts dès ${eur(C.freeDeliveryFrom)} d'achat. Nous convenons ensemble du créneau par WhatsApp.</p>
-    <h2>Ailleurs en France</h2><p>Envoi par Colissimo ou Mondial Relay possible sur demande : écrivez-nous et nous vous indiquons le tarif selon le poids du colis avant toute commande.</p>`),
+    <h2>Partout en France : point relais Mondial Relay</h2><p>Choisissez « Point relais » à la commande et indiquez votre adresse : nous choisissons le point relais le plus proche de chez vous et vous le confirmons sur WhatsApp. Expédition sous 48 heures ouvrées, livraison en 3 à 5 jours. Frais : ${eur(C.relayFee)}, offerts dès ${eur(C.relayFreeFrom)} d'achat. Vous recevez le numéro de suivi dès l'envoi.</p>`),
   "retours": () => textPage(t("retours"), `
     <p>Vous avez <b>14 jours</b> à compter de la réception pour changer d'avis, sans avoir à vous justifier (droit de rétractation, article L221-18 du Code de la consommation).</p>
     <h2>Comment faire</h2><ol><li>Écrivez-nous sur WhatsApp ou par e-mail en indiquant votre commande.</li><li>Rapportez l'article au stand du marché, ou renvoyez-le par la poste (frais de retour à votre charge).</li><li>Nous vous remboursons sous 14 jours, avec le même moyen de paiement, ou nous échangeons l'article si vous préférez.</li></ol>
@@ -870,7 +874,7 @@ const PAGES = {
     <h2>4. Prix</h2><p>Prix en euros, toutes taxes comprises, hors frais de livraison éventuels indiqués avant la validation. Les offres par lot (ex. 3 torchons pour 5 €) s'appliquent automatiquement au panier.</p>
     <h2>5. Commande</h2><p>Le client sélectionne ses articles, choisit le mode de réception, renseigne ses coordonnées et accepte les présentes CGV, puis envoie sa commande via WhatsApp. Le contrat est conclu à la confirmation écrite de Dar Lin (disponibilité et total), envoyée par WhatsApp.</p>
     <h2>6. Paiement</h2><p>Paiement en ligne par carte bancaire, Apple Pay ou Google Pay, traité de façon sécurisée par SumUp (Dar Lin n'a jamais accès à vos données bancaires), ou paiement à la remise de la commande (retrait au marché ou livraison) en espèces ou carte bancaire.</p>
-    <h2>7. Réception</h2><p>Retrait gratuit au marché d'Amiens Nord le dimanche matin, ou livraison à domicile à Amiens et environs sous 48 h ouvrées (${eur(C.deliveryFee)}, offerte dès ${eur(C.freeDeliveryFrom)}). Le risque de perte est transféré au client à la remise du colis.</p>
+    <h2>7. Réception</h2><p>Retrait gratuit au marché d'Amiens Nord le dimanche matin, livraison à domicile à Amiens et environs sous 48 h ouvrées (${eur(C.deliveryFee)}, offerte dès ${eur(C.freeDeliveryFrom)}), ou envoi en point relais Mondial Relay en France métropolitaine (${eur(C.relayFee)}, offert dès ${eur(C.relayFreeFrom)} ; expédition sous 48 h ouvrées, livraison en 3 à 5 jours). Le risque de perte est transféré au client à la remise du colis.</p>
     <h2>8. Droit de rétractation</h2><p>Le client dispose de 14 jours à compter de la réception pour se rétracter sans motif (art. L221-18 du Code de la consommation), en informant Dar Lin par WhatsApp ou e-mail. Les articles sont retournés neufs, non lavés et dans leur emballage d'origine. Le remboursement intervient sous 14 jours par le même moyen de paiement.</p>
     <h2>9. Garanties</h2><p>Les produits bénéficient de la garantie légale de conformité (art. L217-3 et suivants du Code de la consommation) pendant 2 ans à compter de la délivrance, et de la garantie des vices cachés (art. 1641 et suivants du Code civil).</p>
     <h2>10. Médiation</h2><p>En cas de litige non résolu, le client peut recourir gratuitement au médiateur de la consommation : ${TODO("nom et site du médiateur à compléter après adhésion")}. Plateforme européenne de règlement des litiges : ec.europa.eu/consumers/odr.</p>
