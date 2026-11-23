@@ -7,7 +7,7 @@ backend:
     update: "Mise à jour : {{slug}}"
 
 locale: fr
-media_folder: img/uploads
+media_folder: uploads
 public_folder: img/uploads
 
 collections:
@@ -53,6 +53,14 @@ collections:
                   - { name: name, label: "الاسم", widget: string }
                   - { name: short, label: "وصف قصير", widget: string }
                   - { name: desc, label: "الوصف", widget: text }
+              - name: en
+                label: "Text in English"
+                widget: object
+                required: false
+                fields:
+                  - { name: name, label: "Name", widget: string, required: false }
+                  - { name: short, label: "Short subtitle", widget: string, required: false }
+                  - { name: desc, label: "Description", widget: text, required: false }
               - name: variants
                 label: "Couleurs / modèles"
                 label_singular: "Couleur"
@@ -61,6 +69,7 @@ collections:
                 fields:
                   - { name: fr, label: "Nom (FR)", widget: string }
                   - { name: ar, label: "الاسم (AR)", widget: string }
+                  - { name: en, label: "Name (EN)", widget: string, required: false }
                   - { name: hex, label: "Couleur de la pastille", widget: color }
                   - { name: img, label: "Photo", widget: image }
               - name: extraImgs
@@ -105,6 +114,7 @@ collections:
                   - { label: "Code promo", value: code }
               - { name: label_fr, label: "Texte affiché (FR)", widget: string }
               - { name: label_ar, label: "النص المعروض (AR)", widget: string }
+              - { name: label_en, label: "Text shown (EN)", widget: string, required: false }
               - name: products
                 label: "Produits concernés (vide = tous)"
                 widget: relation
@@ -162,19 +172,23 @@ collections:
             fields:
               - { name: title_fr, label: "Titre (FR) – <br> pour aller à la ligne, <em>…</em> pour l'italique", widget: string }
               - { name: title_ar, label: "العنوان (AR)", widget: string }
+              - { name: title_en, label: "Title (EN)", widget: string, required: false }
               - { name: text_fr, label: "Texte (FR)", widget: text }
               - { name: text_ar, label: "النص (AR)", widget: text }
-              - { name: image1, label: "Grande photo", widget: image }
+              - { name: text_en, label: "Text (EN)", widget: text, required: false }
+              - { name: image1, label: "Grande photo de fond (paysage)", widget: image }
               - { name: image2, label: "Photo 2", widget: image }
               - { name: image3, label: "Photo 3", widget: image }
               - { name: caption_fr, label: "Petite étiquette sur la photo (FR)", widget: string, required: false }
               - { name: caption_ar, label: "الملصق على الصورة (AR)", widget: string, required: false }
+              - { name: caption_en, label: "Label on photo (EN)", widget: string, required: false }
           - name: topbar
             label: "Bandeau du haut"
             widget: object
             fields:
               - { name: fr, label: "Messages (FR)", widget: list, field: { name: m, label: Message, widget: string } }
               - { name: ar, label: "الرسائل (AR)", widget: list, field: { name: m, label: Message, widget: string } }
+              - { name: en, label: "Messages (EN)", widget: list, required: false, field: { name: m, label: Message, widget: string } }
           - name: shop
             label: "Boutique, livraison et paiement"
             widget: object
@@ -195,4 +209,5 @@ collections:
               - { name: id, label: "Identifiant", widget: string }
               - { name: fr, label: "Nom (FR)", widget: string }
               - { name: ar, label: "الاسم (AR)", widget: string }
+              - { name: en, label: "Name (EN)", widget: string, required: false }
               - { name: img, label: "Photo", widget: image }
