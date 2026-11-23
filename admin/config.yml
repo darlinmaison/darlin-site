@@ -201,6 +201,8 @@ collections:
               - { name: facebook, label: "Lien Facebook", widget: string }
               - { name: deliveryFee, label: "Frais de livraison Amiens (€)", widget: number, value_type: float }
               - { name: freeDeliveryFrom, label: "Livraison offerte dès (€)", widget: number, value_type: float }
+              - { name: relayFee, label: "Point relais Mondial Relay – frais (€)", widget: number, value_type: float, required: false }
+              - { name: relayFreeFrom, label: "Point relais offert dès (€)", widget: number, value_type: float, required: false }
               - { name: cardPayment, label: "Paiement par carte SumUp activé", widget: boolean }
           - name: categories
             label: "Catégories (accueil)"
