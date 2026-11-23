@@ -104,8 +104,10 @@ const factory = function () {
       }
     }
 
-    const mode = o.mode === "home" ? "home" : "market";
-    const delivery = mode === "home" ? (net >= cents(shop.freeDeliveryFrom) ? 0 : cents(shop.deliveryFee)) : 0;
+    const mode = o.mode === "home" ? "home" : o.mode === "relay" ? "relay" : "market";
+    let delivery = 0;
+    if (mode === "home") delivery = net >= cents(shop.freeDeliveryFrom) ? 0 : cents(shop.deliveryFee);
+    if (mode === "relay") delivery = shop.relayFreeFrom && net >= cents(shop.relayFreeFrom) ? 0 : cents(shop.relayFee != null ? shop.relayFee : 5.9);
     return { lines, sub, discounts, net, delivery, total: net + delivery, code: codeResult, mode };
   }
 
