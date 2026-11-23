@@ -71,6 +71,16 @@
    "minOrder": 20,
    "label_fr": "Code BIENVENUE5 : -5 %",
    "label_ar": "كود BIENVENUE5 : خصم ٥٪"
+  },
+  {
+   "id": "merci10",
+   "active": true,
+   "type": "code",
+   "code": "MERCI10",
+   "percent": 10,
+   "minOrder": 20,
+   "label_fr": "Code MERCI10 : -10 %",
+   "label_ar": "كود MERCI10 : خصم ١٠٪"
   }
  ]
 }
