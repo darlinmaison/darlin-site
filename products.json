@@ -633,6 +633,13 @@
      "en": "Blue"
     },
     {
+     "fr": "Vert",
+     "ar": "أخضر",
+     "en": "Green",
+     "hex": "#3fb39a",
+     "img": "img/73.jpg"
+    },
+    {
      "fr": "Rose",
      "ar": "زهري",
      "hex": "#ee9bb3",

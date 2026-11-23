@@ -1,7 +1,7 @@
 window.DL_BOOT = function(DATA){
 "use strict";
 const S = DATA.settings, SHOP = S.shop, E = window.DLEngine;
-const P = DATA.products.filter(p => p.active !== false), CATS = S.categories, PROMOS = DATA.promos || [];
+const P = DATA.products.filter(p => p.active !== false), CATS = S.categories, PROMOS = DATA.promos || [], REV = (DATA.reviews || []).slice().sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
 const C = { whatsapp: SHOP.whatsapp, phoneDisplay: SHOP.phoneDisplay, email: SHOP.email, instagram: SHOP.instagram, facebook: SHOP.facebook,
   deliveryFee: E.cents(SHOP.deliveryFee), freeDeliveryFrom: E.cents(SHOP.freeDeliveryFrom), cardPayment: !!SHOP.cardPayment };
 const pc = p => E.cents(p.price);
@@ -181,7 +181,18 @@ const X = {
     photo_note:"Photo du produit réel dans son emballage d'origine.",
     chat_open:"Une question ?", chat_title:"Assistant Dar Lin", chat_hi:"Bonjour 👋 Je réponds tout de suite aux questions les plus fréquentes. Choisissez un sujet :",
     chat_more:"Autre question", chat_wa:"Parler à Ahmad sur WhatsApp", chat_back:"Autres questions",
-    lang_name:"Français"
+    lang_name:"Français",
+    rv_h:"Ce que disent nos clients", rv_none:"Soyez le premier à donner votre avis !", rv_count:"{n} avis", rv_verified:"Achat vérifié", rv_write:"Donner mon avis",
+    rv_form_h:"Votre avis sur Dar Lin", rv_name:"Prénom (et initiale du nom)", rv_city:"Ville (facultatif)", rv_prod:"Produit acheté (facultatif)", rv_text:"Votre avis", rv_send:"Envoyer mon avis",
+    rv_note:"Votre avis nous est envoyé sur WhatsApp. Nous publions tous les avis réels, positifs comme négatifs, sans les modifier.", rv_rate:"Votre note", rv_all:"Tous les avis", rv_google:"Avis Google",
+    ship_left:"Plus que {m} pour la livraison offerte 🚚", ship_ok:"Bravo, la livraison à domicile est offerte ✓",
+    upsell:"Petit plus pour votre panier", add_s:"Ajouter", recent:"Vus récemment",
+    eta:"Commandez aujourd'hui : livré à Amiens d'ici le {d}, ou à retirer dimanche au marché.",
+    story_eyebrow:"Notre histoire", story_h:"Du marché d'Amiens à votre maison",
+    story_p:"Dar Lin, c'est une petite maison familiale née sur les marchés d'Amiens. Chaque semaine, nous sélectionnons du linge neuf de marques reconnues et nous le proposons à des prix justes. Pas d'intermédiaire, pas de surprise : vous voyez le vrai produit, dans son emballage d'origine, et vous pouvez nous écrire à tout moment.",
+    story_cta:"Nous rencontrer au marché",
+    rev_h:"Vous avez acheté chez nous ?", rev_p:"Votre avis aide d'autres familles d'Amiens à nous découvrir. Ça prend 30 secondes.", rev_btn:"Laisser un avis",
+    pay_icons:"Paiements acceptés", zoom:"Agrandir la photo", close:"Fermer"
   },
   en: {
     tr1_h:"Delivery in Amiens", tr1_p:"Within 48 h, free from {free}",
@@ -193,7 +204,18 @@ const X = {
     photo_note:"Photo of the real product in its original packaging.",
     chat_open:"A question?", chat_title:"Dar Lin assistant", chat_hi:"Hello 👋 I can answer the most common questions right away. Pick a topic:",
     chat_more:"Something else", chat_wa:"Talk to Ahmad on WhatsApp", chat_back:"Other questions",
-    lang_name:"English"
+    lang_name:"English",
+    rv_h:"What our customers say", rv_none:"Be the first to leave a review!", rv_count:"{n} reviews", rv_verified:"Verified purchase", rv_write:"Write a review",
+    rv_form_h:"Your review of Dar Lin", rv_name:"First name (and last initial)", rv_city:"Town (optional)", rv_prod:"Product bought (optional)", rv_text:"Your review", rv_send:"Send my review",
+    rv_note:"Your review is sent to us on WhatsApp. We publish every genuine review, positive or negative, without editing it.", rv_rate:"Your rating", rv_all:"All reviews", rv_google:"Google reviews",
+    ship_left:"Only {m} more for free delivery 🚚", ship_ok:"Great, home delivery is free ✓",
+    upsell:"A little extra for your cart", add_s:"Add", recent:"Recently viewed",
+    eta:"Order today: delivered in Amiens by {d}, or collect it on Sunday at the market.",
+    story_eyebrow:"Our story", story_h:"From the Amiens market to your home",
+    story_p:"Dar Lin is a small family business born at the markets of Amiens. Every week we select brand-new linen from trusted brands and offer it at fair prices. No middleman, no surprises: you see the real product in its original packaging, and you can message us anytime.",
+    story_cta:"Meet us at the market",
+    rev_h:"Bought from us?", rev_p:"Your review helps other families in Amiens discover us. It takes 30 seconds.", rev_btn:"Leave a review",
+    pay_icons:"Accepted payments", zoom:"Enlarge photo", close:"Close"
   },
   ar: {
     tr1_h:"توصيل بأميان", tr1_p:"خلال ٤٨ ساعة، مجاني من {free}",
@@ -205,7 +227,18 @@ const X = {
     photo_note:"صورة المنتج الحقيقي بكرتونته الأصلية.",
     chat_open:"عندك سؤال؟", chat_title:"مساعد دار لين", chat_hi:"أهلاً 👋 بجاوبك فوراً على الأسئلة المتكررة. اختار موضوع:",
     chat_more:"سؤال تاني", chat_wa:"احكي مع أحمد على واتساب", chat_back:"أسئلة تانية",
-    lang_name:"العربية"
+    lang_name:"العربية",
+    rv_h:"شو بيقولوا زباينّا", rv_none:"كون أول واحد بيكتب رأيه!", rv_count:"{n} تقييم", rv_verified:"شراء مؤكد", rv_write:"اكتب رأيك",
+    rv_form_h:"رأيك بدار لين", rv_name:"الاسم (وأول حرف من الكنية)", rv_city:"المدينة (اختياري)", rv_prod:"شو اشتريت؟ (اختياري)", rv_text:"رأيك", rv_send:"ابعت رأيي",
+    rv_note:"رأيك بيوصلنا على واتساب. منحط كل التقييمات الحقيقية، الحلوة والسيئة، بدون ما نغيّر فيها.", rv_rate:"تقييمك", rv_all:"كل التقييمات", rv_google:"تقييمات غوغل",
+    ship_left:"باقي {m} وبيصير التوصيل مجاني 🚚", ship_ok:"حلو، التوصيل للبيت صار مجاني ✓",
+    upsell:"شي صغير بيكمّل سلتك", add_s:"زيد", recent:"شفتهن مؤخراً",
+    eta:"اطلب اليوم: بيوصلك بأميان لحد {d}، أو استلمه الأحد من السوق.",
+    story_eyebrow:"قصتنا", story_h:"من سوق أميان لبيتك",
+    story_p:"دار لين مشروع عائلي صغير انولد بأسواق أميان. كل أسبوع منختار مفروشات جديدة من ماركات معروفة ومنبيعها بأسعار منيحة. بلا وسيط وبلا مفاجآت: بتشوف المنتج الحقيقي بكرتونته الأصلية، وفيك تحكينا بأي وقت.",
+    story_cta:"تعال شوفنا بالسوق",
+    rev_h:"اشتريت من عنا؟", rev_p:"رأيك بيساعد عائلات تانية بأميان تتعرف علينا. بياخد ٣٠ ثانية بس.", rev_btn:"اكتب رأيك",
+    pay_icons:"طرق الدفع", zoom:"كبّر الصورة", close:"سكّر"
   }
 };
 for(const k in X) Object.assign(T[k], X[k]);
@@ -262,6 +295,59 @@ const FAQ = {
       ["في كود خصم؟","إيه: MERCI10 بيعطيك خصم ١٠٪ من ٢٠ € وطالع. والعروض (منشفتين بـ ٥ €، ٣ فوط بـ ٥ €…) بتنحسب لحالها بالسلة."],
       ["بتحكوا عربي؟","أكيد! منحكي عربي وفرنساوي وإنكليزي. ابعتلنا باللغة اللي بتريحك."]]
 };
+const PAYICONS = `<span class="payicons" aria-label="Visa, Mastercard, Apple Pay, Google Pay">
+  <svg viewBox="0 0 48 30"><rect width="48" height="30" rx="4" fill="#fff"/><path d="M19.5 20.5h-2.8l1.8-11h2.8zm10.2-10.7a6.9 6.9 0 0 0-2.5-.5c-2.8 0-4.7 1.5-4.7 3.6 0 1.6 1.4 2.4 2.5 3 1.1.5 1.5.9 1.5 1.4 0 .7-.9 1.1-1.7 1.1-1.1 0-1.8-.2-2.7-.6l-.4-.2-.4 2.4a9 9 0 0 0 3.2.6c3 0 4.9-1.5 4.9-3.7 0-1.2-.7-2.2-2.4-3-1-.5-1.6-.8-1.6-1.4 0-.5.5-1 1.6-1a5 5 0 0 1 2.1.4l.3.1zm7.2-.3h-2.2c-.7 0-1.2.2-1.5.9l-4.2 10.1h3l.6-1.6h3.6l.3 1.6h2.6zm-3.5 7.1 1.1-3.1.6 3.1zM15.2 9.5l-2.8 7.5-.3-1.5a8.4 8.4 0 0 0-3.9-4.6l2.5 9.6h3l4.5-11z" fill="#1A1F71"/><path d="M9.9 9.5H5.3l-.1.2c3.6.9 6 3.1 6.9 5.8l-1-5.1c-.1-.7-.6-.9-1.2-.9z" fill="#F9A533"/></svg>
+  <svg viewBox="0 0 48 30"><rect width="48" height="30" rx="4" fill="#fff"/><circle cx="19.5" cy="15" r="7.5" fill="#EB001B"/><circle cx="28.5" cy="15" r="7.5" fill="#F79E1B"/><path d="M24 9a7.5 7.5 0 0 1 0 12 7.5 7.5 0 0 1 0-12z" fill="#FF5F00"/></svg>
+  <svg viewBox="0 0 48 30"><rect width="48" height="30" rx="4" fill="#000"/><text x="24" y="19.5" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="10" font-weight="600" fill="#fff"> Pay</text></svg>
+  <svg viewBox="0 0 48 30"><rect width="48" height="30" rx="4" fill="#fff"/><text x="24" y="19.5" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#5F6368"><tspan fill="#4285F4">G</tspan> Pay</text></svg>
+  <svg viewBox="0 0 48 30"><rect width="48" height="30" rx="4" fill="#fff"/><text x="24" y="19" text-anchor="middle" font-family="Arial" font-size="8.5" font-weight="700" fill="#2E2118">CB</text></svg>
+</span>`;
+function etaDate(){ const d = new Date(); let n = 0; while(n < 2){ d.setDate(d.getDate()+1); if(d.getDay()!==0 && d.getDay()!==6) n++; }
+  return d.toLocaleDateString(lang==="ar"?"ar":lang==="en"?"en-GB":"fr-FR", {weekday:"long", day:"numeric", month:"numeric"}); }
+let recent = store.get("dl_recent", []);
+function pushRecent(id){ recent = [id, ...recent.filter(x=>x!==id)].slice(0,8); store.set("dl_recent", recent); }
+function setMeta(desc, imgUrl){
+  const m = (sel, attr, val) => { let el = document.head.querySelector(sel); if(!el){ el = document.createElement("meta"); const [k,v] = attr; el.setAttribute(k, v); document.head.appendChild(el); } el.setAttribute("content", val); };
+  m('meta[name="description"]', ["name","description"], desc);
+  m('meta[property="og:description"]', ["property","og:description"], desc);
+  if(imgUrl) m('meta[property="og:image"]', ["property","og:image"], imgUrl);
+}
+function productLD(p){
+  let el = document.getElementById("ld-product"); if(!el){ el = document.createElement("script"); el.type = "application/ld+json"; el.id = "ld-product"; document.head.appendChild(el); }
+  el.textContent = p ? JSON.stringify({"@context":"https://schema.org","@type":"Product","name":p.fr.name,"description":p.fr.desc,"brand":p.brand?{"@type":"Brand","name":p.brand}:undefined,
+    "image":[...new Set(p.variants.map(v=>"https://darlinmaison.fr/"+img(v.img).replace(/^img\//,"")))],"sku":p.id,"aggregateRating":revFor(p.id).length?{"@type":"AggregateRating","ratingValue":avg(revFor(p.id)).toFixed(1),"reviewCount":revFor(p.id).length}:undefined,"review":revFor(p.id).slice(0,5).map(r=>({"@type":"Review","author":{"@type":"Person","name":r.name},"reviewRating":{"@type":"Rating","ratingValue":r.rating,"bestRating":5},"reviewBody":r.text,"datePublished":r.date})),
+    "offers":{"@type":"Offer","price":Number(p.price).toFixed(2),"priceCurrency":"EUR","availability":p.stock===0?"https://schema.org/OutOfStock":"https://schema.org/InStock","url":"https://darlinmaison.fr/#p-"+p.id,"seller":{"@type":"Organization","name":"Dar Lin"}}}) : "";
+}
+const starsHTML = (n, cls) => `<span class="rstars ${cls||""}" aria-label="${n}/5">${[1,2,3,4,5].map(i=>`<i class="${i<=Math.round(n)?"on":""}">★</i>`).join("")}</span>`;
+const revFor = id => REV.filter(r => !id || r.product===id);
+const avg = list => list.length ? list.reduce((a,r)=>a+(+r.rating||0),0)/list.length : 0;
+function revCard(r){ const p = r.product && byId(r.product);
+  return `<figure class="rcard">${starsHTML(+r.rating)}<blockquote>${esc(r.text||"")}</blockquote>
+    <figcaption><b>${esc(r.name||"")}</b>${r.city?` · ${esc(r.city)}`:""}${r.verified?` · <span class="ver">✓ ${t("rv_verified")}</span>`:""}${p?`<br><a href="#p-${p.id}">${esc(L(p).name)}</a>`:""}${r.date?` <small>${esc(new Date(r.date).toLocaleDateString(lang==="en"?"en-GB":"fr-FR"))}</small>`:""}</figcaption></figure>`; }
+function revSummary(list){ return list.length ? `<div class="rsum">${starsHTML(avg(list),"big")}<b>${avg(list).toFixed(1).replace(".",",")}/5</b><span>${t("rv_count",{n:list.length})}</span></div>` : ""; }
+function openReviewForm(pid){
+  const r = $("#drawerRoot"); let rating = 5;
+  r.innerHTML = `<div class="drawer-bg" id="dbg"></div><aside class="drawer rvform" role="dialog" aria-modal="true" aria-label="${t("rv_form_h")}">
+    <div class="drawer-h"><h2>${t("rv_form_h")}</h2><button class="icon-btn" id="dclose" type="button" aria-label="${t("close")}">${I.close}</button></div>
+    <form class="drawer-b" id="rvF">
+      <div class="opt-label" style="margin-top:0">${t("rv_rate")}</div>
+      <div class="rpick" id="rpick">${[1,2,3,4,5].map(i=>`<button type="button" data-r="${i}" aria-label="${i}/5" class="on">★</button>`).join("")}</div>
+      <div class="field"><label for="rv-n">${t("rv_name")}</label><input id="rv-n" required placeholder=" "></div>
+      <div class="field"><label for="rv-c">${t("rv_city")}</label><input id="rv-c" placeholder=" "></div>
+      <div class="field"><label for="rv-p">${t("rv_prod")}</label><select id="rv-p"><option value="">—</option>${P.map(p=>`<option value="${p.id}" ${p.id===pid?"selected":""}>${esc(L(p).name)}</option>`).join("")}</select></div>
+      <div class="field"><label for="rv-t">${t("rv_text")}</label><textarea id="rv-t" rows="4" required></textarea></div>
+      <p class="note">${t("rv_note")}</p>
+      <button class="btn wa block" type="submit">${I.wa} ${t("rv_send")}</button>
+    </form></aside>`;
+  $("#dbg").onclick = closeDrawer; $("#dclose").onclick = closeDrawer;
+  const paint = () => r.querySelectorAll("[data-r]").forEach(b => b.classList.toggle("on", +b.dataset.r <= rating));
+  r.querySelectorAll("[data-r]").forEach(b => b.onclick = () => { rating = +b.dataset.r; paint(); });
+  $("#rvF").onsubmit = e => { e.preventDefault();
+    const n = $("#rv-n").value.trim(), tx = $("#rv-t").value.trim(); if(!n || !tx){ (!n?$("#rv-n"):$("#rv-t")).style.borderColor = "var(--warn)"; return; }
+    const pr = byId($("#rv-p").value);
+    const msg = `⭐ AVIS CLIENT DAR LIN\nNote : ${"★".repeat(rating)}${"☆".repeat(5-rating)} (${rating}/5)\nNom : ${n}${$("#rv-c").value.trim()?"\nVille : "+$("#rv-c").value.trim():""}${pr?"\nProduit : "+pr.fr.name+" ("+pr.id+")":""}\n\n${tx}`;
+    const a = document.createElement("a"); a.href = waURL(msg); a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove(); closeDrawer(); };
+}
 const faqList = () => FAQ[lang].map(([q,a]) => [q, a.replace("{fee}", eur(C.deliveryFee)).replace("{free}", eur(C.freeDeliveryFrom))]);
 
 /* ---------- icônes ---------- */
@@ -318,7 +404,7 @@ function shell(){
   document.documentElement.lang = lang; document.documentElement.dir = lang==="ar" ? "rtl" : "ltr";
   const nav = [["chambre","nav_chambre"],["bain","nav_bain"],["table","nav_table"],["rideaux","nav_rideaux"],["affaires","nav_affaires"],["marche","nav_marche"]];
   app.innerHTML = `
-  <div class="topbar"><div class="wrap">${((S.topbar||{})[lang]||(S.topbar||{}).fr||[]).map(x=>`<span>${esc(x)}</span>`).join("<span>·</span>")}</div></div>
+  <div class="topbar"><div class="wrap">${((S.topbar||{})[lang]||(S.topbar||{}).fr||[]).map((x,i)=>`<span class="tb${i===0?" on":""}">${esc(x)}</span>`).join("<span class=\"tbsep\">·</span>")}</div></div>
   <header class="hdr"><div class="wrap">
     <a class="logo" href="#accueil" aria-label="Dar Lin">${LOGO}<span><b>Dar Lin</b><small>LINGE DE MAISON</small></span></a>
     <nav class="nav" aria-label="Principal">${nav.map(([h,k])=>`<a href="#${h}" data-nav="${h}">${t(k)}</a>`).join("")}</nav>
@@ -343,6 +429,7 @@ function shell(){
   <div id="drawerRoot"></div><div id="toastRoot" aria-live="polite"></div>`;
   document.querySelectorAll("[data-lang]").forEach(b => b.onclick = () => { lang = b.dataset.lang; store.set("dl_lang", lang); shell(); route(); });
   bindChat();
+  clearInterval(window.__tb); window.__tb = setInterval(() => { const a = [...document.querySelectorAll(".topbar .tb")]; if(a.length<2) return; const i = a.findIndex(x=>x.classList.contains("on")); a[i].classList.remove("on"); a[(i+1)%a.length].classList.add("on"); }, 3500);
   $("#cartBtn").onclick = openDrawer;
   $("#burger").onclick = e => { const m = $("#mnav"); m.hidden = !m.hidden; e.currentTarget.setAttribute("aria-expanded", String(!m.hidden)); };
   $("#searchBtn").onclick = () => { const s = $("#searchBar"); s.hidden = !s.hidden; if(!s.hidden) $("#q").focus(); };
@@ -372,7 +459,7 @@ function footer(){
     <div class="fgrid">
       <div><a class="logo" href="#accueil" style="margin-bottom:14px">${LOGO.replace(/var\(--accent\)/g,"#F4ECE1")}<span><b style="color:#F4ECE1">Dar Lin</b><small>LINGE DE MAISON</small></span></a><p style="margin:14px 0 0; font-size:.92rem; max-width:34ch">${t("f_about")}</p></div>
       <div><h4>${t("f_shop")}</h4><ul>${CATS.map(c=>`<li><a href="#${c.id}">${L(c)}</a></li>`).join("")}<li><a href="#affaires">${t("nav_affaires")}</a></li></ul></div>
-      <div><h4>${t("f_help")}</h4><ul><li><a href="#livraison">${t("livraison")}</a></li><li><a href="#retours">${t("retours")}</a></li><li><a href="#faq">${t("faq")}</a></li><li><a href="#a-propos">${t("about")}</a></li></ul></div>
+      <div><h4>${t("f_help")}</h4><ul><li><a href="#livraison">${t("livraison")}</a></li><li><a href="#retours">${t("retours")}</a></li><li><a href="#faq">${t("faq")}</a></li><li><a href="#accueil" onclick="setTimeout(()=>{const e=document.getElementById('avis'); if(e) e.scrollIntoView({behavior:'smooth'})},120)">${t("rv_h")}</a></li><li><a href="#a-propos">${t("about")}</a></li></ul></div>
       <div><h4>${t("f_contact")}</h4><ul>
         <li><a href="${waURL(t("order_hello").replace(":", "."))}" target="_blank" rel="noopener">WhatsApp · <span dir="ltr">${C.phoneDisplay}</span></a></li>
         <li><span style="user-select:all">${C.email}</span></li>
@@ -380,6 +467,7 @@ function footer(){
         <li><a href="${C.facebook}" target="_blank" rel="noopener">Facebook Dar Lin</a></li>
         <li><a href="#marche">${t("nav_marche")}</a></li></ul></div>
     </div>
+    <div class="fpay"><span>${t("pay_icons")}</span>${PAYICONS}</div>
     <div class="legal-line"><span>© ${new Date().getFullYear()} Dar Lin · ${t("f_rights")} · ${t("f_vat")}</span>
       <span><a href="#mentions-legales">${t("mentions")}</a> · <a href="#cgv">${t("cgv")}</a> · <a href="#confidentialite">${t("privacy")}</a></span></div>
   </div></footer>`;
@@ -395,7 +483,7 @@ function card(p){
     <div class="pc-img"><img src="${img(v0.img)}" alt="${esc(L(p).name)}" loading="lazy">${tag}${low}</div>
     <h3>${esc(L(p).name)}</h3>
     <div class="sub">${esc(L(p).short)}</div>
-    <div class="row"><span class="price">${eur(pc(p))}</span>${p.variants.length>1?`<span class="dots">${p.variants.slice(0,5).map(v=>`<span class="dot" style="background:${v.hex}" title="${esc(L(v))}"></span>`).join("")}</span>`:""}</div>
+    <div class="row"><span class="price">${eur(pc(p))}</span>${p.variants.length>1?`<span class="dots">${p.variants.slice(0,6).map(v=>`<span class="dot" style="background:${v.hex}" title="${esc(L(v))}"></span>`).join("")}${p.variants.length>6?`<small class="more">+${p.variants.length-6}</small>`:""}</span>`:""}</div>
   </a>`;
 }
 const grid = list => `<div class="grid">${list.map(card).join("")}</div>`;
@@ -446,7 +534,24 @@ function home(){
     ${grid(small.slice(0,4))}
   </div></section>
 
+  <section class="sec story"><div class="wrap">
+    <div class="story-img"><img src="${img((S.categories.find(c=>c.id==="bain")||{}).img||S.hero.image1)}" alt="" loading="lazy"></div>
+    <div class="story-txt"><div class="eyebrow">${t("story_eyebrow")}</div><h2 class="h-sec" style="margin:10px 0 16px">${t("story_h")}</h2><p class="lede">${t("story_p")}</p>
+      <div class="hero-ctas" style="margin-top:22px"><a class="btn" href="#marche">${t("story_cta")}</a><a class="btn ghost" href="#a-propos">${t("about")}</a></div></div>
+  </div></section>
+
+  ${recent.filter(id=>byId(id)).length?`<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-head"><div><div class="eyebrow">Dar Lin</div><h2 class="h-sec">${t("recent")}</h2></div></div>${grid(recent.map(byId).filter(Boolean).slice(0,4))}</div></section>`:""}
+
   <section class="sec" style="padding-top:0"><div class="wrap">${marketBlock()}</div></section>
+
+  <section class="sec" style="padding-top:0" id="avis"><div class="wrap">
+    ${REV.length ? `<div class="sec-head"><div><div class="eyebrow">${t("rv_h")}</div><h2 class="h-sec">${revSummary(REV)}</h2></div><button type="button" class="btn ghost" data-rvform="">${t("rv_write")}</button></div>
+      <div class="rgrid">${REV.slice(0,6).map(revCard).join("")}</div>` : `<div class="rev">
+      <div class="stars" aria-hidden="true">${I.star.repeat(5)}</div>
+      <h2 class="h-sec" style="font-size:clamp(1.7rem,3.2vw,2.4rem)">${t("rev_h")}</h2><p class="lede">${t("rev_p")}</p>
+      <button type="button" class="btn" data-rvform="">${t("rev_btn")}</button>
+    </div>`}
+  </div></section>
 
   <section class="sec" style="padding-top:0"><div class="wrap">
     <div class="join">
@@ -497,12 +602,13 @@ function product(id){
     <div class="crumbs"><a href="#accueil">Dar Lin</a> / <a href="#${cat.id}">${L(cat)}</a> / ${esc(L(p).name)}</div>
     <div class="pp" data-id="${p.id}">
       <div>
-        <div class="gallery-main"><img id="mainImg" src="${img(v.img)}" alt="${esc(L(p).name)} – ${esc(L(v))}"></div>
+        <div class="gallery-main"><button type="button" id="zoomBtn" class="zoom" aria-label="${t("zoom")}"><img id="mainImg" src="${img(v.img)}" alt="${esc(L(p).name)} – ${esc(L(v))}"></button></div>
         ${imgs.length>1?`<div class="thumbs">${imgs.map((n,i)=>`<button type="button" data-img="${n}" aria-pressed="${i===0}" aria-label="Photo ${i+1}"><img src="${img(n)}" alt="" loading="lazy"></button>`).join("")}</div>`:""}
       </div>
       <div>
         ${p.brand?`<div class="brand">${esc(p.brand)}</div>`:""}
         <h1 style="margin:6px 0 10px">${esc(L(p).name)}</h1>
+        ${revFor(p.id).length?`<a class="rlink" href="#rv-${p.id}" onclick="event.preventDefault();document.getElementById('rvsec').scrollIntoView({behavior:'smooth'})">${starsHTML(avg(revFor(p.id)))} ${t("rv_count",{n:revFor(p.id).length})}</a>`:""}
         <div><span class="big-price">${eur(pc(p))}</span>${E.promosFor(p, PROMOS).map(pr=>`<span class="pack">${promoLabel(pr)}</span>`).join("")}</div>${p.stock!=null && p.stock<=3 ? `<p class="stock">${p.stock>0?t("low",{n:p.stock}):t("soldout")}</p>`:""}
         <p style="margin:16px 0 0">${esc(L(p).desc)}</p>
         <div class="opt-label">${t("colour")} : <b id="vName">${esc(L(v))}</b></div>
@@ -513,6 +619,7 @@ function product(id){
           <button class="btn block" type="button" id="addBtn">${I.bag.replace('<svg','<svg style="fill:none;stroke:currentColor;stroke-width:1.6"')} ${t("add")}</button>
           <a class="btn wa block" id="waBtn" target="_blank" rel="noopener" href="#">${I.wa} ${t("wa_order")}</a>
         </div>
+        <p class="eta">${I.truck}<span>${t("eta",{d:esc(etaDate())})}</span></p>
         <ul class="perks">
           <li>${I.pin}<span>${t("perk1")}</span></li>
           <li>${I.truck}<span>${t("perk2",{fee:eur(C.deliveryFee), free:eur(C.freeDeliveryFrom)})}</span></li>
@@ -531,9 +638,13 @@ function product(id){
         <p class="note" style="margin-top:14px">${t("photo_note")}</p>
       </div>
     </div>
+    <section class="sec" id="rvsec" style="padding-top:32px"><div class="sec-head"><div><div class="eyebrow">${t("rv_h")}</div><h2 class="h-sec">${revFor(p.id).length?revSummary(revFor(p.id)):t("rv_none")}</h2></div><button type="button" class="btn ghost" data-rvform="${p.id}">${t("rv_write")}</button></div>
+      ${revFor(p.id).length?`<div class="rgrid">${revFor(p.id).map(revCard).join("")}</div>`:""}</section>
+    <div class="sticky-buy" id="stickyBuy" aria-hidden="true"><div><b>${esc(L(p).name)}</b><span>${eur(pc(p))}</span></div><button class="btn" type="button" id="stickyAdd">${t("add")}</button></div>
     ${similar.length?`<section class="sec" style="padding-top:24px"><div class="sec-head"><h2 class="h-sec">${t("also")}</h2></div>${grid(similar)}</section>`:""}
   </div>`;
 }
+const v0img = p => (p.variants[0]||{}).img;
 function bindProduct(){
   const root = $(".pp"); if(!root) return;
   const p = byId(root.dataset.id); let vi = 0, q = 1;
@@ -550,6 +661,16 @@ function bindProduct(){
   $("#qm").onclick = () => { if(q>1){ q--; upd(); } };
   $("#qp").onclick = () => { if(q<20){ q++; upd(); } };
   $("#addBtn").onclick = () => addToCart(p.id, vi, q);
+  $("#stickyAdd").onclick = () => addToCart(p.id, vi, q);
+  const sb = $("#stickyBuy"), ab = $("#addBtn");
+  if("IntersectionObserver" in window){ const io = new IntersectionObserver(([e]) => sb.classList.toggle("show", !e.isIntersecting && e.boundingClientRect.top < 0)); io.observe(ab); }
+  $("#zoomBtn").onclick = () => {
+    const r = $("#drawerRoot");
+    r.innerHTML = `<div class="lightbox" id="lb" role="dialog" aria-modal="true"><button class="icon-btn" type="button" id="lbClose" aria-label="${t("close")}">${I.close}</button><img src="${$("#mainImg").src}" alt=""></div>`;
+    const close = () => { r.innerHTML = ""; }; $("#lb").onclick = close; document.addEventListener("keydown", function k(e){ if(e.key==="Escape"){ close(); document.removeEventListener("keydown", k); } });
+  };
+  pushRecent(p.id); productLD(p);
+  setMeta(`${p.fr.name} – ${p.fr.short}. ${p.fr.desc} ${eur(pc(p))} chez Dar Lin, Amiens.`, "https://darlinmaison.fr/" + img(v0img(p)).replace(/^img\//,""));
   upd();
 }
 
@@ -579,9 +700,15 @@ function bindLines(root, redraw){
 function drawDrawer(){
   const b = $("#dbody"), f = $("#dfoot"); if(!b) return;
   if(!cart.length){ b.innerHTML = `<div class="empty"><p>${t("cart_empty")}</p><a class="btn ghost" href="#tout" id="dgo">${t("continue")}</a></div>`; f.innerHTML = ""; $("#dgo").onclick = closeDrawer; return; }
-  b.innerHTML = cartLines(); bindLines(b, drawDrawer);
   const r = calc();
-  f.innerHTML = `${sumRows(r, false)}
+  const left = C.freeDeliveryFrom - r.net, pct = Math.max(0, Math.min(100, Math.round(r.net / C.freeDeliveryFrom * 100)));
+  const ship = `<div class="shipbar"><p>${left>0 ? t("ship_left",{m:eur(left)}) : t("ship_ok")}</p><div class="bar"><i style="width:${pct}%"></i></div></div>`;
+  const inCart = new Set(cart.map(l=>l.id));
+  const ups = P.filter(p=>p.price<=5 && !inCart.has(p.id) && p.stock!==0).slice(0,3);
+  b.innerHTML = ship + cartLines() + (ups.length?`<div class="upsell"><h3>${t("upsell")}</h3>${ups.map(p=>`<div class="up"><img src="${img(v0img(p))}" alt=""><div><b>${esc(L(p).name)}</b><span>${eur(pc(p))}</span></div><button type="button" class="btn ghost" data-up="${p.id}">${t("add_s")}</button></div>`).join("")}</div>`:"");
+  bindLines(b, drawDrawer);
+  b.querySelectorAll("[data-up]").forEach(x => x.onclick = () => { const ex = cart.find(l=>l.id===x.dataset.up && l.v===0); if(ex) ex.q++; else cart.push({id:x.dataset.up, v:0, q:1}); saveCart(); drawDrawer(); });
+  f.innerHTML = `${sumRows(r, false)}<div class="drawer-pay">${PAYICONS}</div>
     <a class="btn block" href="#commande" id="dco">${t("checkout")}</a>
     <button class="btn ghost block" type="button" id="dcont">${t("continue")}</button>`;
   $("#dco").onclick = closeDrawer; $("#dcont").onclick = closeDrawer;
@@ -620,6 +747,7 @@ function checkout(){
       <p class="note" id="coErr" hidden style="color:var(--warn)">${t("co_fill")}</p>
       <button class="btn block" type="submit" id="payBtn" ${C.cardPayment && co.pay!=="cash" ? "" : "hidden"}>${I.card.replace('<svg','<svg style="fill:none;stroke:currentColor;stroke-width:1.6"')} ${t("pay_now")}</button>
       <button class="btn wa block" type="submit" id="waSend" ${C.cardPayment && co.pay!=="cash" ? "hidden" : ""}>${I.wa} ${t("co_send")}</button>
+      <div class="drawer-pay" style="margin-top:12px">${PAYICONS}</div>
       <p class="note" style="margin:10px 0 0" id="coAfter">${C.cardPayment && co.pay!=="cash" ? t("pay_after") : t("co_after")}</p>
       <div id="sumupBox" hidden style="margin-top:14px"><div id="sumup-card"></div></div>
       <div id="coFallback" hidden style="margin-top:12px"><p class="note">${t("co_wa_hidden",{tel:C.phoneDisplay})}</p><textarea id="coMsg" rows="7" readonly style="width:100%; font:inherit; font-size:.85rem; padding:10px; border-radius:10px; border:1px solid var(--line); background:var(--bg); color:var(--ink)"></textarea><button class="btn ghost block" type="button" id="copyBtn" style="margin-top:8px">${t("copy")}</button></div>
@@ -787,8 +915,10 @@ function route(){
   const m = $("#mnav"); if(m) m.hidden = true;
   const sb = $("#searchBar"); if(sb && !sb.hidden && !$("#q").value) sb.hidden = true;
   bindProduct(); bindCheckout();
+  document.querySelectorAll("[data-rvform]").forEach(b => b.onclick = () => openReviewForm(b.dataset.rvform));
   const sel = $("#sortSel"); if(sel) sel.onchange = () => { store.set("dl_sort", sel.value); route(); };
   const p = h.startsWith("p-") && byId(h.slice(2));
+  if(!p){ productLD(null); setMeta("Dar Lin, linge de maison à Amiens : parures de draps, draps housse, serviettes, nappes et rideaux de marque à petits prix. Livraison sur Amiens, retrait au marché, paiement sécurisé.", "https://darlinmaison.fr/amb-hero.jpg"); }
   document.title = p ? `${p.fr.name} – Dar Lin` : (TITLES[h] || "Dar Lin – Linge de maison à Amiens");
   window.scrollTo(0,0);
 }

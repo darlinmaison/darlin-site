@@ -347,3 +347,69 @@ details p{color:var(--muted); margin:10px 0 0}
 .qs button:hover, .chat-more:hover{border-color:var(--accent2); background:var(--surface)}
 .chat-b .btn{margin-top:4px; padding:12px 18px; font-size:.88rem}
 @media (max-width: 520px){ .chat-label{display:none} .chat-btn{padding:6px} }
+
+/* ===== v3.1 : barre livraison, upsell, icônes paiement, histoire, avis, zoom, barre achat mobile ===== */
+.topbar .tbsep{opacity:.5}
+@media (max-width: 820px){ .topbar .tb{display:none} .topbar .tb.on{display:inline; animation:tbin .5s ease} .topbar .tbsep{display:none} }
+@keyframes tbin{from{opacity:0; transform:translateY(4px)} to{opacity:1; transform:none}}
+.dots .more{font-size:.72rem; color:var(--muted); margin-inline-start:2px}
+.shipbar{background:var(--surface); border-radius:12px; padding:12px 14px; margin-bottom:14px}
+.shipbar p{margin:0 0 8px; font-size:.88rem}
+.shipbar .bar{height:6px; border-radius:99px; background:var(--line); overflow:hidden}
+.shipbar .bar i{display:block; height:100%; background:linear-gradient(90deg,var(--accent2),var(--accent)); border-radius:inherit; transition:width .4s}
+.upsell{margin-top:18px; border-top:1px solid var(--line); padding-top:14px}
+.upsell h3{font-size:1.15rem; margin:0 0 10px}
+.up{display:grid; grid-template-columns:52px 1fr auto; gap:10px; align-items:center; margin-bottom:10px}
+.up img{width:52px; height:64px; object-fit:cover; border-radius:8px; background:var(--surface)}
+.up b{display:block; font-weight:500; font-size:.88rem; line-height:1.25}
+.up span{font-size:.85rem; color:var(--muted)}
+.up .btn{padding:8px 14px; font-size:.82rem}
+.payicons{display:inline-flex; gap:6px; flex-wrap:wrap; align-items:center}
+.payicons svg{width:40px; height:25px; border-radius:4px; box-shadow:0 0 0 1px rgba(0,0,0,.12)}
+.drawer-pay{display:flex; justify-content:center; margin:10px 0 4px}
+.fpay{display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding-top:18px; margin-top:24px; border-top:1px solid rgba(244,236,225,.15); font-size:.85rem; opacity:.9}
+.eta{display:flex; gap:10px; align-items:flex-start; background:var(--surface); border-radius:12px; padding:12px 14px; margin:16px 0 0; font-size:.9rem}
+.eta svg{width:22px; height:22px; flex:none; fill:none; stroke:var(--accent2); stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; margin-top:1px}
+.story .wrap{display:grid; grid-template-columns:1fr 1.05fr; gap:48px; align-items:center}
+.story-img{border-radius:var(--r); overflow:hidden; aspect-ratio:4/5; max-height:560px}
+.story-img img{width:100%; height:100%; object-fit:cover}
+@media (max-width: 820px){ .story .wrap{grid-template-columns:1fr; gap:24px} .story-img{aspect-ratio:4/3} }
+.rev{text-align:center; background:var(--surface); border-radius:calc(var(--r) + 6px); padding:40px 24px}
+.rev .stars{display:flex; justify-content:center; gap:4px; margin-bottom:12px}
+.rev .stars svg{width:24px; height:24px; fill:#E0A33A; stroke:none}
+.rev .lede{max-width:52ch; margin:10px auto 22px}
+.zoom{all:unset; display:block; width:100%; height:100%; cursor:zoom-in}
+.lightbox{position:fixed; inset:0; z-index:120; background:rgba(15,9,5,.92); display:grid; place-items:center; padding:24px; cursor:zoom-out}
+.lightbox img{max-width:100%; max-height:100%; object-fit:contain; border-radius:8px}
+.lightbox .icon-btn{position:absolute; top:calc(14px + env(safe-area-inset-top,0px)); inset-inline-end:14px; color:#fff}
+.lightbox .icon-btn svg{stroke:#fff}
+.sticky-buy{position:fixed; left:0; right:0; bottom:0; z-index:55; display:none; align-items:center; gap:12px; padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px)); background:color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter:blur(10px); border-top:1px solid var(--line); transform:translateY(100%); transition:transform .25s}
+.sticky-buy div{flex:1; min-width:0}
+.sticky-buy b{display:block; font-weight:500; font-size:.9rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.sticky-buy span{font-size:.85rem; color:var(--accent2)}
+.sticky-buy .btn{padding:11px 18px; font-size:.88rem}
+@media (max-width: 820px){ .sticky-buy{display:flex} .sticky-buy.show{transform:none} body:has(.sticky-buy.show) .chat{bottom:calc(84px + env(safe-area-inset-bottom,0px))} }
+@media (max-width: 820px){ .topbar span.tb.on{display:inline!important} }
+
+/* ===== avis clients ===== */
+.rstars{display:inline-flex; gap:1px; color:var(--line); font-size:1rem; line-height:1; vertical-align:middle}
+.rstars i{font-style:normal}
+.rstars i.on{color:#E0A33A}
+.rstars.big{font-size:1.5rem}
+.rsum{display:flex; align-items:center; gap:12px; flex-wrap:wrap; font-family:var(--f-body)}
+.rsum b{font-size:1.4rem; font-weight:500}
+.rsum span{font-size:.95rem; color:var(--muted)}
+.rgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+@media (max-width: 960px){ .rgrid{grid-template-columns:1fr 1fr} }
+@media (max-width: 620px){ .rgrid{grid-template-columns:1fr} }
+.rcard{margin:0; background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:18px 18px 16px; display:flex; flex-direction:column; gap:10px}
+.rcard blockquote{margin:0; font-size:.95rem; line-height:1.55}
+.rcard figcaption{font-size:.84rem; color:var(--muted)}
+.rcard figcaption b{color:var(--ink); font-weight:500}
+.rcard .ver{color:var(--ok)}
+.rcard small{opacity:.8}
+.rlink{display:inline-flex; align-items:center; gap:8px; font-size:.88rem; color:var(--muted); text-decoration:none; margin-bottom:6px}
+.rpick{display:flex; gap:6px; margin-bottom:14px}
+.rpick button{border:0; background:none; font-size:2rem; line-height:1; color:var(--line); cursor:pointer; padding:0}
+.rpick button.on{color:#E0A33A}
+.rvform select{width:100%; padding:12px; border-radius:10px; border:1px solid var(--line); background:var(--bg); color:var(--ink); font:inherit}
