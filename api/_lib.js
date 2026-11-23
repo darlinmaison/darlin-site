@@ -1,7 +1,7 @@
 // Outils communs aux fonctions de paiement (Vercel). Les clés SumUp sont dans les variables d'environnement Vercel, jamais dans le code.
 const fs = require("fs"), path = require("path");
 const E = require("../engine.js");
-const read = f => JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", f), "utf8"));
+const read = f => JSON.parse(fs.readFileSync(path.join(process.cwd(), f), "utf8"));
 function loadData() {
   return { products: read("products.json").products, promos: read("promos.json").promos, settings: read("settings.json") };
 }
