@@ -1,4 +1,4 @@
-# Dar Lin – configuration Netlify (hébergement gratuit, usage commercial autorisé)
+# Dar Lin – configuration Netlify
 [build]
   publish = "."
 
@@ -6,13 +6,18 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
-# Paiement SumUp : /api/checkout et /api/status
+# QR "Votre avis compte" de la carte merci (a remplacer par le lien d'avis Google)
+[[redirects]]
+  from = "/avis"
+  to = "https://wa.me/33781055149?text=Bonjour%20Dar%20Lin%20%21%20Voici%20mon%20avis%20sur%20ma%20commande%20%3A%20"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
-# Les images et données sont à la racine du dépôt
 [[redirects]]
   from = "/img/*"
   to = "/:splat"
