@@ -17,7 +17,7 @@ export async function onRequestPost({ request, env }) {
     return json(200, { checkoutId: c.id, reference, total: r.total });
   } catch (e) {
     console.error(e.message, JSON.stringify(e.body || {}));
-    return json(500, { error: "payment" });
+    return json(500, { error: "payment", detail: String(e.message || "").slice(0, 60) });
   }
 }
 export const onRequest = () => json(405, { error: "method" });
