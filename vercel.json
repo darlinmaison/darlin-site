@@ -1,4 +1,28 @@
 {
-  "functions": { "api/*.js": { "includeFiles": "{data/**,engine.js}" } },
-  "headers": [ { "source": "/data/(.*)", "headers": [ { "key": "Cache-Control", "value": "no-cache" } ] } ]
+  "functions": {
+    "api/*.js": {
+      "includeFiles": "{products.json,promos.json,settings.json,engine.js}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/img/:file",
+      "destination": "/:file"
+    },
+    {
+      "source": "/data/:file",
+      "destination": "/:file"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*).json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    }
+  ]
 }
