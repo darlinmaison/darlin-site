@@ -908,7 +908,8 @@ const TITLES = {accueil:"Dar Lin – Linge de maison à Amiens"};
 function route(){
   const h = (location.hash || "#accueil").slice(1) || "accueil";
   const v = $("#view"); let html = null;
-  if(h==="accueil") html = home();
+  const rvOpen = h==="avis" || h.startsWith("avis-");
+  if(h==="accueil" || rvOpen) html = home();
   else if(["chambre","bain","table","rideaux","affaires","tout"].includes(h)) html = listing(h);
   else if(h.startsWith("p-")) html = product(h.slice(2));
   else if(h==="commande") html = checkout();
@@ -925,6 +926,7 @@ function route(){
   if(!p){ productLD(null); setMeta("Dar Lin, linge de maison à Amiens : parures de draps, draps housse, serviettes, nappes et rideaux de marque à petits prix. Livraison sur Amiens, retrait au marché, paiement sécurisé.", "https://darlinmaison.fr/amb-hero.jpg"); }
   document.title = p ? `${p.fr.name} – Dar Lin` : (TITLES[h] || "Dar Lin – Linge de maison à Amiens");
   window.scrollTo(0,0);
+  if(rvOpen){ const pid = h.startsWith("avis-") ? h.slice(5) : ""; setTimeout(() => openReviewForm(byId(pid) ? pid : ""), 50); }
 }
 window.addEventListener("hashchange", () => { const q = $("#q"); if(q) q.value = ""; route(); });
 shell(); route();
