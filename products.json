@@ -1,6 +1,227 @@
 {
  "products": [
   {
+   "id": "couverture-graciosa",
+   "cat": "chambre",
+   "price": 35,
+   "stock": null,
+   "active": true,
+   "star": true,
+   "brand": "Calor de España",
+   "fr": {
+    "name": "Couverture Graciosa 200×240",
+    "short": "200×240 cm · toucher velours",
+    "desc": "Couverture épaisse et très douce, toucher velours, pour avoir bien chaud tout l'hiver. Grande taille pour lit 2 places. Neuve, livrée dans sa housse transparente à poignées, pratique pour la ranger ou l'offrir."
+   },
+   "ar": {
+    "name": "بطانية غراسيوزا 200×240",
+    "short": "200×240 سم · ناعمة متل المخمل",
+    "desc": "بطانية سميكة وناعمة كتير متل المخمل، بتدفّيك كل الشتوية. حجم كبير لتخت مزدوج. جديدة، بتجي بشنطتها الشفافة مع سحّاب ومسكات، منيحة للتخزين أو كهدية."
+   },
+   "en": {
+    "name": "Graciosa blanket 200×240",
+    "short": "200×240 cm · velvety soft",
+    "desc": "A thick, very soft blanket with a velvety feel to keep you warm all winter. Large size for a double bed. Brand new, delivered in its clear zip bag with handles, handy for storage or as a gift."
+   },
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "200×240 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester, toucher velours"
+    },
+    {
+     "label": "Contenu",
+     "value": "1 couverture + housse de rangement à poignées"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Beige doré",
+     "ar": "بيج ذهبي",
+     "en": "Golden beige",
+     "hex": "#d2b47c",
+     "img": "img/couv-graciosa-beige.jpg"
+    },
+    {
+     "fr": "Bordeaux",
+     "ar": "خمري",
+     "en": "Burgundy",
+     "hex": "#8e1c2a",
+     "img": "img/couv-graciosa-bordeaux.jpg"
+    },
+    {
+     "fr": "Bleu canard",
+     "ar": "أزرق بترولي",
+     "en": "Teal",
+     "hex": "#1f6f78",
+     "img": "img/couv-graciosa-canard.jpg"
+    }
+   ],
+   "extraImgs": [
+    "img/couv-lot.jpg"
+   ]
+  },
+  {
+   "id": "couverture-cabrera",
+   "cat": "chambre",
+   "price": 35,
+   "stock": null,
+   "active": true,
+   "star": false,
+   "brand": "Calor de España",
+   "fr": {
+    "name": "Couverture Cabrera 200×240",
+    "short": "200×240 cm · toucher velours",
+    "desc": "Couverture épaisse et très douce, toucher velours, pour avoir bien chaud tout l'hiver. Grande taille pour lit 2 places. Neuve, livrée dans sa housse transparente à poignées, pratique pour la ranger ou l'offrir."
+   },
+   "ar": {
+    "name": "بطانية كابريرا 200×240",
+    "short": "200×240 سم · ناعمة متل المخمل",
+    "desc": "بطانية سميكة وناعمة كتير متل المخمل، بتدفّيك كل الشتوية. حجم كبير لتخت مزدوج. جديدة، بتجي بشنطتها الشفافة مع سحّاب ومسكات، منيحة للتخزين أو كهدية."
+   },
+   "en": {
+    "name": "Cabrera blanket 200×240",
+    "short": "200×240 cm · velvety soft",
+    "desc": "A thick, very soft blanket with a velvety feel to keep you warm all winter. Large size for a double bed. Brand new, delivered in its clear zip bag with handles, handy for storage or as a gift."
+   },
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "200×240 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester, toucher velours"
+    },
+    {
+     "label": "Contenu",
+     "value": "1 couverture + housse de rangement à poignées"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Gris",
+     "ar": "رمادي",
+     "en": "Grey",
+     "hex": "#9aa3b0",
+     "img": "img/couv-cabrera-gris.jpg"
+    },
+    {
+     "fr": "Chocolat",
+     "ar": "بني شوكولا",
+     "en": "Chocolate",
+     "hex": "#4a3228",
+     "img": "img/couv-cabrera-choco.jpg"
+    }
+   ],
+   "extraImgs": [
+    "img/couv-lot.jpg"
+   ]
+  },
+  {
+   "id": "couverture-gandia",
+   "cat": "chambre",
+   "price": 35,
+   "stock": null,
+   "active": true,
+   "star": false,
+   "brand": "Calor de España",
+   "fr": {
+    "name": "Couverture Gandia 200×240 fleurie",
+    "short": "200×240 cm · toucher velours",
+    "desc": "Couverture épaisse et très douce, toucher velours, pour avoir bien chaud tout l'hiver. Grande taille pour lit 2 places. Neuve, livrée dans sa housse transparente à poignées, pratique pour la ranger ou l'offrir."
+   },
+   "ar": {
+    "name": "بطانية غانديا 200×240 ورد",
+    "short": "200×240 سم · ناعمة متل المخمل",
+    "desc": "بطانية سميكة وناعمة كتير متل المخمل، بتدفّيك كل الشتوية. حجم كبير لتخت مزدوج. جديدة، بتجي بشنطتها الشفافة مع سحّاب ومسكات، منيحة للتخزين أو كهدية."
+   },
+   "en": {
+    "name": "Gandia floral blanket 200×240",
+    "short": "200×240 cm · velvety soft",
+    "desc": "A thick, very soft blanket with a velvety feel to keep you warm all winter. Large size for a double bed. Brand new, delivered in its clear zip bag with handles, handy for storage or as a gift."
+   },
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "200×240 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester, toucher velours"
+    },
+    {
+     "label": "Contenu",
+     "value": "1 couverture + housse de rangement à poignées"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Rose fleuri",
+     "ar": "وردي مورّد",
+     "en": "Pink floral",
+     "hex": "#e07a8f",
+     "img": "img/couv-gandia.jpg"
+    }
+   ],
+   "extraImgs": [
+    "img/couv-lot.jpg"
+   ]
+  },
+  {
+   "id": "couverture-alicia",
+   "cat": "chambre",
+   "price": 35,
+   "stock": null,
+   "active": true,
+   "star": false,
+   "brand": "Alicia Collection",
+   "fr": {
+    "name": "Couverture Alicia 220×240 imprimée",
+    "short": "220×240 cm · toucher velours",
+    "desc": "Couverture épaisse et très douce, toucher velours, pour avoir bien chaud tout l'hiver. Grande taille pour lit 2 places. Neuve, livrée dans sa housse transparente à poignées, pratique pour la ranger ou l'offrir."
+   },
+   "ar": {
+    "name": "بطانية أليسيا 220×240 مطبوعة",
+    "short": "220×240 سم · ناعمة متل المخمل",
+    "desc": "بطانية سميكة وناعمة كتير متل المخمل، بتدفّيك كل الشتوية. حجم كبير لتخت مزدوج. جديدة، بتجي بشنطتها الشفافة مع سحّاب ومسكات، منيحة للتخزين أو كهدية."
+   },
+   "en": {
+    "name": "Alicia printed blanket 220×240",
+    "short": "220×240 cm · velvety soft",
+    "desc": "A thick, very soft blanket with a velvety feel to keep you warm all winter. Large size for a double bed. Brand new, delivered in its clear zip bag with handles, handy for storage or as a gift."
+   },
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "220×240 cm"
+    },
+    {
+     "label": "Matière",
+     "value": "100 % polyester, toucher velours"
+    },
+    {
+     "label": "Contenu",
+     "value": "1 couverture + housse de rangement à poignées"
+    }
+   ],
+   "variants": [
+    {
+     "fr": "Fleurs multicolores",
+     "ar": "ورد ملوّن",
+     "en": "Multicolour flowers",
+     "hex": "#b96c8f",
+     "img": "img/couv-alicia.jpg"
+    }
+   ],
+   "extraImgs": [
+    "img/couv-lot.jpg"
+   ]
+  },
+  {
    "id": "couvre-lit-sherpa",
    "cat": "chambre",
    "price": 35,
