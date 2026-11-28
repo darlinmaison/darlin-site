@@ -763,35 +763,35 @@
      "fr": "Bleu",
      "ar": "أزرق",
      "hex": "#3aa9d6",
-     "img": "img/73.jpg",
+     "img": "img/serviette-bleu.jpg",
      "en": "Blue"
     },
     {
      "fr": "Vert",
      "ar": "أخضر",
      "hex": "#3fb39a",
-     "img": "img/73.jpg",
+     "img": "img/serviette-vert.jpg",
      "en": "Green"
     },
     {
      "fr": "Fuchsia",
      "ar": "فوشيا",
      "hex": "#d6347a",
-     "img": "img/73.jpg",
+     "img": "img/serviette-fuchsia.jpg",
      "en": "Fuchsia"
     },
     {
      "fr": "Rose",
      "ar": "زهري",
      "hex": "#ee9bb3",
-     "img": "img/73.jpg",
+     "img": "img/serviette-rose.jpg",
      "en": "Pink"
     },
     {
      "fr": "Gris",
      "ar": "رمادي",
      "hex": "#a3a3a3",
-     "img": "img/73.jpg",
+     "img": "img/serviette-gris.jpg",
      "en": "Grey"
     },
     {
@@ -810,7 +810,10 @@
     }
    ],
    "stock": null,
-   "active": true
+   "active": true,
+   "extraImgs": [
+    "img/73.jpg"
+   ]
   },
   {
    "id": "drap-de-bain",
@@ -860,7 +863,7 @@
      "fr": "Bleu",
      "ar": "أزرق",
      "hex": "#3aa9d6",
-     "img": "img/73.jpg",
+     "img": "img/serviette-bleu.jpg",
      "en": "Blue"
     },
     {
@@ -868,25 +871,28 @@
      "ar": "أخضر",
      "en": "Green",
      "hex": "#3fb39a",
-     "img": "img/73.jpg"
+     "img": "img/serviette-vert.jpg"
     },
     {
      "fr": "Rose",
      "ar": "زهري",
      "hex": "#ee9bb3",
-     "img": "img/73.jpg",
+     "img": "img/serviette-rose.jpg",
      "en": "Pink"
     },
     {
      "fr": "Gris",
      "ar": "رمادي",
      "hex": "#a3a3a3",
-     "img": "img/73.jpg",
+     "img": "img/serviette-gris.jpg",
      "en": "Grey"
     }
    ],
    "stock": null,
-   "active": true
+   "active": true,
+   "extraImgs": [
+    "img/73.jpg"
+   ]
   },
   {
    "id": "nappe-terra-rectangle",

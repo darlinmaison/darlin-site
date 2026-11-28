@@ -6,11 +6,11 @@
   "email": "darlinmaison.amiens@gmail.com",
   "instagram": "https://www.instagram.com/darlinmaison/",
   "facebook": "https://www.facebook.com/darlinmaison",
-  "deliveryFee": 3,
-  "freeDeliveryFrom": 35,
+  "deliveryFee": 0,
+  "freeDeliveryFrom": 0,
   "cardPayment": true,
-  "relayFee": 5.9,
-  "relayFreeFrom": 60,
+  "relayFee": 0,
+  "relayFreeFrom": 0,
   "giftFrom": 0.01,
   "gift_fr": "lavette microfibre",
   "gift_en": "microfibre cloth",
@@ -45,22 +45,22 @@
  },
  "topbar": {
   "fr": [
+   "🚚 Livraison offerte partout en France",
    "🎁 Une lavette offerte avec chaque commande",
-   "Livraison partout en France en point relais",
    "Paiement sécurisé par carte",
-   "-10 % sur votre 1ère commande avec la newsletter"
-  ],
-  "ar": [
-   "🎁 ممسحة هدية مع كل طلب",
-   "شحن لكل فرنسا لنقاط الاستلام",
-   "دفع آمن بالبطاقة",
-   "خصم ١٠٪ على أول طلب مع النشرة"
+   "-10 % sur votre 1ère commande en vous inscrivant"
   ],
   "en": [
+   "🚚 Free delivery all over France",
    "🎁 A free cloth with every order",
-   "Shipping all over France to pickup points",
    "Secure card payment",
-   "10% off your 1st order with our newsletter"
+   "10% off your 1st order when you sign up"
+  ],
+  "ar": [
+   "🚚 توصيل مجاني لكل فرنسا",
+   "🎁 ممسحة هدية مع كل طلب",
+   "دفع آمن بالبطاقة",
+   "خصم ١٠٪ على أول طلب لما تسجّل"
   ]
  },
  "categories": [
@@ -92,5 +92,8 @@
    "en": "Curtains",
    "img": "img/amb-rideaux.jpg"
   }
- ]
+ ],
+ "season": {
+  "mode": "auto"
+ }
 }

@@ -248,7 +248,7 @@ for(const k in X) Object.assign(T[k], X[k]);
 
 /* textes v8 : tailles, livraison, cadeau, Noël, newsletter, avis directs */
 const Y = {
-  fr: { gift_every:"1 {n} offerte avec chaque commande", size:"Taille", from:"Dès {p}", sizes_n:"{n} tailles",
+  fr: { acct:"S'inscrire · -10 %", nl_foot_h:"-10 % sur votre 1ère commande", nl_foot_p:"Nouveautés, arrivages et offres réservées aux inscrits.", gift_every:"1 {n} offerte avec chaque commande", size:"Taille", from:"Dès {p}", sizes_n:"{n} tailles",
     tr1_h:"Livraison partout en France", tr1_p:"Point relais, offerte dès {free}",
     ship_relay:"<b>Partout en France</b> · point relais {fee}, offert dès {free} · reçu entre le {a} et le {b}",
     ship_home:"<b>Amiens</b> · livraison {fee} (offerte dès {free}) d'ici le {d}, ou retrait gratuit dimanche au marché",
@@ -260,7 +260,7 @@ const Y = {
     rv_note:"Votre avis est publié directement sur le site. Nous publions tous les avis, positifs comme négatifs ; seuls les messages injurieux, hors sujet ou publicitaires sont supprimés. Aucune contrepartie n'est accordée en échange d'un avis.",
     rv_thanks:"Merci ! Votre avis est en ligne.", rv_fail:"Envoi impossible pour le moment. Réessayez dans une minute.", rv_sending:"Envoi…",
     seo_h:"Linge de maison de marque à petits prix, livré partout en France" },
-  en: { gift_every:"1 free {n} with every order", size:"Size", from:"From {p}", sizes_n:"{n} sizes",
+  en: { acct:"Sign up · 10% off", nl_foot_h:"10% off your 1st order", nl_foot_p:"New arrivals and subscriber-only offers.", gift_every:"1 free {n} with every order", size:"Size", from:"From {p}", sizes_n:"{n} sizes",
     tr1_h:"Delivery all over France", tr1_p:"Pickup point, free from {free}",
     ship_relay:"<b>All over France</b> · pickup point {fee}, free from {free} · arrives between {a} and {b}",
     ship_home:"<b>Amiens</b> · delivery {fee} (free from {free}) by {d}, or free pickup on Sunday at the market",
@@ -272,7 +272,7 @@ const Y = {
     rv_note:"Your review is published directly on the site. We publish every review, positive or negative; only abusive, off-topic or promotional messages are removed. Nothing is offered in exchange for a review.",
     rv_thanks:"Thank you! Your review is live.", rv_fail:"Couldn't send it right now. Try again in a minute.", rv_sending:"Sending…",
     seo_h:"Branded home linen at small prices, delivered all over France" },
-  ar: { gift_every:"{n} هدية مع كل طلب", size:"المقاس", from:"من {p}", sizes_n:"{n} مقاسات",
+  ar: { acct:"سجّل · خصم ١٠٪", nl_foot_h:"خصم ١٠٪ على أول طلب", nl_foot_p:"بضاعة جديدة وعروض بس للمسجّلين.", gift_every:"{n} هدية مع كل طلب", size:"المقاس", from:"من {p}", sizes_n:"{n} مقاسات",
     tr1_h:"توصيل لكل فرنسا", tr1_p:"لنقطة استلام، مجاني من {free}",
     ship_relay:"<b>لكل فرنسا</b> · نقطة استلام {fee}، مجانية من {free} · بيوصل بين {a} و{b}",
     ship_home:"<b>أميان</b> · توصيل {fee} (مجاني من {free}) لحد {d}، أو استلام مجاني الأحد من السوق",
@@ -286,6 +286,19 @@ const Y = {
     seo_h:"مفروشات بيت من ماركات معروفة بأسعار صغيرة، لكل فرنسا" }
 };
 for(const k in Y) Object.assign(T[k], Y[k]);
+const FREE_SHIP = C.deliveryFee === 0 && E.cents(SHOP.relayFee || 0) === 0;
+if(FREE_SHIP){ C.relayFee = 0;
+  Object.assign(T.fr, { tr1_h:"Livraison offerte", tr1_p:"Partout en France, en point relais", perk2:"Livraison offerte : point relais partout en France ou à domicile sur Amiens",
+    co_home_s:"Offerte · sous 48 h ouvrées", co_relay_s:"Offert · expédié sous 48 h, livré en 3 à 5 jours",
+    ship_relay:"<b>Livraison offerte partout en France</b> en point relais · reçue entre le {a} et le {b}", ship_home:"<b>Amiens</b> · livraison offerte à domicile d'ici le {d}, ou retrait dimanche au marché", ship_ok:"🚚 Livraison offerte partout en France" });
+  Object.assign(T.en, { tr1_h:"Free delivery", tr1_p:"All over France, to a pickup point", perk2:"Free delivery: pickup point anywhere in France or to your door in Amiens",
+    co_home_s:"Free · within 48 working hours", co_relay_s:"Free · shipped within 48 h, delivered in 3–5 days",
+    ship_relay:"<b>Free delivery all over France</b> to a pickup point · arrives between {a} and {b}", ship_home:"<b>Amiens</b> · free home delivery by {d}, or pickup on Sunday at the market", ship_ok:"🚚 Free delivery all over France" });
+  Object.assign(T.ar, { tr1_h:"توصيل مجاني", tr1_p:"لكل فرنسا، لنقطة استلام", perk2:"توصيل مجاني: لنقطة استلام بكل فرنسا أو للبيت بأميان",
+    co_home_s:"مجاني · خلال ٤٨ ساعة عمل", co_relay_s:"مجاني · منبعته خلال ٤٨ ساعة وبيوصل بـ ٣ لـ ٥ أيام",
+    ship_relay:"<b>توصيل مجاني لكل فرنسا</b> لنقطة استلام · بيوصل بين {a} و{b}", ship_home:"<b>أميان</b> · توصيل مجاني للبيت لحد {d}، أو استلام الأحد من السوق", ship_ok:"🚚 توصيل مجاني لكل فرنسا" });
+}
+const feeFr = (fee, free) => fee ? `Frais : ${eur(fee)}, offerts dès ${eur(free)} d'achat.` : "Livraison offerte.";
 const GIFT_FROM = E.cents(SHOP.giftFrom || 0);
 const GIFT_EVERY = GIFT_FROM > 0 && GIFT_FROM <= 100;
 const giftPerk = () => GIFT_EVERY ? t("gift_every",{n:esc(giftName())}) : giftPerk();
@@ -417,7 +430,7 @@ function openReviewForm(pid){
     } catch(err){ go.disabled = false; go.textContent = t("rv_send"); er.textContent = t("rv_fail"); er.hidden = false; }
   };
 }
-const faqList = () => FAQ[lang].map(([q,a]) => [q, a.replace("{fee}", eur(C.deliveryFee)).replace("{free}", eur(C.freeDeliveryFrom))]);
+const faqList = () => FAQ[lang].map(([q,a]) => [q, (FREE_SHIP ? a.replace(/Frais : \{fee\}, offerts dès \{free\}\./, "Livraison offerte, à Amiens comme partout en France.").replace(/Fee: \{fee\}, free from \{free\}\./, "Delivery is free, in Amiens and all over France.").replace(/التوصيل \{fee\}، ومجاني من \{free\}\./, "التوصيل مجاني، بأميان وبكل فرنسا.") : a).replace("{fee}", eur(C.deliveryFee)).replace("{free}", eur(C.freeDeliveryFrom))]);
 
 /* ---------- icônes ---------- */
 const I = {
@@ -432,6 +445,7 @@ const I = {
   back:'<svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/></svg>',
   check:'<svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></svg>',
   pin:'<svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+  user:'<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',
   card:'<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>'
 };
 const LOGO = '<svg viewBox="0 0 100 130" aria-hidden="true"><path d="M8 126 V52 A42 42 0 0 1 92 52 V126" fill="none" stroke="var(--accent)" stroke-width="5.5" stroke-linecap="round"/><rect x="24" y="78" width="52" height="9" rx="2.5" fill="var(--accent)"/><rect x="28" y="92" width="44" height="9" rx="2.5" fill="#C48A5A"/><rect x="32" y="106" width="36" height="9" rx="2.5" fill="#E3CBAA"/></svg>';
@@ -473,20 +487,21 @@ section.sec{padding-block:${+th.spacing||64}px}
 function shell(){
   applyTheme();
   document.documentElement.lang = lang; document.documentElement.dir = lang==="ar" ? "rtl" : "ltr";
-  const nav = [["chambre","nav_chambre"],["bain","nav_bain"],["table","nav_table"],["rideaux","nav_rideaux"],["affaires","nav_affaires"],["marche","nav_marche"]];
+  const nav = [...(SEASON ? [["saison", null]] : []), ["chambre","nav_chambre"],["bain","nav_bain"],["table","nav_table"],["rideaux","nav_rideaux"],["affaires","nav_affaires"],["marche","nav_marche"]];
   app.innerHTML = `
   <div class="topbar"><div class="wrap">${((S.topbar||{})[lang]||(S.topbar||{}).fr||[]).map((x,i)=>`<span class="tb${i===0?" on":""}">${esc(x)}</span>`).join("<span class=\"tbsep\">·</span>")}</div></div>
   <header class="hdr"><div class="wrap">
     <a class="logo" href="#accueil" aria-label="Dar Lin Maison">${LOGO}<span><b>Dar Lin Maison</b><small>LINGE DE MAISON</small></span></a>
-    <nav class="nav" aria-label="Principal">${nav.map(([h,k])=>`<a href="#${h}" data-nav="${h}">${t(k)}</a>`).join("")}</nav>
+    <nav class="nav" aria-label="Principal">${nav.map(([h,k])=>`<a href="#${h}" data-nav="${h}" ${k?"":'class="nav-season"'}>${k?t(k):SEASON.emoji+" "+SL(SEASON.eyebrow)}</a>`).join("")}</nav>
     <div class="hdr-actions">
       <div class="langs" role="group" aria-label="Langue / Language / اللغة">${LANGS.map(([k,l])=>`<button type="button" data-lang="${k}" aria-pressed="${k===lang}" lang="${k}" title="${T[k].lang_name}">${l}</button>`).join("")}</div>
+      <button class="icon-btn" id="acctBtn" type="button" aria-label="${t("acct")}" title="${t("acct")}">${I.user}</button>
       <button class="icon-btn" id="searchBtn" type="button" aria-label="${t("search")}">${I.search}</button>
       <button class="icon-btn" id="cartBtn" type="button" aria-label="${t("cart")}">${I.bag}<span class="badge" id="badge" hidden>0</span></button>
       <button class="icon-btn burger" id="burger" type="button" aria-label="${t("menu")}" aria-expanded="false">${I.menu}</button>
     </div></div>
     <div class="search" id="searchBar" hidden><div class="wrap"><label class="sr" for="q">${t("search")}</label><input id="q" type="search" placeholder="${t("search")}" autocomplete="off"></div></div>
-    <div class="mnav" id="mnav" hidden><div class="wrap">${nav.map(([h,k])=>`<a href="#${h}">${t(k)}</a>`).join("")}<a href="#tout">${t("all_products")}</a></div></div>
+    <div class="mnav" id="mnav" hidden><div class="wrap">${nav.map(([h,k])=>`<a href="#${h}" ${k?"":'class="nav-season"'}>${k?t(k):SEASON.emoji+" "+SL(SEASON.eyebrow)}</a>`).join("")}<a href="#" data-nlopen>🎁 ${t("nl_bar")}</a><a href="#tout">${t("all_products")}</a></div></div>
   </header>
   <main id="view"></main>
   ${footer()}
@@ -502,6 +517,8 @@ function shell(){
   bindChat();
   clearInterval(window.__tb); window.__tb = setInterval(() => { const a = [...document.querySelectorAll(".topbar .tb")]; if(a.length<2) return; const i = a.findIndex(x=>x.classList.contains("on")); a[i].classList.remove("on"); a[(i+1)%a.length].classList.add("on"); }, 3500);
   $("#cartBtn").onclick = openDrawer;
+  $("#acctBtn").onclick = () => nlOpen("account");
+  document.querySelectorAll("[data-nlopen]").forEach(a => a.onclick = e => { e.preventDefault(); const m = $("#mnav"); if(m) m.hidden = true; nlOpen("link"); });
   $("#burger").onclick = e => { const m = $("#mnav"); m.hidden = !m.hidden; e.currentTarget.setAttribute("aria-expanded", String(!m.hidden)); };
   $("#searchBtn").onclick = () => { const s = $("#searchBar"); s.hidden = !s.hidden; if(!s.hidden) $("#q").focus(); };
   $("#q").addEventListener("input", e => { const v = e.target.value.trim(); if(v.length >= 2) renderSearch(v); else if(!v) route(); });
@@ -538,6 +555,7 @@ function footer(){
         <li><a href="${C.facebook}" target="_blank" rel="noopener">Facebook Dar Lin Maison</a></li>
         <li><a href="#marche">${t("nav_marche")}</a></li></ul></div>
     </div>
+    <div class="fnl"><div><b>${t("nl_foot_h")}</b><span>${t("nl_foot_p")}</span></div><button type="button" class="btn light" data-nlopen>${t("nl_btn")}</button></div>
     <div class="fpay"><span>${t("pay_icons")}</span>${PAYICONS}</div>
     <div class="legal-line"><span>© ${new Date().getFullYear()} Dar Lin Maison · ${t("f_rights")} · ${t("f_vat")}</span>
       <span><a href="#mentions-legales">${t("mentions")}</a> · <a href="#cgv">${t("cgv")}</a> · <a href="#confidentialite">${t("privacy")}</a></span></div>
@@ -580,7 +598,7 @@ function home(){
     <div>${I.back}<span><b>${t("tr4_h")}</b><small>${t("tr4_p")}</small></span></div>
   </div></section>
 
-  ${xmasBlock()}
+  ${seasonBlock()}
   <section class="sec"><div class="wrap">
     <div class="sec-head"><div><div class="eyebrow">${t("cats_eyebrow")}</div><h2 class="h-sec">${t("cats_h")}</h2></div></div>
     <div class="cats">${CATS.map(c=>`<a class="cat" href="#${c.id}"><img src="${img(c.img)}" alt="" loading="lazy"><span>${L(c)}<small>${uniq(P.filter(p=>p.cat===c.id)).length} ${t("items")}</small></span></a>`).join("")}</div>
@@ -633,6 +651,61 @@ function home(){
     </div>
   </div></section>`;
 }
+/* ---------- saisons & événements (changent tout seuls selon la date) ---------- */
+const SEASONS = [
+  {id:"blackfriday", from:"11-20", to:"12-01", emoji:"🖤", dark:true, code:"BLACK15",
+    eyebrow:{fr:"Black Friday", en:"Black Friday", ar:"بلاك فرايدي"},
+    h:{fr:"Black Friday : -15 % sur tout le site", en:"Black Friday: 15% off everything", ar:"بلاك فرايدي: خصم ١٥٪ على كل الموقع"},
+    p:{fr:"Avec le code BLACK15 dès 25 € d'achat, jusqu'au lundi 1er décembre inclus. Livraison offerte.", en:"With code BLACK15 on orders from €25, until Monday 1 December. Free delivery.", ar:"بكود BLACK15 للطلبات من 25 €، لآخر يوم الإثنين 1/12. والتوصيل مجاني."},
+    pick: p => p.star || p.price >= 14},
+  {id:"noel", from:"12-02", to:"12-25", emoji:"🎄", xmas:true,
+    eyebrow:{fr:"Noël", en:"Christmas", ar:"عيد الميلاد"}, h:{fr:"Idées cadeaux de Noël", en:"Christmas gift ideas", ar:"أفكار هدايا للعيد"},
+    p:{fr:"Des cadeaux utiles et douillets, à petits prix, livrés partout en France.", en:"Useful, cosy gifts at small prices, delivered all over France.", ar:"هدايا مفيدة ودافية بأسعار صغيرة، منوصلها لكل فرنسا."}, pick: p => true},
+  {id:"blanc", from:"01-02", to:"01-31", emoji:"🤍",
+    eyebrow:{fr:"Le mois du blanc", en:"White sale month", ar:"شهر الأبيض"}, h:{fr:"Janvier, le mois du blanc", en:"January, the month of linen", ar:"كانون التاني: شهر المفروشات"},
+    p:{fr:"Le moment de renouveler draps, serviettes et linge de table pour toute l'année.", en:"The time to renew sheets, towels and table linen for the whole year.", ar:"أحسن وقت تجدد فيه الشراشف والمناشف ومفارش السفرة لكل السنة."}, pick: p => ["chambre","bain"].includes(p.cat)},
+  {id:"ramadan", from:"2027-02-01", to:"2027-03-11", emoji:"🌙",
+    eyebrow:{fr:"Ramadan & Aïd", en:"Ramadan & Eid", ar:"رمضان والعيد"}, h:{fr:"Préparez la maison pour le Ramadan et l'Aïd", en:"Get your home ready for Ramadan and Eid", ar:"جهّز البيت لرمضان والعيد"},
+    p:{fr:"Nappes pour les grandes tablées, tapis de prière, linge neuf pour recevoir.", en:"Tablecloths for big family meals, prayer rugs, fresh linen for guests.", ar:"مفارش للسفرة الكبيرة، سجّادات صلاة، ومفروشات جديدة للضيوف."}, pick: p => p.cat==="table" || /priere/.test(p.id) || p.cat==="chambre"},
+  {id:"valentin", from:"02-01", to:"02-14", emoji:"❤️",
+    eyebrow:{fr:"Saint-Valentin", en:"Valentine's Day", ar:"عيد الحب"}, h:{fr:"Une chambre cocooning pour la Saint-Valentin", en:"A cosy bedroom for Valentine's Day", ar:"غرفة نوم دافية لعيد الحب"},
+    p:{fr:"Parures douces et couvertures moelleuses pour se faire plaisir à deux.", en:"Soft bed linen and cosy blankets to treat yourselves.", ar:"أطقم ناعمة وبطانيات دافية لإلكن التنين."}, pick: p => p.cat==="chambre"},
+  {id:"printemps", from:"03-12", to:"04-30", emoji:"🌷",
+    eyebrow:{fr:"Printemps", en:"Spring", ar:"الربيع"}, h:{fr:"Grand ménage de printemps", en:"Spring refresh", ar:"تنظيفة الربيع"},
+    p:{fr:"Rideaux, voilages et nappes pour une maison plus lumineuse.", en:"Curtains, voiles and tablecloths for a brighter home.", ar:"ستائر وبرادي ومفارش لبيت أفتح."}, pick: p => ["rideaux","table"].includes(p.cat)},
+  {id:"meres", from:"05-01", to:"05-30", emoji:"💐",
+    eyebrow:{fr:"Fête des mères", en:"Mother's Day", ar:"عيد الأم"}, h:{fr:"Fête des mères : faites-lui plaisir", en:"Mother's Day gifts", ar:"عيد الأم: فرّحها"},
+    p:{fr:"Parures, draps de bain et couvertures : des cadeaux qu'elle utilisera tous les jours.", en:"Bed sets, bath sheets and blankets: gifts she'll use every day.", ar:"أطقم، مناشف حمّام وبطانيات: هدايا بتستعملها كل يوم."}, pick: p => p.star || p.cat==="bain"},
+  {id:"ete", from:"06-01", to:"08-14", emoji:"☀️",
+    eyebrow:{fr:"Été", en:"Summer", ar:"الصيف"}, h:{fr:"L'été au frais", en:"Cool summer", ar:"صيف مرتاح"},
+    p:{fr:"Draps de bain pour la plage, draps légers en coton pour les nuits chaudes.", en:"Bath sheets for the beach, light cotton sheets for warm nights.", ar:"مناشف للبحر وشراشف قطن خفيفة لليالي الشوب."}, pick: p => ["bain","chambre"].includes(p.cat) && !/couverture|sherpa/.test(p.id)},
+  {id:"rentree", from:"08-15", to:"09-30", emoji:"🎒",
+    eyebrow:{fr:"Rentrée", en:"Back to school", ar:"رجعة المدارس"}, h:{fr:"Rentrée étudiante : équipez la chambre", en:"Student move-in essentials", ar:"رجعة الجامعة: جهّز غرفتك"},
+    p:{fr:"Drap housse, parure, serviettes, torchons : l'essentiel pour un studio à petit prix.", en:"Fitted sheet, bed set, towels, tea towels: studio essentials at small prices.", ar:"شرشف، طقم، مناشف ومناشف مطبخ: كل شي بيلزم لستوديو بسعر صغير."}, pick: p => p.price <= 25},
+  {id:"automne", from:"10-01", to:"11-19", emoji:"🍂",
+    eyebrow:{fr:"Automne", en:"Autumn", ar:"الخريف"}, h:{fr:"Cocooning d'automne", en:"Autumn cocooning", ar:"دفا الخريف"},
+    p:{fr:"Couvertures épaisses et parures chaudes pour les premières soirées fraîches.", en:"Thick blankets and warm bed sets for the first chilly evenings.", ar:"بطانيات سميكة وأطقم دافية لأول ليالي البرد."}, pick: p => p.cat==="chambre"}
+];
+function activeSeason(){
+  const mode = (S.season && S.season.mode) || "auto";
+  if(mode === "off") return null;
+  if(mode !== "auto") return SEASONS.find(x => x.id === mode) || null;
+  const d = new Date(), y = d.getFullYear(), ymd = d.toISOString().slice(0,10);
+  const inR = x => { const f = x.from.length > 5 ? x.from : y + "-" + x.from, tt = x.to.length > 5 ? x.to : y + "-" + x.to; return ymd >= f && ymd <= tt; };
+  return SEASONS.find(x => x.from.length > 5 && inR(x)) || SEASONS.find(inR) || null;
+}
+const SEASON = activeSeason();
+const SL = o => o[lang] || o.fr;
+function seasonBlock(){
+  if(!SEASON) return "";
+  if(SEASON.xmas) return xmasBlock();
+  const list = uniq(P.filter(SEASON.pick)).sort((a,b)=>(b.star?1:0)-(a.star?1:0)).slice(0,4);
+  return `<section class="sec season ${SEASON.dark?"dark":""}"><div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">${SEASON.emoji} ${SL(SEASON.eyebrow)}</div><h2 class="h-sec">${SL(SEASON.h)}</h2><p class="lede" style="margin:8px 0 0">${SL(SEASON.p)}</p></div><a href="#saison">${t("see_all")}</a></div>
+    ${SEASON.code?`<p class="scode">${lang==="ar"?"الكود":lang==="en"?"Code":"Code"} <b style="user-select:all">${SEASON.code}</b></p>`:""}
+    ${grid(list)}
+  </div></section>`;
+}
 const XMAS = [["x10", p => p.price < 10], ["x25", p => p.price >= 10 && p.price <= 25], ["x35", p => /^couverture/.test(p.id)]];
 function xmasBlock(){
   const tiles = XMAS.map(([k,f]) => { const l = uniq(P.filter(f)); const pk = l.find(p=>p.star) || l[0]; return pk ? `<a class="xt" href="#cadeaux"><img src="${img(v0img(pk))}" alt="" loading="lazy"><span><b>${t(k)}</b><small>${l.length} ${t("items")}</small></span></a>` : ""; }).join("");
@@ -665,6 +738,8 @@ function marketBlock(){
 }
 function listing(id){
   let title, desc = "", list;
+  if(id==="saison" && SEASON && !SEASON.xmas){ const l = P.filter(SEASON.pick).sort((a,b)=>(b.star?1:0)-(a.star?1:0)); return `<div class="wrap"><div class="page-head"><div class="eyebrow">${SEASON.emoji} ${SL(SEASON.eyebrow)}</div><h1>${SL(SEASON.h)}</h1><p class="lede">${SL(SEASON.p)}</p>${SEASON.code?`<p class="scode">Code <b style="user-select:all">${SEASON.code}</b></p>`:""}</div>${grid(l)}</div>`; }
+  if(id==="saison") id = "cadeaux";
   if(id==="cadeaux"){ return `<div class="wrap"><div class="page-head"><div class="eyebrow">🎄 ${t("xmas_eyebrow")}</div><h1>${t("xmas_title")}</h1><p class="lede">${t("xmas_p")}</p>${GIFT_FROM?`<p class="xgift">🎁 ${giftPerk()}</p>`:""}</div>
     ${XMAS.slice().reverse().map(([k,f]) => { const l = P.filter(f).sort((a,b)=>(b.star?1:0)-(a.star?1:0)); return l.length ? `<section class="sec" style="padding-top:8px"><div class="sec-head"><h2 class="h-sec">${t(k)}</h2></div>${grid(l)}</section>` : ""; }).join("")}</div>`; }
   if(id==="affaires"){ title = t("nav_affaires"); desc = t("affaires_p"); list = P.filter(p=>p.price<=5); }
@@ -799,7 +874,7 @@ function drawDrawer(){
   if(!cart.length){ b.innerHTML = `<div class="empty"><p>${t("cart_empty")}</p><a class="btn ghost" href="#tout" id="dgo">${t("continue")}</a></div>`; f.innerHTML = ""; $("#dgo").onclick = closeDrawer; return; }
   const r = calc();
   const left = C.freeDeliveryFrom - r.net, pct = Math.max(0, Math.min(100, Math.round(r.net / C.freeDeliveryFrom * 100)));
-  let ship = `<div class="shipbar"><p>${left>0 ? t("ship_left",{m:eur(left)}) : t("ship_ok")}</p><div class="bar"><i style="width:${pct}%"></i></div></div>`;
+  let ship = FREE_SHIP ? `<div class="shipbar"><p style="margin:0">${t("ship_ok")}</p></div>` : `<div class="shipbar"><p>${left>0 ? t("ship_left",{m:eur(left)}) : t("ship_ok")}</p><div class="bar"><i style="width:${pct}%"></i></div></div>`;
   if(GIFT_EVERY){ ship += `<div class="shipbar gift"><p style="margin:0">${t("gift_ok",{g:esc(giftName())})}</p></div>`; } else if(GIFT_FROM){ const gl = GIFT_FROM - r.net, gp = Math.max(0, Math.min(100, Math.round(r.net / GIFT_FROM * 100))); ship += `<div class="shipbar gift"><p>${gl>0 ? t("gift_left",{m:eur(gl)}) : t("gift_ok",{g:esc(giftName())})}</p><div class="bar"><i style="width:${gp}%"></i></div></div>`; }
   const inCart = new Set(cart.map(l=>l.id));
   const ups = P.filter(p=>p.price<=5 && !inCart.has(p.id) && p.stock!==0).slice(0,3);
@@ -948,8 +1023,8 @@ const PAGES = {
     <p>Une question, une taille introuvable ? Écrivez-nous sur WhatsApp au <b dir="ltr">${C.phoneDisplay}</b> : on répond vite, en français ou en arabe.</p>`),
   "livraison": () => textPage(t("livraison"), `
     <h2>Retrait au marché, gratuit</h2><p>Commandez sur le site ou sur WhatsApp. Nous confirmons la disponibilité, puis votre commande vous attend au stand Dar Lin Maison du marché d'Amiens Nord le dimanche matin. Vous réglez sur place, en espèces ou par carte.</p>
-    <h2>Livraison à domicile sur Amiens</h2><p>Nous livrons nous-mêmes à Amiens et dans les communes voisines, sous 48 heures ouvrées après confirmation. Frais : ${eur(C.deliveryFee)}, offerts dès ${eur(C.freeDeliveryFrom)} d'achat. Nous convenons ensemble du créneau par WhatsApp.</p>
-    <h2>Partout en France : point relais Mondial Relay</h2><p>Choisissez « Point relais » à la commande et indiquez votre adresse : nous choisissons le point relais le plus proche de chez vous et vous le confirmons sur WhatsApp. Expédition sous 48 heures ouvrées, livraison en 3 à 5 jours. Frais : ${eur(C.relayFee)}, offerts dès ${eur(C.relayFreeFrom)} d'achat. Vous recevez le numéro de suivi dès l'envoi.</p>`),
+    <h2>Livraison à domicile sur Amiens</h2><p>Nous livrons nous-mêmes à Amiens et dans les communes voisines, sous 48 heures ouvrées après confirmation. ${feeFr(C.deliveryFee, C.freeDeliveryFrom)} Nous convenons ensemble du créneau par WhatsApp.</p>
+    <h2>Partout en France : point relais Mondial Relay</h2><p>Choisissez « Point relais » à la commande et indiquez votre adresse : nous choisissons le point relais le plus proche de chez vous et vous le confirmons sur WhatsApp. Expédition sous 48 heures ouvrées, livraison en 3 à 5 jours. ${feeFr(C.relayFee, C.relayFreeFrom)} Vous recevez le numéro de suivi dès l'envoi.</p>`),
   "retours": () => textPage(t("retours"), `
     <p>Vous avez <b>14 jours</b> à compter de la réception pour changer d'avis, sans avoir à vous justifier (droit de rétractation, article L221-18 du Code de la consommation).</p>
     <h2>Comment faire</h2><ol><li>Écrivez-nous sur WhatsApp ou par e-mail en indiquant votre commande.</li><li>Rapportez l'article au stand du marché, ou renvoyez-le par la poste (frais de retour à votre charge).</li><li>Nous vous remboursons sous 14 jours, avec le même moyen de paiement, ou nous échangeons l'article si vous préférez.</li></ol>
@@ -970,7 +1045,7 @@ const PAGES = {
     <h2>4. Prix</h2><p>Prix en euros, toutes taxes comprises, hors frais de livraison éventuels indiqués avant la validation. Les offres par lot (ex. 3 torchons pour 5 €) s'appliquent automatiquement au panier.</p>
     <h2>5. Commande</h2><p>Le client sélectionne ses articles, choisit le mode de réception, renseigne ses coordonnées et accepte les présentes CGV, puis envoie sa commande via WhatsApp. Le contrat est conclu à la confirmation écrite de Dar Lin Maison (disponibilité et total), envoyée par WhatsApp.</p>
     <h2>6. Paiement</h2><p>Paiement en ligne par carte bancaire, Apple Pay ou Google Pay, traité de façon sécurisée par SumUp (Dar Lin Maison n'a jamais accès à vos données bancaires), ou paiement à la remise de la commande (retrait au marché ou livraison) en espèces ou carte bancaire.</p>
-    <h2>7. Réception</h2><p>Retrait gratuit au marché d'Amiens Nord le dimanche matin, livraison à domicile à Amiens et environs sous 48 h ouvrées (${eur(C.deliveryFee)}, offerte dès ${eur(C.freeDeliveryFrom)}), ou envoi en point relais Mondial Relay en France métropolitaine (${eur(C.relayFee)}, offert dès ${eur(C.relayFreeFrom)} ; expédition sous 48 h ouvrées, livraison en 3 à 5 jours). Le risque de perte est transféré au client à la remise du colis.</p>
+    <h2>7. Réception</h2><p>Retrait gratuit au marché d'Amiens Nord le dimanche matin, livraison à domicile à Amiens et environs sous 48 h ouvrées (${C.deliveryFee ? eur(C.deliveryFee) + ", offerte dès " + eur(C.freeDeliveryFrom) : "offerte"}), ou envoi en point relais Mondial Relay en France métropolitaine (${C.relayFee ? eur(C.relayFee) + ", offert dès " + eur(C.relayFreeFrom) : "offert"} ; expédition sous 48 h ouvrées, livraison en 3 à 5 jours). Le risque de perte est transféré au client à la remise du colis.</p>
     <h2>8. Droit de rétractation</h2><p>Le client dispose de 14 jours à compter de la réception pour se rétracter sans motif (art. L221-18 du Code de la consommation), en informant Dar Lin Maison par WhatsApp ou e-mail. Les articles sont retournés neufs, non lavés et dans leur emballage d'origine. Le remboursement intervient sous 14 jours par le même moyen de paiement.</p>
     <h2>9. Garanties</h2><p>Les produits bénéficient de la garantie légale de conformité (art. L217-3 et suivants du Code de la consommation) pendant 2 ans à compter de la délivrance, et de la garantie des vices cachés (art. 1641 et suivants du Code civil).</p>
     <h2>10. Médiation</h2><p>En cas de litige non résolu, le client peut recourir gratuitement au médiateur de la consommation : ${TODO("nom et site du médiateur à compléter après adhésion")}. Plateforme européenne de règlement des litiges : ec.europa.eu/consumers/odr.</p>
@@ -1009,7 +1084,7 @@ function route(){
   const v = $("#view"); let html = null;
   const rvOpen = h==="avis" || h.startsWith("avis-");
   if(h==="accueil" || rvOpen) html = home();
-  else if(["chambre","bain","table","rideaux","affaires","tout","cadeaux"].includes(h)) html = listing(h);
+  else if(["chambre","bain","table","rideaux","affaires","tout","cadeaux","saison"].includes(h)) html = listing(h);
   else if(h.startsWith("p-")) html = product(h.slice(2));
   else if(h==="commande") html = checkout();
   else if(PAGES[h]) html = PAGES[h]();

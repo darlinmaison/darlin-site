@@ -500,3 +500,17 @@ body .topbar a{color:inherit}
 .topbar .tb.on{display:inline}
 .topbar .tbsep{display:none}
 .langs,.langs button{border-radius:2px}
+.season.dark{background:#111214; color:#f3eee8}
+.season.dark .h-sec,.season.dark .eyebrow,.season.dark .lede,.season.dark .sec-head a{color:#f3eee8}
+.season.dark .pc h3,.season.dark .pc .price,.season.dark .pc .sub{color:#f3eee8}
+.scode{display:inline-block; margin:0 0 18px; padding:8px 14px; border:1px dashed currentColor; letter-spacing:.08em; font-size:.85rem; text-transform:uppercase}
+.scode b{font-size:1.05rem; margin-inline-start:6px}
+.nav a.nav-season{color:var(--accent2)}
+.fnl{display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; border-top:1px solid rgba(255,255,255,.15); border-bottom:1px solid rgba(255,255,255,.15); padding:22px 0; margin:28px 0 0}
+.fnl b{display:block; font-family:var(--f-display); font-size:1.5rem; font-weight:400; text-transform:uppercase; letter-spacing:.03em}
+.fnl span{font-size:.9rem; opacity:.85}
+.nav{gap:16px; margin-inline-start:22px; min-width:0}
+.nav a{font-size:.7rem; letter-spacing:.1em}
+.nav a[data-nav="marche"]{display:none}
+.hdr-actions{flex:none}
+@media (max-width: 1180px){ .nav{display:none} .burger{display:grid} }

@@ -99,6 +99,19 @@
    "label_fr": "Code BIENVENUE10 : -10 %",
    "label_ar": "كود BIENVENUE10 : خصم ١٠٪",
    "label_en": "Code BIENVENUE10: 10% off"
+  },
+  {
+   "id": "black15",
+   "active": true,
+   "type": "code",
+   "code": "BLACK15",
+   "percent": 15,
+   "minOrder": 25,
+   "start": "2026-11-20",
+   "end": "2026-12-01",
+   "label_fr": "Black Friday BLACK15 : -15 %",
+   "label_ar": "بلاك فرايدي BLACK15 : خصم ١٥٪",
+   "label_en": "Black Friday BLACK15: 15% off"
   }
  ]
 }
