@@ -471,7 +471,9 @@
     }
    ],
    "stock": null,
-   "active": true
+   "active": true,
+   "group": "parure-stripe",
+   "size": "King 160×200"
   },
   {
    "id": "parure-stripe-140",
@@ -513,7 +515,9 @@
     }
    ],
    "stock": null,
-   "active": true
+   "active": true,
+   "group": "parure-stripe",
+   "size": "140×190"
   },
   {
    "id": "drap-housse-140",
@@ -562,7 +566,9 @@
     }
    ],
    "stock": null,
-   "active": true
+   "active": true,
+   "group": "drap-housse",
+   "size": "140×190"
   },
   {
    "id": "drap-housse-160",
@@ -618,7 +624,9 @@
     }
    ],
    "stock": null,
-   "active": true
+   "active": true,
+   "group": "drap-housse",
+   "size": "160×200"
   },
   {
    "id": "drap-housse-180",
@@ -674,7 +682,9 @@
     }
    ],
    "stock": null,
-   "active": true
+   "active": true,
+   "group": "drap-housse",
+   "size": "180×200"
   },
   {
    "id": "tapis-de-priere",

@@ -25,18 +25,18 @@ const T = {
     cats_eyebrow:"Nos univers", cats_h:"Toute la maison, pièce par pièce", items:"articles",
     best_eyebrow:"Coups de cœur", best_h:"Les plus demandés au marché", see_all:"Tout voir",
     small_eyebrow:"Petits prix", small_h:"À moins de 5 €",
-    why_eyebrow:"Pourquoi Dar Lin",
+    why_eyebrow:"Pourquoi Dar Lin Maison",
     why1_h:"Grandes marques", why1_p:"Gérard Pasquier, Amphora, Hygie : du linge de qualité, neuf et emballé.",
     why2_h:"Petits prix", why2_p:"Des prix justes toute l'année, et des lots pour les articles du quotidien.",
     why3_h:"Retrait ou livraison", why3_p:"Retrait gratuit au marché ou livraison à domicile sur Amiens.",
     why4_h:"14 jours pour changer d'avis", why4_p:"Article neuf dans son emballage ? On l'échange ou on vous rembourse.",
-    mk_eyebrow:"On se voit au marché", mk_day:"Dimanche", mk_h:"Marché d'Amiens Nord", mk_p:"Retrouvez tout le stand Dar Lin chaque dimanche matin. Commandez en ligne, on vous met votre colis de côté : vous passez, vous payez, vous repartez.",
+    mk_eyebrow:"On se voit au marché", mk_day:"Dimanche", mk_h:"Marché d'Amiens Nord", mk_p:"Retrouvez tout le stand Dar Lin Maison chaque dimanche matin. Commandez en ligne, on vous met votre colis de côté : vous passez, vous payez, vous repartez.",
     mk_list1:"Commandez avant samedi 20 h", mk_list2:"Votre commande vous attend au stand", mk_list3:"Paiement sur place",
     mk_map:"Ouvrir dans Google Maps",
     join_h:"Les nouveautés d'abord sur WhatsApp", join_p:"Arrivages, lots, pièces uniques : écrivez-nous « Nouveautés » et recevez les photos avant tout le monde.",
     join_btn:"Écrire « Nouveautés »",
     f_shop:"Boutique", f_help:"Aide", f_legal:"Informations légales", f_contact:"Contact",
-    f_about:"Dar Lin, la maison du linge. Une boutique familiale d'Amiens, sur les marchés et en ligne.",
+    f_about:"Dar Lin Maison, la maison du linge. Une boutique familiale d'Amiens, sur les marchés et en ligne.",
     f_rights:"Tous droits réservés", f_vat:"Prix en euros, toutes taxes comprises.",
     faq:"Questions fréquentes", livraison:"Livraison & retrait", retours:"Retours & échanges", about:"Qui sommes-nous", contact_us:"Nous contacter",
     mentions:"Mentions légales", cgv:"Conditions générales de vente", privacy:"Confidentialité",
@@ -48,7 +48,7 @@ const T = {
     all_products:"Toute la boutique", affaires_p:"Le linge du quotidien à moins de 5 €, et des lots encore plus malins.",
     results:"Résultats pour « {q} »", no_results:"Aucun produit trouvé. Essayez « drap », « nappe » ou « serviette ».",
     cart_empty:"Votre panier est vide.", continue:"Continuer mes achats", subtotal:"Sous-total", pack_saving:"Remise lots", checkout:"Valider ma commande", remove:"Retirer",
-    co_h:"Ma commande", co_mode:"Mode de réception", co_market:"Retrait au marché d'Amiens Nord", co_market_s:"Gratuit · dimanche matin, au stand Dar Lin",
+    co_h:"Ma commande", co_mode:"Mode de réception", co_market:"Retrait au marché d'Amiens Nord", co_market_s:"Gratuit · dimanche matin, au stand Dar Lin Maison",
     co_home:"Livraison à domicile (Amiens)", co_home_s:"{fee} · offerte dès {free} · sous 48 h ouvrées",
     co_relay:"Point relais Mondial Relay (toute la France)", co_relay_s:"{fee} · offert dès {free} · expédié sous 48 h, livré en 3 à 5 jours", co_relay_addr:"Votre adresse complète (code postal + ville) : nous choisissons le point relais le plus proche et vous le confirmons sur WhatsApp",
     co_you:"Vos coordonnées", co_name:"Prénom et nom", co_phone:"Téléphone (WhatsApp de préférence)", co_addr:"Adresse de livraison", co_note:"Un message pour nous ? (facultatif)",
@@ -57,10 +57,10 @@ const T = {
     co_after:"WhatsApp s'ouvre avec votre commande déjà écrite : il ne reste qu'à appuyer sur Envoyer. Nous confirmons la disponibilité dans la journée.",
     co_agree:"J'ai lu et j'accepte les conditions générales de vente.", co_fill:"Complétez les champs en orange pour continuer.",
     co_wa_hidden:"Si WhatsApp ne s'ouvre pas, écrivez-nous au {tel} en copiant ce message :", copy:"Copier", copied:"Copié",
-    order_hello:"Bonjour Dar Lin, je souhaite commander :",
+    order_hello:"Bonjour Dar Lin Maison, je souhaite commander :",
     low:"Plus que {n} en stock", co_pickup:"Retrait au marché", soldout:"Épuisé", code:"Code promo", apply:"Appliquer", code_ok:"Code appliqué ✓", code_bad:"Ce code n'existe pas ou n'est plus valable.", code_min:"Ce code est valable dès {m} d'achat.",
     pay_card:"Payer maintenant par carte", pay_card_s:"Carte bancaire, Apple Pay ou Google Pay · paiement sécurisé SumUp", pay_cash:"Payer à la remise", pay_now:"Payer par carte",
-    pay_after:"Paiement sécurisé par SumUp : Dar Lin ne voit jamais vos données bancaires.", pay_loading:"Préparation du paiement…", pay_error:"Le paiement n'a pas pu démarrer. Réessayez ou commandez sur WhatsApp.",
+    pay_after:"Paiement sécurisé par SumUp : Dar Lin Maison ne voit jamais vos données bancaires.", pay_loading:"Préparation du paiement…", pay_error:"Le paiement n'a pas pu démarrer. Réessayez ou commandez sur WhatsApp.",
     thanks_h:"Merci pour votre commande !", thanks_p:"Votre paiement est bien reçu (réf. {ref}). Envoyez-nous la commande sur WhatsApp pour convenir du retrait ou de la livraison.", thanks_wa:"Envoyer ma commande sur WhatsApp",
     legal_ar:""
   },
@@ -75,18 +75,18 @@ const T = {
     cats_eyebrow:"Our collections", cats_h:"The whole home, room by room", items:"items",
     best_eyebrow:"Favourites", best_h:"Most requested at the market", see_all:"See all",
     small_eyebrow:"Small prices", small_h:"Under €5",
-    why_eyebrow:"Why Dar Lin",
+    why_eyebrow:"Why Dar Lin Maison",
     why1_h:"Trusted brands", why1_p:"Gérard Pasquier, Amphora, Hygie: quality home linen, brand new and in its packaging.",
     why2_h:"Small prices", why2_p:"Fair prices all year round, and bundle deals on everyday items.",
     why3_h:"Pickup or delivery", why3_p:"Free pickup at the market or home delivery in Amiens.",
     why4_h:"14 days to change your mind", why4_p:"Item new and still packed? We exchange it or refund you.",
-    mk_eyebrow:"See you at the market", mk_day:"Sunday", mk_h:"Amiens Nord market", mk_p:"Find the whole Dar Lin stall every Sunday morning. Order online and we set your parcel aside: you drop by, pay and go.",
+    mk_eyebrow:"See you at the market", mk_day:"Sunday", mk_h:"Amiens Nord market", mk_p:"Find the whole Dar Lin Maison stall every Sunday morning. Order online and we set your parcel aside: you drop by, pay and go.",
     mk_list1:"Order before Saturday 8 pm", mk_list2:"Your order waits for you at the stall", mk_list3:"Pay on the spot",
     mk_map:"Open in Google Maps",
     join_h:"New arrivals first on WhatsApp", join_p:"New stock, bundles, one-off pieces: send us “New” and get the photos before everyone else.",
     join_btn:"Send “New”",
     f_shop:"Shop", f_help:"Help", f_legal:"Legal information", f_contact:"Contact",
-    f_about:"Dar Lin, the home of linen. A family shop from Amiens, at the markets and online.",
+    f_about:"Dar Lin Maison, the home of linen. A family shop from Amiens, at the markets and online.",
     f_rights:"All rights reserved", f_vat:"Prices in euros, all taxes included.",
     faq:"FAQ", livraison:"Delivery & pickup", retours:"Returns & exchanges", about:"About us", contact_us:"Contact us",
     mentions:"Legal notice", cgv:"Terms of sale", privacy:"Privacy",
@@ -98,7 +98,7 @@ const T = {
     all_products:"All products", affaires_p:"Everyday linen under €5, and even smarter bundles.",
     results:"Results for “{q}”", no_results:"No product found. Try “sheet”, “tablecloth” or “towel”.",
     cart_empty:"Your cart is empty.", continue:"Continue shopping", subtotal:"Subtotal", pack_saving:"Bundle discount", checkout:"Checkout", remove:"Remove",
-    co_h:"My order", co_mode:"How would you like to receive it?", co_market:"Pickup at the Amiens Nord market", co_market_s:"Free · Sunday morning, at the Dar Lin stall",
+    co_h:"My order", co_mode:"How would you like to receive it?", co_market:"Pickup at the Amiens Nord market", co_market_s:"Free · Sunday morning, at the Dar Lin Maison stall",
     co_home:"Home delivery (Amiens)", co_home_s:"{fee} · free from {free} · within 48 working hours",
     co_relay:"Mondial Relay pickup point (all of France)", co_relay_s:"{fee} · free from {free} · shipped within 48 h, delivered in 3–5 days", co_relay_addr:"Your full address (postcode + town): we pick the nearest pickup point and confirm it on WhatsApp",
     co_you:"Your details", co_name:"First and last name", co_phone:"Phone (WhatsApp preferred)", co_addr:"Delivery address", co_note:"A message for us? (optional)",
@@ -107,10 +107,10 @@ const T = {
     co_after:"WhatsApp opens with your order already written: just press Send. We confirm availability the same day.",
     co_agree:"I have read and accept the terms of sale.", co_fill:"Fill in the fields in orange to continue.",
     co_wa_hidden:"If WhatsApp doesn't open, message us at {tel} and copy this text:", copy:"Copy", copied:"Copied",
-    order_hello:"Bonjour Dar Lin, je souhaite commander :",
+    order_hello:"Bonjour Dar Lin Maison, je souhaite commander :",
     low:"Only {n} left", co_pickup:"Market pickup", soldout:"Sold out", code:"Promo code", apply:"Apply", code_ok:"Code applied ✓", code_bad:"This code doesn't exist or has expired.", code_min:"This code is valid from {m}.",
     pay_card:"Pay now by card", pay_card_s:"Bank card, Apple Pay or Google Pay · secure payment by SumUp", pay_cash:"Pay on delivery", pay_now:"Pay by card",
-    pay_after:"Secure payment by SumUp: Dar Lin never sees your card details.", pay_loading:"Preparing payment…", pay_error:"Payment could not start. Try again or order on WhatsApp.",
+    pay_after:"Secure payment by SumUp: Dar Lin Maison never sees your card details.", pay_loading:"Preparing payment…", pay_error:"Payment could not start. Try again or order on WhatsApp.",
     thanks_h:"Thank you for your order!", thanks_p:"We've received your payment (ref. {ref}). Send us the order on WhatsApp to arrange pickup or delivery.", thanks_wa:"Send my order on WhatsApp",
     legal_ar:"These legal texts are in French, the official language of contracts in France."
   },
@@ -125,18 +125,18 @@ const T = {
     cats_eyebrow:"أقسامنا", cats_h:"كل البيت، غرفة غرفة", items:"منتج",
     best_eyebrow:"الأكثر طلباً", best_h:"اللي الناس بتطلبه بالسوق", see_all:"شوف الكل",
     small_eyebrow:"أسعار صغيرة", small_h:"أقل من ٥ €",
-    why_eyebrow:"ليش دار لين",
+    why_eyebrow:"ليش دار لين ميزون",
     why1_h:"ماركات معروفة", why1_p:"Gérard Pasquier وAmphora وHygie: مفروشات بجودة عالية، جديدة وبكرتونتها.",
     why2_h:"أسعار صغيرة", why2_p:"أسعار منيحة طول السنة، وعروض بالجملة لأغراض كل يوم.",
     why3_h:"استلام أو توصيل", why3_p:"استلام مجاني من السوق أو توصيل للبيت بأميان.",
     why4_h:"١٤ يوم لتغيّر رأيك", why4_p:"المنتج جديد وبكرتونته؟ منبدّله أو منرجّعلك مصاريك.",
-    mk_eyebrow:"منشوفك بالسوق", mk_day:"الأحد", mk_h:"سوق أميان الشمالية", mk_p:"لاقي كل بسطة دار لين كل أحد الصبح. اطلب أونلاين ومنخبّيلك طلبك: بتمرق، بتدفع، وبتاخده.",
+    mk_eyebrow:"منشوفك بالسوق", mk_day:"الأحد", mk_h:"سوق أميان الشمالية", mk_p:"لاقي كل بسطة دار لين ميزون كل أحد الصبح. اطلب أونلاين ومنخبّيلك طلبك: بتمرق، بتدفع، وبتاخده.",
     mk_list1:"اطلب قبل السبت الساعة ٨ المسا", mk_list2:"طلبك بيستناك عالبسطة", mk_list3:"الدفع بالسوق",
     mk_map:"افتح بخرائط غوغل",
     join_h:"الجديد بيوصلك أول على واتساب", join_p:"بضاعة جديدة، عروض، قطع محدودة: ابعتلنا «جديد» وبتوصلك الصور قبل الكل.",
     join_btn:"ابعت «جديد»",
     f_shop:"المتجر", f_help:"مساعدة", f_legal:"معلومات قانونية", f_contact:"تواصل معنا",
-    f_about:"دار لين، بيت المفروشات. متجر عائلي من أميان، بالأسواق وأونلاين.",
+    f_about:"دار لين ميزون، بيت المفروشات. متجر عائلي من أميان، بالأسواق وأونلاين.",
     f_rights:"جميع الحقوق محفوظة", f_vat:"الأسعار باليورو وشاملة الضرائب.",
     faq:"أسئلة متكررة", livraison:"التوصيل والاستلام", retours:"الإرجاع والتبديل", about:"مين نحنا", contact_us:"تواصل معنا",
     mentions:"البيانات القانونية", cgv:"شروط البيع", privacy:"الخصوصية",
@@ -148,7 +148,7 @@ const T = {
     all_products:"كل المتجر", affaires_p:"أغراض البيت اليومية بأقل من ٥ €، وعروض أحسن كمان.",
     results:"نتائج «{q}»", no_results:"ما لقينا شي. جرّب «شرشف» أو «مفرش» أو «منشفة».",
     cart_empty:"سلتك فاضية.", continue:"كمّل تسوّق", subtotal:"المجموع", pack_saving:"خصم العروض", checkout:"أكّد الطلب", remove:"شيل",
-    co_h:"طلبي", co_mode:"طريقة الاستلام", co_market:"استلام من سوق أميان الشمالية", co_market_s:"مجاني · الأحد الصبح عند بسطة دار لين",
+    co_h:"طلبي", co_mode:"طريقة الاستلام", co_market:"استلام من سوق أميان الشمالية", co_market_s:"مجاني · الأحد الصبح عند بسطة دار لين ميزون",
     co_home:"توصيل للبيت (أميان)", co_home_s:"{fee} · مجاني من {free} · خلال ٤٨ ساعة عمل",
     co_relay:"نقطة استلام Mondial Relay (كل فرنسا)", co_relay_s:"{fee} · مجاني من {free} · منبعته خلال ٤٨ ساعة وبيوصل بـ ٣ لـ ٥ أيام", co_relay_addr:"عنوانك الكامل (الرمز البريدي + المدينة): منختار أقرب نقطة استلام ومنأكدلك ياها عالواتساب",
     co_you:"معلوماتك", co_name:"الاسم والكنية", co_phone:"رقم التلفون (يفضّل واتساب)", co_addr:"عنوان التوصيل", co_note:"بدك تقلنا شي؟ (اختياري)",
@@ -157,10 +157,10 @@ const T = {
     co_after:"رح ينفتح واتساب وطلبك مكتوب جاهز: بس اضغط إرسال. منأكدلك التوفر بنفس اليوم.",
     co_agree:"قريت ووافقت على شروط البيع.", co_fill:"عبّي الخانات الملوّنة لتكمّل.",
     co_wa_hidden:"إذا ما انفتح واتساب، ابعتلنا على {tel} وانسخ هالرسالة:", copy:"انسخ", copied:"انتسخ",
-    order_hello:"مرحبا دار لين، بدي اطلب:",
+    order_hello:"مرحبا دار لين ميزون، بدي اطلب:",
     low:"باقي {n} بس", co_pickup:"استلام من السوق", soldout:"خلصت", code:"كود الخصم", apply:"طبّق", code_ok:"انطبق الكود ✓", code_bad:"هالكود مش موجود أو انتهى.", code_min:"هالكود بيمشي من {m} وطالع.",
     pay_card:"ادفع هلق بالبطاقة", pay_card_s:"بطاقة بنكية، Apple Pay أو Google Pay · دفع آمن عبر SumUp", pay_cash:"ادفع وقت الاستلام", pay_now:"ادفع بالبطاقة",
-    pay_after:"الدفع آمن عبر SumUp: دار لين ما بتشوف معلومات بطاقتك أبداً.", pay_loading:"عم نجهّز الدفع…", pay_error:"ما زبط الدفع. جرّب مرة تانية أو اطلب على واتساب.",
+    pay_after:"الدفع آمن عبر SumUp: دار لين ميزون ما بتشوف معلومات بطاقتك أبداً.", pay_loading:"عم نجهّز الدفع…", pay_error:"ما زبط الدفع. جرّب مرة تانية أو اطلب على واتساب.",
     thanks_h:"شكراً على طلبك!", thanks_p:"وصلنا الدفع (رقم {ref}). ابعتلنا الطلب على واتساب لنتفق على الاستلام أو التوصيل.", thanks_wa:"ابعت طلبي على واتساب",
     legal_ar:"النص القانوني مكتوب بالفرنسية لأنه هي اللغة الرسمية للعقد بفرنسا."
   }
@@ -182,17 +182,17 @@ const X = {
     care_h:"Conseils d'entretien", size_h:"Guide des tailles", pay_h:"Paiement 100 % sécurisé",
     pay_list:"Carte bancaire · Apple Pay · Google Pay · espèces au retrait",
     photo_note:"Photo du produit réel dans son emballage d'origine.",
-    chat_open:"Une question ?", chat_title:"Assistant Dar Lin", chat_hi:"Bonjour 👋 Je réponds tout de suite aux questions les plus fréquentes. Choisissez un sujet :",
+    chat_open:"Une question ?", chat_title:"Assistant Dar Lin Maison", chat_hi:"Bonjour 👋 Je réponds tout de suite aux questions les plus fréquentes. Choisissez un sujet :",
     chat_more:"Autre question", chat_wa:"Parler à Ahmad sur WhatsApp", chat_back:"Autres questions",
     lang_name:"Français",
     rv_h:"Ce que disent nos clients", rv_none:"Soyez le premier à donner votre avis !", rv_count:"{n} avis", rv_verified:"Achat vérifié", rv_write:"Donner mon avis",
-    rv_form_h:"Votre avis sur Dar Lin", rv_name:"Prénom (et initiale du nom)", rv_city:"Ville (facultatif)", rv_prod:"Produit acheté (facultatif)", rv_text:"Votre avis", rv_send:"Envoyer mon avis",
+    rv_form_h:"Votre avis sur Dar Lin Maison", rv_name:"Prénom (et initiale du nom)", rv_city:"Ville (facultatif)", rv_prod:"Produit acheté (facultatif)", rv_text:"Votre avis", rv_send:"Envoyer mon avis",
     rv_note:"Votre avis nous est envoyé sur WhatsApp. Nous publions tous les avis réels, positifs comme négatifs, sans les modifier.", rv_rate:"Votre note", rv_all:"Tous les avis", rv_google:"Avis Google",
     ship_left:"Plus que {m} pour la livraison offerte 🚚", ship_ok:"Bravo, la livraison à domicile est offerte ✓",
     upsell:"Petit plus pour votre panier", add_s:"Ajouter", recent:"Vus récemment",
     eta:"Commandez aujourd'hui : livré à Amiens d'ici le {d}, ou à retirer dimanche au marché.",
     story_eyebrow:"Notre histoire", story_h:"Du marché d'Amiens à votre maison",
-    story_p:"Dar Lin, c'est une petite maison familiale née sur les marchés d'Amiens. Chaque semaine, nous sélectionnons du linge neuf de marques reconnues et nous le proposons à des prix justes. Pas d'intermédiaire, pas de surprise : vous voyez le vrai produit, dans son emballage d'origine, et vous pouvez nous écrire à tout moment.",
+    story_p:"Dar Lin Maison, c'est une petite maison familiale née sur les marchés d'Amiens. Chaque semaine, nous sélectionnons du linge neuf de marques reconnues et nous le proposons à des prix justes. Pas d'intermédiaire, pas de surprise : vous voyez le vrai produit, dans son emballage d'origine, et vous pouvez nous écrire à tout moment.",
     story_cta:"Nous rencontrer au marché",
     rev_h:"Vous avez acheté chez nous ?", rev_p:"Votre avis aide d'autres familles d'Amiens à nous découvrir. Ça prend 30 secondes.", rev_btn:"Laisser un avis",
     pay_icons:"Paiements acceptés", zoom:"Agrandir la photo", close:"Fermer"
@@ -205,17 +205,17 @@ const X = {
     care_h:"Care guide", size_h:"Size guide", pay_h:"100% secure payment",
     pay_list:"Bank card · Apple Pay · Google Pay · cash on pickup",
     photo_note:"Photo of the real product in its original packaging.",
-    chat_open:"A question?", chat_title:"Dar Lin assistant", chat_hi:"Hello 👋 I can answer the most common questions right away. Pick a topic:",
+    chat_open:"A question?", chat_title:"Dar Lin Maison assistant", chat_hi:"Hello 👋 I can answer the most common questions right away. Pick a topic:",
     chat_more:"Something else", chat_wa:"Talk to Ahmad on WhatsApp", chat_back:"Other questions",
     lang_name:"English",
     rv_h:"What our customers say", rv_none:"Be the first to leave a review!", rv_count:"{n} reviews", rv_verified:"Verified purchase", rv_write:"Write a review",
-    rv_form_h:"Your review of Dar Lin", rv_name:"First name (and last initial)", rv_city:"Town (optional)", rv_prod:"Product bought (optional)", rv_text:"Your review", rv_send:"Send my review",
+    rv_form_h:"Your review of Dar Lin Maison", rv_name:"First name (and last initial)", rv_city:"Town (optional)", rv_prod:"Product bought (optional)", rv_text:"Your review", rv_send:"Send my review",
     rv_note:"Your review is sent to us on WhatsApp. We publish every genuine review, positive or negative, without editing it.", rv_rate:"Your rating", rv_all:"All reviews", rv_google:"Google reviews",
     ship_left:"Only {m} more for free delivery 🚚", ship_ok:"Great, home delivery is free ✓",
     upsell:"A little extra for your cart", add_s:"Add", recent:"Recently viewed",
     eta:"Order today: delivered in Amiens by {d}, or collect it on Sunday at the market.",
     story_eyebrow:"Our story", story_h:"From the Amiens market to your home",
-    story_p:"Dar Lin is a small family business born at the markets of Amiens. Every week we select brand-new linen from trusted brands and offer it at fair prices. No middleman, no surprises: you see the real product in its original packaging, and you can message us anytime.",
+    story_p:"Dar Lin Maison is a small family business born at the markets of Amiens. Every week we select brand-new linen from trusted brands and offer it at fair prices. No middleman, no surprises: you see the real product in its original packaging, and you can message us anytime.",
     story_cta:"Meet us at the market",
     rev_h:"Bought from us?", rev_p:"Your review helps other families in Amiens discover us. It takes 30 seconds.", rev_btn:"Leave a review",
     pay_icons:"Accepted payments", zoom:"Enlarge photo", close:"Close"
@@ -228,23 +228,73 @@ const X = {
     care_h:"نصائح الغسيل", size_h:"دليل المقاسات", pay_h:"دفع آمن ١٠٠٪",
     pay_list:"بطاقة بنكية · Apple Pay · Google Pay · كاش وقت الاستلام",
     photo_note:"صورة المنتج الحقيقي بكرتونته الأصلية.",
-    chat_open:"عندك سؤال؟", chat_title:"مساعد دار لين", chat_hi:"أهلاً 👋 بجاوبك فوراً على الأسئلة المتكررة. اختار موضوع:",
+    chat_open:"عندك سؤال؟", chat_title:"مساعد دار لين ميزون", chat_hi:"أهلاً 👋 بجاوبك فوراً على الأسئلة المتكررة. اختار موضوع:",
     chat_more:"سؤال تاني", chat_wa:"احكي مع أحمد على واتساب", chat_back:"أسئلة تانية",
     lang_name:"العربية",
     rv_h:"شو بيقولوا زباينّا", rv_none:"كون أول واحد بيكتب رأيه!", rv_count:"{n} تقييم", rv_verified:"شراء مؤكد", rv_write:"اكتب رأيك",
-    rv_form_h:"رأيك بدار لين", rv_name:"الاسم (وأول حرف من الكنية)", rv_city:"المدينة (اختياري)", rv_prod:"شو اشتريت؟ (اختياري)", rv_text:"رأيك", rv_send:"ابعت رأيي",
+    rv_form_h:"رأيك بدار لين ميزون", rv_name:"الاسم (وأول حرف من الكنية)", rv_city:"المدينة (اختياري)", rv_prod:"شو اشتريت؟ (اختياري)", rv_text:"رأيك", rv_send:"ابعت رأيي",
     rv_note:"رأيك بيوصلنا على واتساب. منحط كل التقييمات الحقيقية، الحلوة والسيئة، بدون ما نغيّر فيها.", rv_rate:"تقييمك", rv_all:"كل التقييمات", rv_google:"تقييمات غوغل",
     ship_left:"باقي {m} وبيصير التوصيل مجاني 🚚", ship_ok:"حلو، التوصيل للبيت صار مجاني ✓",
     upsell:"شي صغير بيكمّل سلتك", add_s:"زيد", recent:"شفتهن مؤخراً",
     eta:"اطلب اليوم: بيوصلك بأميان لحد {d}، أو استلمه الأحد من السوق.",
     story_eyebrow:"قصتنا", story_h:"من سوق أميان لبيتك",
-    story_p:"دار لين مشروع عائلي صغير انولد بأسواق أميان. كل أسبوع منختار مفروشات جديدة من ماركات معروفة ومنبيعها بأسعار منيحة. بلا وسيط وبلا مفاجآت: بتشوف المنتج الحقيقي بكرتونته الأصلية، وفيك تحكينا بأي وقت.",
+    story_p:"دار لين ميزون مشروع عائلي صغير انولد بأسواق أميان. كل أسبوع منختار مفروشات جديدة من ماركات معروفة ومنبيعها بأسعار منيحة. بلا وسيط وبلا مفاجآت: بتشوف المنتج الحقيقي بكرتونته الأصلية، وفيك تحكينا بأي وقت.",
     story_cta:"تعال شوفنا بالسوق",
     rev_h:"اشتريت من عنا؟", rev_p:"رأيك بيساعد عائلات تانية بأميان تتعرف علينا. بياخد ٣٠ ثانية بس.", rev_btn:"اكتب رأيك",
     pay_icons:"طرق الدفع", zoom:"كبّر الصورة", close:"سكّر"
   }
 };
 for(const k in X) Object.assign(T[k], X[k]);
+
+/* textes v8 : tailles, livraison, cadeau, Noël, newsletter, avis directs */
+const Y = {
+  fr: { gift_every:"1 {n} offerte avec chaque commande", size:"Taille", from:"Dès {p}", sizes_n:"{n} tailles",
+    tr1_h:"Livraison partout en France", tr1_p:"Point relais, offerte dès {free}",
+    ship_relay:"<b>Partout en France</b> · point relais {fee}, offert dès {free} · reçu entre le {a} et le {b}",
+    ship_home:"<b>Amiens</b> · livraison {fee} (offerte dès {free}) d'ici le {d}, ou retrait gratuit dimanche au marché",
+    gift_left:"Plus que {m} pour recevoir un cadeau 🎁", gift_ok:"🎁 Cadeau offert : {g}", gift_line:"Cadeau offert", gift_perk:"Un cadeau offert dès {g} d'achat ({n})",
+    xmas_eyebrow:"Noël 2026", xmas_h:"Idées cadeaux de Noël", xmas_p:"Des cadeaux utiles et douillets, à petits prix, livrés partout en France.", x10:"Moins de 10 €", x25:"De 10 à 25 €", x35:"Couvertures douillettes", xmas_cta:"Voir toutes les idées cadeaux", xmas_title:"Idées cadeaux de Noël",
+    nl_h:"-10 % sur votre 1ère commande 🎁", nl_p:"Inscrivez-vous pour recevoir nos nouveautés et nos offres en avant-première.", nl_email:"Votre adresse e-mail", nl_btn:"Je m'inscris",
+    nl_consent:"J'accepte de recevoir les offres de Dar Lin Maison par e-mail (désinscription possible à tout moment).", nl_done:"Merci ! Voici votre code :", nl_done_p:"Il est déjà ajouté à votre panier (dès 20 € d'achat).", nl_err:"Vérifiez votre e-mail et cochez la case.", nl_bar:"-10 % sur votre 1ère commande", nl_copy:"Copier le code",
+    rv_photo:"Ajouter une photo (facultatif)", rv_send:"Publier mon avis",
+    rv_note:"Votre avis est publié directement sur le site. Nous publions tous les avis, positifs comme négatifs ; seuls les messages injurieux, hors sujet ou publicitaires sont supprimés. Aucune contrepartie n'est accordée en échange d'un avis.",
+    rv_thanks:"Merci ! Votre avis est en ligne.", rv_fail:"Envoi impossible pour le moment. Réessayez dans une minute.", rv_sending:"Envoi…",
+    seo_h:"Linge de maison de marque à petits prix, livré partout en France" },
+  en: { gift_every:"1 free {n} with every order", size:"Size", from:"From {p}", sizes_n:"{n} sizes",
+    tr1_h:"Delivery all over France", tr1_p:"Pickup point, free from {free}",
+    ship_relay:"<b>All over France</b> · pickup point {fee}, free from {free} · arrives between {a} and {b}",
+    ship_home:"<b>Amiens</b> · delivery {fee} (free from {free}) by {d}, or free pickup on Sunday at the market",
+    gift_left:"Only {m} more for a free gift 🎁", gift_ok:"🎁 Free gift: {g}", gift_line:"Free gift", gift_perk:"A free gift with orders from {g} ({n})",
+    xmas_eyebrow:"Christmas 2026", xmas_h:"Christmas gift ideas", xmas_p:"Useful, cosy gifts at small prices, delivered all over France.", x10:"Under €10", x25:"€10 to €25", x35:"Cosy blankets", xmas_cta:"See all gift ideas", xmas_title:"Christmas gift ideas",
+    nl_h:"10% off your 1st order 🎁", nl_p:"Sign up to get our new arrivals and offers first.", nl_email:"Your email address", nl_btn:"Sign up",
+    nl_consent:"I agree to receive Dar Lin Maison offers by email (unsubscribe at any time).", nl_done:"Thank you! Here is your code:", nl_done_p:"It's already added to your cart (orders from €20).", nl_err:"Check your email and tick the box.", nl_bar:"10% off your 1st order", nl_copy:"Copy code",
+    rv_photo:"Add a photo (optional)", rv_send:"Publish my review",
+    rv_note:"Your review is published directly on the site. We publish every review, positive or negative; only abusive, off-topic or promotional messages are removed. Nothing is offered in exchange for a review.",
+    rv_thanks:"Thank you! Your review is live.", rv_fail:"Couldn't send it right now. Try again in a minute.", rv_sending:"Sending…",
+    seo_h:"Branded home linen at small prices, delivered all over France" },
+  ar: { gift_every:"{n} هدية مع كل طلب", size:"المقاس", from:"من {p}", sizes_n:"{n} مقاسات",
+    tr1_h:"توصيل لكل فرنسا", tr1_p:"لنقطة استلام، مجاني من {free}",
+    ship_relay:"<b>لكل فرنسا</b> · نقطة استلام {fee}، مجانية من {free} · بيوصل بين {a} و{b}",
+    ship_home:"<b>أميان</b> · توصيل {fee} (مجاني من {free}) لحد {d}، أو استلام مجاني الأحد من السوق",
+    gift_left:"باقي {m} وبتاخد هدية 🎁", gift_ok:"🎁 هدية مجانية: {g}", gift_line:"هدية مجانية", gift_perk:"هدية مجانية لكل طلب من {g} ({n})",
+    xmas_eyebrow:"عيد الميلاد 2026", xmas_h:"أفكار هدايا للعيد", xmas_p:"هدايا مفيدة ودافية بأسعار صغيرة، منوصلها لكل فرنسا.", x10:"أقل من 10 €", x25:"من 10 لـ 25 €", x35:"بطانيات دافية", xmas_cta:"شوف كل أفكار الهدايا", xmas_title:"أفكار هدايا للعيد",
+    nl_h:"خصم ١٠٪ على أول طلب 🎁", nl_p:"سجّل لتوصلك البضاعة الجديدة والعروض قبل الكل.", nl_email:"إيميلك", nl_btn:"سجّلني",
+    nl_consent:"موافق إنه توصلني عروض Dar Lin Maison عالإيميل (فيني ألغي بأي وقت).", nl_done:"شكراً! هاد كودك:", nl_done_p:"انضاف لسلّتك (للطلبات من 20 €).", nl_err:"تأكد من الإيميل وعلّم عالمربع.", nl_bar:"خصم ١٠٪ على أول طلب", nl_copy:"انسخ الكود",
+    rv_photo:"ضيف صورة (اختياري)", rv_send:"انشر رأيي",
+    rv_note:"رأيك بينزل مباشرة عالموقع. منحط كل التقييمات، الحلوة والسيئة؛ بس منشيل المسبّات والسبام والكلام اللي ما إله علاقة. وما منعطي أي مقابل للتقييم.",
+    rv_thanks:"شكراً! رأيك صار عالموقع.", rv_fail:"ما زبط الإرسال هلق. جرّب بعد دقيقة.", rv_sending:"عم يتبعت…",
+    seo_h:"مفروشات بيت من ماركات معروفة بأسعار صغيرة، لكل فرنسا" }
+};
+for(const k in Y) Object.assign(T[k], Y[k]);
+const GIFT_FROM = E.cents(SHOP.giftFrom || 0);
+const GIFT_EVERY = GIFT_FROM > 0 && GIFT_FROM <= 100;
+const giftPerk = () => GIFT_EVERY ? t("gift_every",{n:esc(giftName())}) : giftPerk();
+const giftName = () => SHOP["gift_"+lang] || SHOP.gift_fr || "";
+const giftOK = r => GIFT_FROM > 0 && r.net >= GIFT_FROM;
+const GROUP = g => P.filter(x => x.group === g).sort((a,b) => a.price - b.price);
+const isPrimary = p => !p.group || GROUP(p.group)[0].id === p.id;
+const uniq = list => list.filter(isPrimary);
+function addDays(n){ const d = new Date(); let k = 0; while(k < n){ d.setDate(d.getDate()+1); if(d.getDay()!==0 && d.getDay()!==6) k++; } return d.toLocaleDateString(lang==="ar"?"ar":lang==="en"?"en-GB":"fr-FR", {weekday:"short", day:"numeric", month:"numeric"}); }
 T.fr.lang = "Français"; T.ar.lang = "العربية"; T.en.lang = "English";
 const LANGS = [["fr","FR"],["en","EN"],["ar","ع"]];
 const LBL = (o, key) => (o && (o[key+"_"+lang] || o[key+"_fr"] || o[key+"_ar"])) || "";
@@ -319,13 +369,13 @@ function productLD(p){
   let el = document.getElementById("ld-product"); if(!el){ el = document.createElement("script"); el.type = "application/ld+json"; el.id = "ld-product"; document.head.appendChild(el); }
   el.textContent = p ? JSON.stringify({"@context":"https://schema.org","@type":"Product","name":p.fr.name,"description":p.fr.desc,"brand":p.brand?{"@type":"Brand","name":p.brand}:undefined,
     "image":[...new Set(p.variants.map(v=>"https://darlinmaison.fr/"+img(v.img).replace(/^img\//,"")))],"sku":p.id,"aggregateRating":revFor(p.id).length?{"@type":"AggregateRating","ratingValue":avg(revFor(p.id)).toFixed(1),"reviewCount":revFor(p.id).length}:undefined,"review":revFor(p.id).slice(0,5).map(r=>({"@type":"Review","author":{"@type":"Person","name":r.name},"reviewRating":{"@type":"Rating","ratingValue":r.rating,"bestRating":5},"reviewBody":r.text,"datePublished":r.date})),
-    "offers":{"@type":"Offer","price":Number(p.price).toFixed(2),"priceCurrency":"EUR","availability":p.stock===0?"https://schema.org/OutOfStock":"https://schema.org/InStock","url":"https://darlinmaison.fr/#p-"+p.id,"seller":{"@type":"Organization","name":"Dar Lin"}}}) : "";
+    "offers":{"@type":"Offer","price":Number(p.price).toFixed(2),"priceCurrency":"EUR","availability":p.stock===0?"https://schema.org/OutOfStock":"https://schema.org/InStock","url":"https://darlinmaison.fr/#p-"+p.id,"seller":{"@type":"Organization","name":"Dar Lin Maison"}}}) : "";
 }
 const starsHTML = (n, cls) => `<span class="rstars ${cls||""}" aria-label="${n}/5">${[1,2,3,4,5].map(i=>`<i class="${i<=Math.round(n)?"on":""}">★</i>`).join("")}</span>`;
 const revFor = id => REV.filter(r => !id || r.product===id);
 const avg = list => list.length ? list.reduce((a,r)=>a+(+r.rating||0),0)/list.length : 0;
 function revCard(r){ const p = r.product && byId(r.product);
-  return `<figure class="rcard">${starsHTML(+r.rating)}<blockquote>${esc(r.text||"")}</blockquote>
+  return `<figure class="rcard">${r.photo?`<a class="rph" href="${esc(r.photo)}" target="_blank" rel="noopener"><img src="${esc(r.photo)}" alt="" loading="lazy"></a>`:""}${starsHTML(+r.rating)}<blockquote>${esc(r.text||"")}</blockquote>
     <figcaption><b>${esc(r.name||"")}</b>${r.city?` · ${esc(r.city)}`:""}${r.verified?` · <span class="ver">✓ ${t("rv_verified")}</span>`:""}${p?`<br><a href="#p-${p.id}">${esc(L(p).name)}</a>`:""}${r.date?` <small>${esc(new Date(r.date).toLocaleDateString(lang==="en"?"en-GB":"fr-FR"))}</small>`:""}</figcaption></figure>`; }
 function revSummary(list){ return list.length ? `<div class="rsum">${starsHTML(avg(list),"big")}<b>${avg(list).toFixed(1).replace(".",",")}/5</b><span>${t("rv_count",{n:list.length})}</span></div>` : ""; }
 function openReviewForm(pid){
@@ -338,18 +388,34 @@ function openReviewForm(pid){
       <div class="field"><label for="rv-n">${t("rv_name")}</label><input id="rv-n" required placeholder=" "></div>
       <div class="field"><label for="rv-c">${t("rv_city")}</label><input id="rv-c" placeholder=" "></div>
       <div class="field"><label for="rv-p">${t("rv_prod")}</label><select id="rv-p"><option value="">—</option>${P.map(p=>`<option value="${p.id}" ${p.id===pid?"selected":""}>${esc(L(p).name)}</option>`).join("")}</select></div>
-      <div class="field"><label for="rv-t">${t("rv_text")}</label><textarea id="rv-t" rows="4" required></textarea></div>
+      <div class="field"><label for="rv-t">${t("rv_text")}</label><textarea id="rv-t" rows="4" required maxlength="1200"></textarea></div>
+      <label class="rvphoto"><input type="file" id="rv-f" accept="image/*"><span id="rv-fl">📷 ${t("rv_photo")}</span><img id="rv-prev" alt="" hidden></label>
+      <input type="text" id="rv-hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
       <p class="note">${t("rv_note")}</p>
-      <button class="btn wa block" type="submit">${I.wa} ${t("rv_send")}</button>
+      <p class="note" id="rv-err" hidden style="color:var(--warn)"></p>
+      <button class="btn block" type="submit" id="rv-go">${t("rv_send")}</button>
     </form></aside>`;
   $("#dbg").onclick = closeDrawer; $("#dclose").onclick = closeDrawer;
   const paint = () => r.querySelectorAll("[data-r]").forEach(b => b.classList.toggle("on", +b.dataset.r <= rating));
   r.querySelectorAll("[data-r]").forEach(b => b.onclick = () => { rating = +b.dataset.r; paint(); });
-  $("#rvF").onsubmit = e => { e.preventDefault();
-    const n = $("#rv-n").value.trim(), tx = $("#rv-t").value.trim(); if(!n || !tx){ (!n?$("#rv-n"):$("#rv-t")).style.borderColor = "var(--warn)"; return; }
-    const pr = byId($("#rv-p").value);
-    const msg = `⭐ AVIS CLIENT DAR LIN\nNote : ${"★".repeat(rating)}${"☆".repeat(5-rating)} (${rating}/5)\nNom : ${n}${$("#rv-c").value.trim()?"\nVille : "+$("#rv-c").value.trim():""}${pr?"\nProduit : "+pr.fr.name+" ("+pr.id+")":""}\n\n${tx}`;
-    const a = document.createElement("a"); a.href = waURL(msg); a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove(); closeDrawer(); };
+  let photo = "";
+  $("#rv-f").onchange = e => { const file = e.target.files[0]; if(!file) return;
+    const im = new Image(), u = URL.createObjectURL(file);
+    im.onload = () => { const k = Math.min(1, 1000 / Math.max(im.width, im.height)), c = document.createElement("canvas"); c.width = Math.round(im.width*k); c.height = Math.round(im.height*k);
+      c.getContext("2d").drawImage(im, 0, 0, c.width, c.height); photo = c.toDataURL("image/jpeg", 0.78); URL.revokeObjectURL(u);
+      const pv = $("#rv-prev"); pv.src = photo; pv.hidden = false; };
+    im.src = u; };
+  $("#rvF").onsubmit = async e => { e.preventDefault();
+    const n = $("#rv-n").value.trim(), tx = $("#rv-t").value.trim(); if(!n || tx.length < 5){ (!n?$("#rv-n"):$("#rv-t")).style.borderColor = "var(--warn)"; return; }
+    const go = $("#rv-go"), er = $("#rv-err"); go.disabled = true; go.textContent = t("rv_sending"); er.hidden = true;
+    try {
+      const res = await fetch("/api/reviews", {method:"POST", headers:{"content-type":"application/json"}, body: JSON.stringify({rating, name:n, city:$("#rv-c").value.trim(), product:$("#rv-p").value, text:tx, photo, hp:$("#rv-hp").value})});
+      const j = await res.json().catch(()=>({}));
+      if(!res.ok || !j.ok) throw new Error(j.error || "x");
+      if(j.review){ REV.unshift(j.review); }
+      closeDrawer(); toast(t("rv_thanks")); if(/^#avis/.test(location.hash)) history.replaceState(null, "", "#accueil"); route(); setTimeout(() => { const el = document.getElementById(byId($("#rv-p") ? "" : "") ? "rvsec" : (document.getElementById("rvsec") ? "rvsec" : "avis")); if(el) el.scrollIntoView({behavior:"smooth"}); }, 80);
+    } catch(err){ go.disabled = false; go.textContent = t("rv_send"); er.textContent = t("rv_fail"); er.hidden = false; }
+  };
 }
 const faqList = () => FAQ[lang].map(([q,a]) => [q, a.replace("{fee}", eur(C.deliveryFee)).replace("{free}", eur(C.freeDeliveryFrom))]);
 
@@ -388,6 +454,7 @@ function sumRows(r, withDelivery){
   return `<div class="sum"><span>${t("subtotal")}</span><span>${eur(r.sub)}</span></div>
     ${r.discounts.map(d=>`<div class="sum ok"><span>${promoLabel(d)}</span><span>−${eur(d.amount)}</span></div>`).join("")}
     ${withDelivery?`<div class="sum"><span>${r.mode==="market"?t("co_pickup"):t("co_delivery")}</span><span>${r.delivery?eur(r.delivery):t("co_free")}</span></div>`:""}
+    ${giftOK(r)?`<div class="sum ok"><span>🎁 ${t("gift_line")} : ${esc(giftName())}</span><span>${t("co_free")}</span></div>`:""}
     <div class="sum total"><span>${t("co_total")}</span><span>${eur(withDelivery?r.total:r.net)}</span></div>`;
 }
 
@@ -399,7 +466,8 @@ function applyTheme(){
   st.textContent = `:root{--brun:${th.primary};--accent:${th.primary};--caramel:${th.secondary};--accent2:${th.secondary};--sable:${th.sand};--bg:${th.background};--surface:${th.surface};--lin:${th.surface};--ink:${th.text};--r:${+th.radius||14}px;--f-display:${q(th.fontTitles)}, "Amiri", Georgia, serif;--f-body:${q(th.fontText)}, "Amiri", system-ui, sans-serif;--f-ar:${q(th.fontArabic)}, "Amiri", serif}
 section.sec{padding-block:${+th.spacing||64}px}
 .topbar,footer,.market-card{background:${th.primary}}`;
-  const fams = [th.fontTitles, th.fontText, th.fontArabic].filter(Boolean).map(f => "family=" + encodeURIComponent(f).replace(/%20/g,"+") + ":wght@400;500;600;700");
+  const ONE = ["Instrument Serif","DM Serif Display","Abril Fatface","Bebas Neue"];
+  const fams = [...new Set([th.fontTitles, th.fontText, th.fontArabic].filter(Boolean))].map(f => "family=" + encodeURIComponent(f).replace(/%20/g,"+") + (ONE.includes(f) ? ":ital@0;1" : ":wght@400;500;600;700"));
   if(!document.getElementById("dl-fonts") && fams.length){ const l = document.createElement("link"); l.id = "dl-fonts"; l.rel = "stylesheet"; l.href = "https://fonts.googleapis.com/css2?" + fams.join("&") + "&display=swap"; document.head.appendChild(l); }
 }
 function shell(){
@@ -409,7 +477,7 @@ function shell(){
   app.innerHTML = `
   <div class="topbar"><div class="wrap">${((S.topbar||{})[lang]||(S.topbar||{}).fr||[]).map((x,i)=>`<span class="tb${i===0?" on":""}">${esc(x)}</span>`).join("<span class=\"tbsep\">·</span>")}</div></div>
   <header class="hdr"><div class="wrap">
-    <a class="logo" href="#accueil" aria-label="Dar Lin">${LOGO}<span><b>Dar Lin</b><small>LINGE DE MAISON</small></span></a>
+    <a class="logo" href="#accueil" aria-label="Dar Lin Maison">${LOGO}<span><b>Dar Lin Maison</b><small>LINGE DE MAISON</small></span></a>
     <nav class="nav" aria-label="Principal">${nav.map(([h,k])=>`<a href="#${h}" data-nav="${h}">${t(k)}</a>`).join("")}</nav>
     <div class="hdr-actions">
       <div class="langs" role="group" aria-label="Langue / Language / اللغة">${LANGS.map(([k,l])=>`<button type="button" data-lang="${k}" aria-pressed="${k===lang}" lang="${k}" title="${T[k].lang_name}">${l}</button>`).join("")}</div>
@@ -429,7 +497,7 @@ function shell(){
     </div>
     <button type="button" class="chat-btn" id="chatBtn" aria-expanded="false"><span class="chat-label">${t("chat_open")}</span><span class="chat-ic">${I.wa}</span></button>
   </div>
-  <div id="drawerRoot"></div><div id="toastRoot" aria-live="polite"></div>`;
+  <div id="drawerRoot"></div><div id="nlRoot"></div><div id="toastRoot" aria-live="polite"></div>`;
   document.querySelectorAll("[data-lang]").forEach(b => b.onclick = () => { lang = b.dataset.lang; store.set("dl_lang", lang); shell(); route(); });
   bindChat();
   clearInterval(window.__tb); window.__tb = setInterval(() => { const a = [...document.querySelectorAll(".topbar .tb")]; if(a.length<2) return; const i = a.findIndex(x=>x.classList.contains("on")); a[i].classList.remove("on"); a[(i+1)%a.length].classList.add("on"); }, 3500);
@@ -443,7 +511,7 @@ function renderBadge(){ const b = $("#badge"); if(!b) return; const n = cartCoun
 /* ---------- assistant (questions fréquentes, puis WhatsApp) ---------- */
 function bindChat(){
   const panel = $("#chatPanel"), btn = $("#chatBtn"), body = $("#chatBody"); if(!panel) return;
-  const waLink = q => `<a class="btn wa block" href="${waURL((lang==="ar"?"مرحبا دار لين، عندي سؤال: ":lang==="en"?"Hello Dar Lin, I have a question: ":"Bonjour Dar Lin, j'ai une question : ") + (q||""))}" target="_blank" rel="noopener">${I.wa} ${t("chat_wa")}</a>`;
+  const waLink = q => `<a class="btn wa block" href="${waURL((lang==="ar"?"مرحبا دار لين ميزون، عندي سؤال: ":lang==="en"?"Hello Dar Lin Maison, I have a question: ":"Bonjour Dar Lin Maison, j'ai une question : ") + (q||""))}" target="_blank" rel="noopener">${I.wa} ${t("chat_wa")}</a>`;
   const menu = () => {
     body.innerHTML = `<div class="msg bot">${t("chat_hi")}</div><div class="qs">${faqList().map(([q],i)=>`<button type="button" data-q="${i}">${esc(q)}</button>`).join("")}</div>${waLink("")}`;
     body.querySelectorAll("[data-q]").forEach(b => b.onclick = () => answer(+b.dataset.q));
@@ -460,18 +528,18 @@ function bindChat(){
 function footer(){
   return `<footer><div class="wrap">
     <div class="fgrid">
-      <div><a class="logo" href="#accueil" style="margin-bottom:14px">${LOGO.replace(/var\(--accent\)/g,"#F4ECE1")}<span><b style="color:#F4ECE1">Dar Lin</b><small>LINGE DE MAISON</small></span></a><p style="margin:14px 0 0; font-size:.92rem; max-width:34ch">${t("f_about")}</p></div>
+      <div><a class="logo" href="#accueil" style="margin-bottom:14px">${LOGO.replace(/var\(--accent\)/g,"#F4ECE1")}<span><b style="color:#F4ECE1">Dar Lin Maison</b><small>LINGE DE MAISON</small></span></a><p style="margin:14px 0 0; font-size:.92rem; max-width:34ch">${t("f_about")}</p></div>
       <div><h4>${t("f_shop")}</h4><ul>${CATS.map(c=>`<li><a href="#${c.id}">${L(c)}</a></li>`).join("")}<li><a href="#affaires">${t("nav_affaires")}</a></li></ul></div>
       <div><h4>${t("f_help")}</h4><ul><li><a href="#livraison">${t("livraison")}</a></li><li><a href="#retours">${t("retours")}</a></li><li><a href="#faq">${t("faq")}</a></li><li><a href="#accueil" onclick="setTimeout(()=>{const e=document.getElementById('avis'); if(e) e.scrollIntoView({behavior:'smooth'})},120)">${t("rv_h")}</a></li><li><a href="#a-propos">${t("about")}</a></li></ul></div>
       <div><h4>${t("f_contact")}</h4><ul>
         <li><a href="${waURL(t("order_hello").replace(":", "."))}" target="_blank" rel="noopener">WhatsApp · <span dir="ltr">${C.phoneDisplay}</span></a></li>
         <li><span style="user-select:all">${C.email}</span></li>
         <li><a href="${C.instagram}" target="_blank" rel="noopener">Instagram @darlinmaison</a></li>
-        <li><a href="${C.facebook}" target="_blank" rel="noopener">Facebook Dar Lin</a></li>
+        <li><a href="${C.facebook}" target="_blank" rel="noopener">Facebook Dar Lin Maison</a></li>
         <li><a href="#marche">${t("nav_marche")}</a></li></ul></div>
     </div>
     <div class="fpay"><span>${t("pay_icons")}</span>${PAYICONS}</div>
-    <div class="legal-line"><span>© ${new Date().getFullYear()} Dar Lin · ${t("f_rights")} · ${t("f_vat")}</span>
+    <div class="legal-line"><span>© ${new Date().getFullYear()} Dar Lin Maison · ${t("f_rights")} · ${t("f_vat")}</span>
       <span><a href="#mentions-legales">${t("mentions")}</a> · <a href="#cgv">${t("cgv")}</a> · <a href="#confidentialite">${t("privacy")}</a></span></div>
   </div></footer>`;
 }
@@ -486,10 +554,10 @@ function card(p){
     <div class="pc-img"><img src="${img(v0.img)}" alt="${esc(L(p).name)}" loading="lazy">${tag}${low}</div>
     <h3>${esc(L(p).name)}</h3>
     <div class="sub">${esc(L(p).short)}</div>
-    <div class="row"><span class="price">${eur(pc(p))}</span>${p.variants.length>1?`<span class="dots">${p.variants.slice(0,6).map(v=>`<span class="dot" style="background:${v.hex}" title="${esc(L(v))}"></span>`).join("")}${p.variants.length>6?`<small class="more">+${p.variants.length-6}</small>`:""}</span>`:""}</div>
+    <div class="row"><span class="price">${p.group&&GROUP(p.group).length>1?t("from",{p:eur(pc(GROUP(p.group)[0]))}):eur(pc(p))}</span>${p.group&&GROUP(p.group).length>1?`<small class="nsz">${t("sizes_n",{n:GROUP(p.group).length})}</small>`:""}${p.variants.length>1?`<span class="dots">${p.variants.slice(0,6).map(v=>`<span class="dot" style="background:${v.hex}" title="${esc(L(v))}"></span>`).join("")}${p.variants.length>6?`<small class="more">+${p.variants.length-6}</small>`:""}</span>`:""}</div>
   </a>`;
 }
-const grid = list => `<div class="grid">${list.map(card).join("")}</div>`;
+const grid = list => `<div class="grid">${uniq(list).map(card).join("")}</div>`;
 
 /* ---------- vues ---------- */
 function home(){
@@ -506,15 +574,16 @@ function home(){
     </div>
   </div></section>
   <section class="trust" aria-label="${t("why_eyebrow")}"><div class="wrap">
-    <div>${I.truck}<span><b>${t("tr1_h")}</b><small>${t("tr1_p",{free:eur(C.freeDeliveryFrom)})}</small></span></div>
+    <div>${I.truck}<span><b>${t("tr1_h")}</b><small>${t("tr1_p",{free:eur(C.relayFreeFrom)})}</small></span></div>
     <div>${I.card}<span><b>${t("tr2_h")}</b><small>${t("tr2_p")}</small></span></div>
     <div>${I.pin}<span><b>${t("tr3_h")}</b><small>${t("tr3_p")}</small></span></div>
     <div>${I.back}<span><b>${t("tr4_h")}</b><small>${t("tr4_p")}</small></span></div>
   </div></section>
 
+  ${xmasBlock()}
   <section class="sec"><div class="wrap">
     <div class="sec-head"><div><div class="eyebrow">${t("cats_eyebrow")}</div><h2 class="h-sec">${t("cats_h")}</h2></div></div>
-    <div class="cats">${CATS.map(c=>`<a class="cat" href="#${c.id}"><img src="${img(c.img)}" alt="" loading="lazy"><span>${L(c)}<small>${P.filter(p=>p.cat===c.id).length} ${t("items")}</small></span></a>`).join("")}</div>
+    <div class="cats">${CATS.map(c=>`<a class="cat" href="#${c.id}"><img src="${img(c.img)}" alt="" loading="lazy"><span>${L(c)}<small>${uniq(P.filter(p=>p.cat===c.id)).length} ${t("items")}</small></span></a>`).join("")}</div>
   </div></section>
 
   <section class="sec" style="padding-top:0"><div class="wrap">
@@ -543,7 +612,7 @@ function home(){
       <div class="hero-ctas" style="margin-top:22px"><a class="btn" href="#marche">${t("story_cta")}</a><a class="btn ghost" href="#a-propos">${t("about")}</a></div></div>
   </div></section>
 
-  ${recent.filter(id=>byId(id)).length?`<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-head"><div><div class="eyebrow">Dar Lin</div><h2 class="h-sec">${t("recent")}</h2></div></div>${grid(recent.map(byId).filter(Boolean).slice(0,4))}</div></section>`:""}
+  ${recent.filter(id=>byId(id)).length?`<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-head"><div><div class="eyebrow">Dar Lin Maison</div><h2 class="h-sec">${t("recent")}</h2></div></div>${grid(recent.map(byId).filter(Boolean).slice(0,4))}</div></section>`:""}
 
   <section class="sec" style="padding-top:0"><div class="wrap">${marketBlock()}</div></section>
 
@@ -556,12 +625,32 @@ function home(){
     </div>`}
   </div></section>
 
+  ${seoBlock()}
   <section class="sec" style="padding-top:0"><div class="wrap">
     <div class="join">
       <div><h2 class="h-sec" style="font-size:clamp(1.8rem,3.4vw,2.6rem); color:var(--accent)">${t("join_h")}</h2><p class="lede">${t("join_p")}</p></div>
       <div><a class="btn wa block" href="${waURL(lang==="ar"?"جديد":lang==="en"?"New arrivals":"Nouveautés")}" target="_blank" rel="noopener">${I.wa} ${t("join_btn")}</a><p class="note" style="text-align:center; margin:10px 0 0">WhatsApp · <span dir="ltr" style="user-select:all">${C.phoneDisplay}</span></p></div>
     </div>
   </div></section>`;
+}
+const XMAS = [["x10", p => p.price < 10], ["x25", p => p.price >= 10 && p.price <= 25], ["x35", p => /^couverture/.test(p.id)]];
+function xmasBlock(){
+  const tiles = XMAS.map(([k,f]) => { const l = uniq(P.filter(f)); const pk = l.find(p=>p.star) || l[0]; return pk ? `<a class="xt" href="#cadeaux"><img src="${img(v0img(pk))}" alt="" loading="lazy"><span><b>${t(k)}</b><small>${l.length} ${t("items")}</small></span></a>` : ""; }).join("");
+  return `<section class="sec xmas"><div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">🎄 ${t("xmas_eyebrow")}</div><h2 class="h-sec">${t("xmas_h")}</h2><p class="lede" style="margin:8px 0 0">${t("xmas_p")}</p></div><a href="#cadeaux">${t("xmas_cta")}</a></div>
+    <div class="xtiles">${tiles}</div>
+    ${GIFT_FROM?`<p class="xgift">🎁 ${giftPerk()}</p>`:""}
+  </div></section>`;
+}
+function seoBlock(){
+  return `<section class="sec seo" style="padding-top:0"><div class="wrap"><details><summary><h2>${t("seo_h")}</h2></summary>
+    <p><b>Dar Lin Maison</b> est une boutique de <b>linge de maison pas cher</b> née sur le marché d'Amiens Nord. Nous sélectionnons chaque semaine des articles neufs de marques reconnues, vendus dans leur emballage d'origine, et nous les expédions <b>partout en France en point relais</b>.</p>
+    <p><b>Linge de lit :</b> parures de draps 2 places et King size, draps housse 140×190, 160×200 et 180×200 avec bonnet de 25 cm, couvre-lits et <b>couvertures polaires</b> bien chaudes pour l'hiver.</p>
+    <p><b>Linge de bain :</b> serviettes de toilette 50×90 et draps de bain en coton, doux et absorbants, dans de nombreuses couleurs.</p>
+    <p><b>Linge de table et cuisine :</b> nappes rectangulaires et rondes, nappes enduites faciles à nettoyer, torchons en coton et lavettes microfibre.</p>
+    <p><b>Rideaux et voilages :</b> rideaux jacquard occultants et voilages légers pour habiller vos fenêtres à petit prix.</p>
+    <p>Paiement sécurisé par carte bancaire, Apple Pay ou Google Pay, retour ou échange sous 14 jours et service client sur WhatsApp. À Amiens, livraison à domicile ou retrait gratuit le dimanche au marché.</p>
+  </details></div></section>`;
 }
 function marketBlock(){
   return `<div class="market">
@@ -576,6 +665,8 @@ function marketBlock(){
 }
 function listing(id){
   let title, desc = "", list;
+  if(id==="cadeaux"){ return `<div class="wrap"><div class="page-head"><div class="eyebrow">🎄 ${t("xmas_eyebrow")}</div><h1>${t("xmas_title")}</h1><p class="lede">${t("xmas_p")}</p>${GIFT_FROM?`<p class="xgift">🎁 ${giftPerk()}</p>`:""}</div>
+    ${XMAS.slice().reverse().map(([k,f]) => { const l = P.filter(f).sort((a,b)=>(b.star?1:0)-(a.star?1:0)); return l.length ? `<section class="sec" style="padding-top:8px"><div class="sec-head"><h2 class="h-sec">${t(k)}</h2></div>${grid(l)}</section>` : ""; }).join("")}</div>`; }
   if(id==="affaires"){ title = t("nav_affaires"); desc = t("affaires_p"); list = P.filter(p=>p.price<=5); }
   else if(id==="tout"){ title = t("all_products"); list = P.slice(); }
   else { const c = CATS.find(c=>c.id===id); title = L(c); list = P.filter(p=>p.cat===id); }
@@ -584,7 +675,7 @@ function listing(id){
   if(sort==="down") list.sort((a,b)=>b.price-a.price);
   if(sort==="pop") list.sort((a,b)=>(b.star?1:0)-(a.star?1:0));
   return `<div class="wrap">
-    <div class="page-head"><div class="eyebrow">Dar Lin</div><h1>${esc(title)}</h1>${desc?`<p class="lede">${desc}</p>`:""}</div>
+    <div class="page-head"><div class="eyebrow">Dar Lin Maison</div><h1>${esc(title)}</h1>${desc?`<p class="lede">${desc}</p>`:""}</div>
     <div class="toolbar">
       <div class="chips"><a class="chip" href="#tout" ${id==="tout"?'aria-current="page"':""}>${t("all")}</a>${CATS.map(c=>`<a class="chip" href="#${c.id}" ${id===c.id?'aria-current="page"':""}>${L(c)}</a>`).join("")}<a class="chip" href="#affaires" ${id==="affaires"?'aria-current="page"':""}>${t("nav_affaires")}</a></div>
       <label><span class="sr">${t("sort")}</span><select id="sortSel">
@@ -602,7 +693,7 @@ function product(id){
   const cat = CATS.find(c=>c.id===p.cat);
   const similar = P.filter(x=>x.cat===p.cat && x.id!==p.id).slice(0,4);
   return `<div class="wrap">
-    <div class="crumbs"><a href="#accueil">Dar Lin</a> / <a href="#${cat.id}">${L(cat)}</a> / ${esc(L(p).name)}</div>
+    <div class="crumbs"><a href="#accueil">Dar Lin Maison</a> / <a href="#${cat.id}">${L(cat)}</a> / ${esc(L(p).name)}</div>
     <div class="pp" data-id="${p.id}">
       <div>
         <div class="gallery-main"><button type="button" id="zoomBtn" class="zoom" aria-label="${t("zoom")}"><img id="mainImg" src="${img(v.img)}" alt="${esc(L(p).name)} – ${esc(L(v))}"></button></div>
@@ -613,16 +704,19 @@ function product(id){
         <h1 style="margin:6px 0 10px">${esc(L(p).name)}</h1>
         ${revFor(p.id).length?`<a class="rlink" href="#rv-${p.id}" onclick="event.preventDefault();document.getElementById('rvsec').scrollIntoView({behavior:'smooth'})">${starsHTML(avg(revFor(p.id)))} ${t("rv_count",{n:revFor(p.id).length})}</a>`:""}
         <div><span class="big-price">${eur(pc(p))}</span>${E.promosFor(p, PROMOS).map(pr=>`<span class="pack">${promoLabel(pr)}</span>`).join("")}</div>${p.stock!=null && p.stock<=3 ? `<p class="stock">${p.stock>0?t("low",{n:p.stock}):t("soldout")}</p>`:""}
+        ${p.group&&GROUP(p.group).length>1?`<div class="opt-label">${t("size")} : <b>${esc(p.size||"")}</b></div><div class="sizes">${GROUP(p.group).map(s=>`<a class="sz" href="#p-${s.id}" ${s.id===p.id?'aria-current="true"':""}><b>${esc(s.size||L(s).name)}</b><small>${eur(pc(s))}</small></a>`).join("")}</div>`:""}
         <p style="margin:16px 0 0">${esc(L(p).desc)}</p>
         <div class="opt-label">${t("colour")} : <b id="vName">${esc(L(v))}</b></div>
-        <div class="swatches">${p.variants.map((v,i)=>`<button type="button" class="sw" data-v="${i}" aria-pressed="${i===0}" aria-label="${esc(L(v))}" title="${esc(L(v))}" style="background:${v.hex}"></button>`).join("")}</div>
+        <div class="swatches">${p.variants.map((v,i)=>`<button type="button" class="sw" data-v="${i}" aria-pressed="${i===0}" aria-label="${esc(L(v))}" title="${esc(L(v))}"><i style="background:${v.hex}"></i><small>${esc(L(v))}</small></button>`).join("")}</div>
         <div class="opt-label">${t("qty")}</div>
         <div class="qty"><button type="button" id="qm" aria-label="-">−</button><output id="qv">1</output><button type="button" id="qp" aria-label="+">+</button></div>
         <div class="buy">
           <button class="btn block" type="button" id="addBtn">${I.bag.replace('<svg','<svg style="fill:none;stroke:currentColor;stroke-width:1.6"')} ${t("add")}</button>
           <a class="btn wa block" id="waBtn" target="_blank" rel="noopener" href="#">${I.wa} ${t("wa_order")}</a>
         </div>
-        <p class="eta">${I.truck}<span>${t("eta",{d:esc(etaDate())})}</span></p>
+        <div class="shipinfo"><p>${I.truck}<span>${t("ship_relay",{fee:eur(C.relayFee), free:eur(C.relayFreeFrom), a:esc(addDays(3)), b:esc(addDays(5))})}</span></p>
+          <p>${I.pin}<span>${t("ship_home",{fee:eur(C.deliveryFee), free:eur(C.freeDeliveryFrom), d:esc(etaDate())})}</span></p>
+          ${GIFT_FROM?`<p>🎁<span>${giftPerk()}</span></p>`:""}</div>
         <ul class="perks">
           <li>${I.pin}<span>${t("perk1")}</span></li>
           <li>${I.truck}<span>${t("perk2",{fee:eur(C.deliveryFee), free:eur(C.freeDeliveryFrom)})}</span></li>
@@ -673,7 +767,7 @@ function bindProduct(){
     const close = () => { r.innerHTML = ""; }; $("#lb").onclick = close; document.addEventListener("keydown", function k(e){ if(e.key==="Escape"){ close(); document.removeEventListener("keydown", k); } });
   };
   pushRecent(p.id); productLD(p);
-  setMeta(`${p.fr.name} – ${p.fr.short}. ${p.fr.desc} ${eur(pc(p))} chez Dar Lin, Amiens.`, "https://darlinmaison.fr/" + img(v0img(p)).replace(/^img\//,""));
+  setMeta(`${p.fr.name} – ${p.fr.short}. ${p.fr.desc} ${eur(pc(p))} chez Dar Lin Maison, Amiens.`, "https://darlinmaison.fr/" + img(v0img(p)).replace(/^img\//,""));
   upd();
 }
 
@@ -705,7 +799,8 @@ function drawDrawer(){
   if(!cart.length){ b.innerHTML = `<div class="empty"><p>${t("cart_empty")}</p><a class="btn ghost" href="#tout" id="dgo">${t("continue")}</a></div>`; f.innerHTML = ""; $("#dgo").onclick = closeDrawer; return; }
   const r = calc();
   const left = C.freeDeliveryFrom - r.net, pct = Math.max(0, Math.min(100, Math.round(r.net / C.freeDeliveryFrom * 100)));
-  const ship = `<div class="shipbar"><p>${left>0 ? t("ship_left",{m:eur(left)}) : t("ship_ok")}</p><div class="bar"><i style="width:${pct}%"></i></div></div>`;
+  let ship = `<div class="shipbar"><p>${left>0 ? t("ship_left",{m:eur(left)}) : t("ship_ok")}</p><div class="bar"><i style="width:${pct}%"></i></div></div>`;
+  if(GIFT_EVERY){ ship += `<div class="shipbar gift"><p style="margin:0">${t("gift_ok",{g:esc(giftName())})}</p></div>`; } else if(GIFT_FROM){ const gl = GIFT_FROM - r.net, gp = Math.max(0, Math.min(100, Math.round(r.net / GIFT_FROM * 100))); ship += `<div class="shipbar gift"><p>${gl>0 ? t("gift_left",{m:eur(gl)}) : t("gift_ok",{g:esc(giftName())})}</p><div class="bar"><i style="width:${gp}%"></i></div></div>`; }
   const inCart = new Set(cart.map(l=>l.id));
   const ups = P.filter(p=>p.price<=5 && !inCart.has(p.id) && p.stock!==0).slice(0,3);
   b.innerHTML = ship + cartLines() + (ups.length?`<div class="upsell"><h3>${t("upsell")}</h3>${ups.map(p=>`<div class="up"><img src="${img(v0img(p))}" alt=""><div><b>${esc(L(p).name)}</b><span>${eur(pc(p))}</span></div><button type="button" class="btn ghost" data-up="${p.id}">${t("add_s")}</button></div>`).join("")}</div>`:"");
@@ -764,9 +859,10 @@ function orderMessage(){
   return [T.fr.order_hello, "", lines, "",
     ...r.discounts.map(d=>`${d.label_fr} : −${eur(d.amount)}`),
     `Réception : ${co.mode==="home" ? "Livraison à domicile – " + (r.delivery ? eur(r.delivery) : "offerte") : co.mode==="relay" ? "POINT RELAIS Mondial Relay – " + (r.delivery ? eur(r.delivery) : "offert") : "Retrait au marché (dimanche)"}`,
+    giftOK(r) ? `🎁 CADEAU OFFERT : ${SHOP.gift_fr || ""}` : null,
     `TOTAL : ${eur(r.total)}`, paidRef ? `PAYÉ PAR CARTE ✅ (réf. ${paidRef})` : "Paiement à la remise", "",
     `Nom : ${co.name}`, `Tél : ${co.phone}`, co.mode!=="market" ? `Adresse : ${co.addr}` : null, co.note ? `Message : ${co.note}` : null,
-    "", "J'accepte les CGV de Dar Lin."].filter(x=>x!==null).join("\n");
+    "", "J'accepte les CGV de Dar Lin Maison."].filter(x=>x!==null).join("\n");
 }
 let paidRef = "";
 function sendWhatsApp(){
@@ -801,7 +897,7 @@ function loadSumUp(){
 function orderDone(){
   const msg = orderMessage();
   cart = []; saveCart(); promoCode = ""; store.set("dl_code", "");
-  $("#view").innerHTML = `<div class="wrap"><div class="page-head"><div class="eyebrow">Dar Lin</div><h1>${t("thanks_h")}</h1><p class="lede">${t("thanks_p",{ref:esc(paidRef)})}</p></div>
+  $("#view").innerHTML = `<div class="wrap"><div class="page-head"><div class="eyebrow">Dar Lin Maison</div><h1>${t("thanks_h")}</h1><p class="lede">${t("thanks_p",{ref:esc(paidRef)})}</p></div>
     <a class="btn wa" href="${waURL(msg)}" target="_blank" rel="noopener">${I.wa} ${t("thanks_wa")}</a></div>`;
   paidRef = "";
 }
@@ -847,11 +943,11 @@ const PAGES = {
     <section class="sec"><h2 class="h-sec" style="font-size:2rem; margin-bottom:16px">${t("contact_us")}</h2>
     <ul class="perks"><li>${I.wa}<span>WhatsApp : <b dir="ltr" style="user-select:all">${C.phoneDisplay}</b></span></li><li>${I.check}<span>E-mail : <b style="user-select:all">${C.email}</b></span></li></ul></section></div>`,
   "a-propos": () => textPage(t("about"), `
-    <p>Dar Lin, « la maison du linge », est une petite boutique d'Amiens tenue par Ahmad. On sélectionne du linge de maison de marques reconnues (Gérard Pasquier, Amphora, Hygie…) et on le vend à prix doux, sur le marché d'Amiens Nord et ici, en ligne.</p>
+    <p>Dar Lin Maison, « la maison du linge », est une petite boutique d'Amiens tenue par Ahmad. On sélectionne du linge de maison de marques reconnues (Gérard Pasquier, Amphora, Hygie…) et on le vend à prix doux, sur le marché d'Amiens Nord et ici, en ligne.</p>
     <p>Notre idée est simple : tout le monde mérite des draps qui sentent bon le propre, des serviettes épaisses et une jolie nappe pour recevoir, sans y laisser son budget.</p>
     <p>Une question, une taille introuvable ? Écrivez-nous sur WhatsApp au <b dir="ltr">${C.phoneDisplay}</b> : on répond vite, en français ou en arabe.</p>`),
   "livraison": () => textPage(t("livraison"), `
-    <h2>Retrait au marché, gratuit</h2><p>Commandez sur le site ou sur WhatsApp. Nous confirmons la disponibilité, puis votre commande vous attend au stand Dar Lin du marché d'Amiens Nord le dimanche matin. Vous réglez sur place, en espèces ou par carte.</p>
+    <h2>Retrait au marché, gratuit</h2><p>Commandez sur le site ou sur WhatsApp. Nous confirmons la disponibilité, puis votre commande vous attend au stand Dar Lin Maison du marché d'Amiens Nord le dimanche matin. Vous réglez sur place, en espèces ou par carte.</p>
     <h2>Livraison à domicile sur Amiens</h2><p>Nous livrons nous-mêmes à Amiens et dans les communes voisines, sous 48 heures ouvrées après confirmation. Frais : ${eur(C.deliveryFee)}, offerts dès ${eur(C.freeDeliveryFrom)} d'achat. Nous convenons ensemble du créneau par WhatsApp.</p>
     <h2>Partout en France : point relais Mondial Relay</h2><p>Choisissez « Point relais » à la commande et indiquez votre adresse : nous choisissons le point relais le plus proche de chez vous et vous le confirmons sur WhatsApp. Expédition sous 48 heures ouvrées, livraison en 3 à 5 jours. Frais : ${eur(C.relayFee)}, offerts dès ${eur(C.relayFreeFrom)} d'achat. Vous recevez le numéro de suivi dès l'envoi.</p>`),
   "retours": () => textPage(t("retours"), `
@@ -862,30 +958,33 @@ const PAGES = {
   "faq": () => `<div class="wrap prose"><div class="page-head" style="padding-inline:0"><h1>${t("faq")}</h1></div>
     ${faqList().map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>`,
   "mentions-legales": () => textPage(t("mentions"), `
-    <h2>Éditeur du site</h2><p>Dar Lin – Ahmad TAMIM, entrepreneur individuel (EI)<br>Siège : ${ADDR}<br>SIRET : 938 397 502 00023 – RCS Amiens 938 397 502<br>TVA : ${TODO("TVA non applicable, art. 293 B du CGI (à confirmer selon votre régime)")}<br>Téléphone : ${C.phoneDisplay} – E-mail : ${C.email}<br>Directeur de la publication : Ahmad TAMIM</p>
+    <h2>Éditeur du site</h2><p>Dar Lin Maison – Ahmad TAMIM, entrepreneur individuel (EI)<br>Siège : ${ADDR}<br>SIRET : 938 397 502 00023 – RCS Amiens 938 397 502<br>TVA : ${TODO("TVA non applicable, art. 293 B du CGI (à confirmer selon votre régime)")}<br>Téléphone : ${C.phoneDisplay} – E-mail : ${C.email}<br>Directeur de la publication : Ahmad TAMIM</p>
     <h2>Hébergement</h2><p>Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis – cloudflare.com</p>
-    <h2>Propriété intellectuelle</h2><p>Les textes, photos, logo et la marque Dar Lin sont la propriété de l'éditeur. Toute reproduction sans autorisation est interdite. Les marques citées (Gérard Pasquier, Amphora, Hygie) appartiennent à leurs titulaires respectifs.</p>
+    <h2>Propriété intellectuelle</h2><p>Les textes, photos, logo et la marque Dar Lin Maison sont la propriété de l'éditeur. Toute reproduction sans autorisation est interdite. Les marques citées (Gérard Pasquier, Amphora, Hygie) appartiennent à leurs titulaires respectifs.</p>
     <h2>Données personnelles</h2><p>Voir la page <a href="#confidentialite">Confidentialité</a>.</p>`),
   "cgv": () => textPage(t("cgv"), `
     <p><i>Version du 20/11/2026.</i></p>
-    <h2>1. Vendeur</h2><p>Dar Lin – Ahmad TAMIM, EI, ${ADDR}, SIRET 938 397 502 00023, RCS Amiens. Contact : ${C.phoneDisplay} (WhatsApp), ${C.email}.</p>
+    <h2>1. Vendeur</h2><p>Dar Lin Maison – Ahmad TAMIM, EI, ${ADDR}, SIRET 938 397 502 00023, RCS Amiens. Contact : ${C.phoneDisplay} (WhatsApp), ${C.email}.</p>
     <h2>2. Champ d'application</h2><p>Les présentes conditions s'appliquent à toute commande passée par un consommateur sur le site darlinmaison.fr ou par WhatsApp.</p>
     <h2>3. Produits</h2><p>Linge de maison neuf, présenté avec photos et caractéristiques principales. Les couleurs peuvent légèrement varier selon l'écran. Offre valable dans la limite des stocks disponibles.</p>
     <h2>4. Prix</h2><p>Prix en euros, toutes taxes comprises, hors frais de livraison éventuels indiqués avant la validation. Les offres par lot (ex. 3 torchons pour 5 €) s'appliquent automatiquement au panier.</p>
-    <h2>5. Commande</h2><p>Le client sélectionne ses articles, choisit le mode de réception, renseigne ses coordonnées et accepte les présentes CGV, puis envoie sa commande via WhatsApp. Le contrat est conclu à la confirmation écrite de Dar Lin (disponibilité et total), envoyée par WhatsApp.</p>
-    <h2>6. Paiement</h2><p>Paiement en ligne par carte bancaire, Apple Pay ou Google Pay, traité de façon sécurisée par SumUp (Dar Lin n'a jamais accès à vos données bancaires), ou paiement à la remise de la commande (retrait au marché ou livraison) en espèces ou carte bancaire.</p>
+    <h2>5. Commande</h2><p>Le client sélectionne ses articles, choisit le mode de réception, renseigne ses coordonnées et accepte les présentes CGV, puis envoie sa commande via WhatsApp. Le contrat est conclu à la confirmation écrite de Dar Lin Maison (disponibilité et total), envoyée par WhatsApp.</p>
+    <h2>6. Paiement</h2><p>Paiement en ligne par carte bancaire, Apple Pay ou Google Pay, traité de façon sécurisée par SumUp (Dar Lin Maison n'a jamais accès à vos données bancaires), ou paiement à la remise de la commande (retrait au marché ou livraison) en espèces ou carte bancaire.</p>
     <h2>7. Réception</h2><p>Retrait gratuit au marché d'Amiens Nord le dimanche matin, livraison à domicile à Amiens et environs sous 48 h ouvrées (${eur(C.deliveryFee)}, offerte dès ${eur(C.freeDeliveryFrom)}), ou envoi en point relais Mondial Relay en France métropolitaine (${eur(C.relayFee)}, offert dès ${eur(C.relayFreeFrom)} ; expédition sous 48 h ouvrées, livraison en 3 à 5 jours). Le risque de perte est transféré au client à la remise du colis.</p>
-    <h2>8. Droit de rétractation</h2><p>Le client dispose de 14 jours à compter de la réception pour se rétracter sans motif (art. L221-18 du Code de la consommation), en informant Dar Lin par WhatsApp ou e-mail. Les articles sont retournés neufs, non lavés et dans leur emballage d'origine. Le remboursement intervient sous 14 jours par le même moyen de paiement.</p>
+    <h2>8. Droit de rétractation</h2><p>Le client dispose de 14 jours à compter de la réception pour se rétracter sans motif (art. L221-18 du Code de la consommation), en informant Dar Lin Maison par WhatsApp ou e-mail. Les articles sont retournés neufs, non lavés et dans leur emballage d'origine. Le remboursement intervient sous 14 jours par le même moyen de paiement.</p>
     <h2>9. Garanties</h2><p>Les produits bénéficient de la garantie légale de conformité (art. L217-3 et suivants du Code de la consommation) pendant 2 ans à compter de la délivrance, et de la garantie des vices cachés (art. 1641 et suivants du Code civil).</p>
     <h2>10. Médiation</h2><p>En cas de litige non résolu, le client peut recourir gratuitement au médiateur de la consommation : ${TODO("nom et site du médiateur à compléter après adhésion")}. Plateforme européenne de règlement des litiges : ec.europa.eu/consumers/odr.</p>
     <h2>11. Données personnelles</h2><p>Voir la page <a href="#confidentialite">Confidentialité</a>.</p>
     <h2>12. Droit applicable</h2><p>Droit français. Tribunaux compétents selon les règles légales.</p>`),
   "confidentialite": () => textPage(t("privacy"), `
-    <h2>Qui est responsable ?</h2><p>Ahmad TAMIM (Dar Lin), ${ADDR}, ${C.email}.</p>
-    <h2>Quelles données ?</h2><p>Uniquement ce que vous nous transmettez pour une commande : nom, téléphone, adresse de livraison et message éventuel. Ces informations nous parviennent via WhatsApp, au moment où vous envoyez votre commande.</p>
+    <h2>Qui est responsable ?</h2><p>Ahmad TAMIM (Dar Lin Maison), ${ADDR}, ${C.email}.</p>
+    <h2>Quelles données ?</h2><p>Uniquement ce que vous nous transmettez pour une commande : nom, téléphone, adresse de livraison et message éventuel. Ces informations nous parviennent via WhatsApp ou le formulaire de commande.</p>
+    <p><b>Newsletter :</b> si vous vous inscrivez, nous conservons votre adresse e-mail et la date de votre consentement pour vous envoyer nos nouveautés et offres. Vous pouvez vous désinscrire à tout moment par simple e-mail à ${C.email} ou via le lien présent dans chaque message. L'adresse est supprimée au plus tard 3 ans après votre dernier contact.</p>
+    <p><b>Avis clients :</b> si vous publiez un avis, votre prénom, la ville éventuelle, votre texte et votre photo éventuelle sont affichés publiquement sur le site. Écrivez-nous pour le faire retirer.</p>
     <h2>Pourquoi ?</h2><p>Préparer, livrer et suivre votre commande, et répondre à vos questions (exécution du contrat). Nous ne vendons ni ne louons vos données.</p>
     <h2>Combien de temps ?</h2><p>3 ans après notre dernier échange, puis suppression. Les pièces comptables sont conservées 10 ans comme l'exige la loi.</p>
-    <h2>Cookies</h2><p>Ce site n'utilise ni cookie publicitaire ni outil de suivi. Votre panier, votre langue et les champs de commande sont gardés uniquement dans votre navigateur (stockage local) pour que vous ne les perdiez pas ; ils ne nous sont pas envoyés.</p>
+    <h2>Hébergement et mesure d'audience</h2><p>Le site, les inscriptions à la newsletter et les avis sont hébergés par Cloudflare. Nous utilisons Cloudflare Web Analytics, une mesure d'audience sans cookie qui ne suit pas les visiteurs d'un site à l'autre.</p>
+    <h2>Cookies</h2><p>Ce site n'utilise ni cookie publicitaire ni outil de suivi publicitaire. Votre panier, votre langue et les champs de commande sont gardés uniquement dans votre navigateur (stockage local) pour que vous ne les perdiez pas ; ils ne nous sont pas envoyés.</p>
     <h2>Vos droits</h2><p>Accès, rectification, effacement, opposition, limitation et portabilité : écrivez à ${C.email}. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>`)
 };
 function textPage(title, html){
@@ -904,13 +1003,13 @@ let tt;
 function toast(msg){ const r = $("#toastRoot"); r.innerHTML = `<div class="toast">${esc(msg)}</div>`; clearTimeout(tt); tt = setTimeout(()=>{ r.innerHTML=""; }, 2200); }
 
 /* ---------- routeur ---------- */
-const TITLES = {accueil:"Dar Lin – Linge de maison à Amiens"};
+const TITLES = {accueil:"Dar Lin Maison – Linge de maison à Amiens", cadeaux:"Idées cadeaux de Noël – Dar Lin Maison"};
 function route(){
   const h = (location.hash || "#accueil").slice(1) || "accueil";
   const v = $("#view"); let html = null;
   const rvOpen = h==="avis" || h.startsWith("avis-");
   if(h==="accueil" || rvOpen) html = home();
-  else if(["chambre","bain","table","rideaux","affaires","tout"].includes(h)) html = listing(h);
+  else if(["chambre","bain","table","rideaux","affaires","tout","cadeaux"].includes(h)) html = listing(h);
   else if(h.startsWith("p-")) html = product(h.slice(2));
   else if(h==="commande") html = checkout();
   else if(PAGES[h]) html = PAGES[h]();
@@ -923,11 +1022,52 @@ function route(){
   document.querySelectorAll("[data-rvform]").forEach(b => b.onclick = () => openReviewForm(b.dataset.rvform));
   const sel = $("#sortSel"); if(sel) sel.onchange = () => { store.set("dl_sort", sel.value); route(); };
   const p = h.startsWith("p-") && byId(h.slice(2));
-  if(!p){ productLD(null); setMeta("Dar Lin, linge de maison à Amiens : parures de draps, draps housse, serviettes, nappes et rideaux de marque à petits prix. Livraison sur Amiens, retrait au marché, paiement sécurisé.", "https://darlinmaison.fr/amb-hero.jpg"); }
-  document.title = p ? `${p.fr.name} – Dar Lin` : (TITLES[h] || "Dar Lin – Linge de maison à Amiens");
+  if(!p){ productLD(null); setMeta("Dar Lin Maison, linge de maison à Amiens : parures de draps, draps housse, serviettes, nappes et rideaux de marque à petits prix. Livraison sur Amiens, retrait au marché, paiement sécurisé.", "https://darlinmaison.fr/amb-hero.jpg"); }
+  document.title = p ? `${p.fr.name} – Dar Lin Maison` : (TITLES[h] || "Dar Lin Maison – Linge de maison à Amiens");
   window.scrollTo(0,0);
   if(rvOpen){ const pid = h.startsWith("avis-") ? h.slice(5) : ""; setTimeout(() => openReviewForm(byId(pid) ? pid : ""), 50); }
 }
+/* ---------- newsletter ---------- */
+function nlOpen(src){
+  const r = $("#nlRoot"); if(!r) return;
+  store.set("dl_nl", {t: Date.now(), s: "seen"});
+  r.innerHTML = `<div class="nl-bg" id="nlbg"></div><div class="nl" role="dialog" aria-modal="true" aria-label="${t("nl_h")}">
+    <div class="nl-img" style="background-image:url('${img(S.hero.image2 || S.hero.image1)}')"></div>
+    <div class="nl-b"><button class="icon-btn nl-x" type="button" id="nlx" aria-label="${t("close")}">${I.close}</button>
+      <div id="nlForm"><h2>${t("nl_h")}</h2><p>${t("nl_p")}</p>
+      <form id="nlF" novalidate><label class="sr" for="nl-e">${t("nl_email")}</label><input id="nl-e" type="email" required autocomplete="email" placeholder="${t("nl_email")}" dir="ltr">
+        <input type="text" id="nl-hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <label class="nl-c"><input type="checkbox" id="nl-c"><span>${t("nl_consent")} <a href="#confidentialite">${t("privacy")}</a></span></label>
+        <p class="note" id="nl-err" hidden style="color:var(--warn)">${t("nl_err")}</p>
+        <button class="btn block" type="submit">${t("nl_btn")}</button></form></div>
+    </div></div>`;
+  const close = () => { r.innerHTML = ""; };
+  $("#nlbg").onclick = close; $("#nlx").onclick = close;
+  $("#nlF").onsubmit = async e => { e.preventDefault();
+    const em = $("#nl-e").value.trim(), ok = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(em) && $("#nl-c").checked;
+    if(!ok){ $("#nl-err").hidden = false; return; }
+    try { const res = await fetch("/api/subscribe", {method:"POST", headers:{"content-type":"application/json"}, body: JSON.stringify({email: em, consent: true, lang, src, hp: $("#nl-hp").value})});
+      const j = await res.json(); if(!j.ok) throw 0;
+      store.set("dl_nl", {t: Date.now(), s: "sub"}); promoCode = j.code; store.set("dl_code", j.code);
+      $("#nlForm").innerHTML = `<h2>${t("nl_done")}</h2><p class="nl-code" style="user-select:all">${esc(j.code)}</p><p>${t("nl_done_p")}</p><button class="btn ghost block" type="button" id="nlcp">${t("nl_copy")}</button>`;
+      $("#nlcp").onclick = () => { try{ navigator.clipboard.writeText(j.code); toast("✓ " + j.code); }catch(_){} };
+      const b = $("#nlbar"); if(b) b.remove();
+    } catch(_){ $("#nl-err").hidden = false; }
+  };
+}
+function nlInit(){
+  const st = store.get("dl_nl", null);
+  if(st && (st.s === "sub" || Date.now() - st.t < 30*864e5)) return;
+  const busy = () => $("#nlRoot").innerHTML || $(".drawer") || location.hash === "#commande";
+  if(matchMedia("(min-width: 768px)").matches){
+    setTimeout(() => { if(!busy()) nlOpen("timer"); }, 9000);
+    document.addEventListener("mouseout", function ex(e){ if(e.clientY <= 0 && !e.relatedTarget){ document.removeEventListener("mouseout", ex); if(!busy() && !store.get("dl_nl", null)) nlOpen("exit"); } });
+  } else {
+    setTimeout(() => { if(busy() || $("#nlbar")) return; const b = document.createElement("div"); b.className = "nlbar"; b.id = "nlbar";
+      b.innerHTML = `<button type="button" id="nlbo">🎁 <b>${t("nl_bar")}</b></button><button type="button" class="icon-btn" id="nlbx" aria-label="${t("close")}">${I.close}</button>`;
+      document.body.appendChild(b); $("#nlbo").onclick = () => { b.remove(); nlOpen("bar"); }; $("#nlbx").onclick = () => { b.remove(); store.set("dl_nl", {t: Date.now(), s: "seen"}); }; }, 12000);
+  }
+}
 window.addEventListener("hashchange", () => { const q = $("#q"); if(q) q.value = ""; route(); });
-shell(); route();
+shell(); route(); nlInit();
 };

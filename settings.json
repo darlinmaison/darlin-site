@@ -1,6 +1,6 @@
 {
  "shop": {
-  "name": "Dar Lin",
+  "name": "Dar Lin Maison",
   "whatsapp": "33781055149",
   "phoneDisplay": "07 81 05 51 49",
   "email": "darlinmaison.amiens@gmail.com",
@@ -10,28 +10,32 @@
   "freeDeliveryFrom": 35,
   "cardPayment": true,
   "relayFee": 5.9,
-  "relayFreeFrom": 60
+  "relayFreeFrom": 60,
+  "giftFrom": 0.01,
+  "gift_fr": "lavette microfibre",
+  "gift_en": "microfibre cloth",
+  "gift_ar": "ممسحة مايكروفايبر"
  },
  "theme": {
-  "primary": "#6B4226",
-  "secondary": "#C48A5A",
-  "sand": "#E3CBAA",
-  "background": "#FBF7F1",
-  "surface": "#F4ECE1",
-  "text": "#2E2118",
-  "fontTitles": "Cormorant Garamond",
-  "fontText": "Jost",
+  "primary": "#181A29",
+  "secondary": "#B5552F",
+  "sand": "#E6DACB",
+  "background": "#F8F6F4",
+  "surface": "#EFEBE6",
+  "text": "#181A29",
+  "fontTitles": "Instrument Serif",
+  "fontText": "Instrument Sans",
   "fontArabic": "Amiri",
-  "radius": 14,
-  "spacing": 64
+  "radius": 2,
+  "spacing": 72
  },
  "hero": {
   "title_fr": "Dormez bien,<br><em>vivez doux.</em>",
   "title_ar": "نوم هني،<br><em>وحياة ناعمة.</em>",
   "title_en": "Sleep well,<br><em>live softly.</em>",
-  "text_fr": "Parures, draps, serviettes, nappes et rideaux de grandes marques, à petits prix. À retirer au marché ou livrés chez vous à Amiens.",
-  "text_ar": "أطقم شراشف، مناشف، مفارش وستائر من ماركات معروفة وبأسعار صغيرة. استلمها من السوق أو منوصلها لبيتك بأميان.",
-  "text_en": "Bed linen, sheets, towels, tablecloths and curtains from trusted brands, at small prices. Collect at the market or get it delivered to your door in Amiens.",
+  "text_fr": "Parures, draps, couvertures, serviettes, nappes et rideaux de grandes marques, à petits prix. Livrés partout en France ou à retirer au marché d'Amiens.",
+  "text_ar": "أطقم شراشف، بطانيات، مناشف، مفارش وستائر من ماركات معروفة وبأسعار صغيرة. منوصلها لكل فرنسا أو استلمها من سوق أميان.",
+  "text_en": "Bed linen, sheets, blankets, towels, tablecloths and curtains from trusted brands, at small prices. Delivered all over France or collected at the Amiens market.",
   "image1": "img/amb-hero.jpg",
   "image2": "img/amb-chambre.jpg",
   "image3": "img/amb-bain.jpg",
@@ -41,22 +45,22 @@
  },
  "topbar": {
   "fr": [
-   "Livraison à domicile sur Amiens",
-   "Envoi partout en France en point relais",
+   "🎁 Une lavette offerte avec chaque commande",
+   "Livraison partout en France en point relais",
    "Paiement sécurisé par carte",
-   "-10 % avec le code MERCI10 dès 20 €"
+   "-10 % sur votre 1ère commande avec la newsletter"
   ],
   "ar": [
-   "توصيل للبيت داخل أميان",
+   "🎁 ممسحة هدية مع كل طلب",
    "شحن لكل فرنسا لنقاط الاستلام",
    "دفع آمن بالبطاقة",
-   "خصم ١٠٪ بكود MERCI10 من ٢٠ €"
+   "خصم ١٠٪ على أول طلب مع النشرة"
   ],
   "en": [
-   "Home delivery in Amiens",
+   "🎁 A free cloth with every order",
    "Shipping all over France to pickup points",
    "Secure card payment",
-   "10% off with code MERCI10 from €20"
+   "10% off your 1st order with our newsletter"
   ]
  },
  "categories": [
