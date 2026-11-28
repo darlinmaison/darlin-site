@@ -37,6 +37,8 @@ collections:
                   - { label: "Rideaux", value: rideaux }
               - { name: price, label: "Prix (€)", widget: number, value_type: float, min: 0, step: 0.5 }
               - { name: stock, label: "Stock (laisser vide si on ne compte pas)", widget: number, value_type: int, required: false }
+              - { name: group, label: "Groupe de tailles (même mot pour les tailles d'un même article, ex. drap-housse)", widget: string, required: false }
+              - { name: size, label: "Taille affichée (ex. 140×190)", widget: string, required: false }
               - { name: star, label: "Coup de cœur (affiché sur l'accueil)", widget: boolean, default: false, required: false }
               - { name: brand, label: "Marque", widget: string, required: false }
               - name: fr
@@ -203,6 +205,10 @@ collections:
               - { name: freeDeliveryFrom, label: "Livraison offerte dès (€)", widget: number, value_type: float }
               - { name: relayFee, label: "Point relais Mondial Relay – frais (€)", widget: number, value_type: float, required: false }
               - { name: relayFreeFrom, label: "Point relais offert dès (€)", widget: number, value_type: float, required: false }
+              - { name: giftFrom, label: "Cadeau offert dès (€) — 0 = pas de cadeau", widget: number, value_type: float, required: false }
+              - { name: gift_fr, label: "Cadeau offert (français)", widget: string, required: false }
+              - { name: gift_en, label: "Cadeau offert (anglais)", widget: string, required: false }
+              - { name: gift_ar, label: "Cadeau offert (arabe)", widget: string, required: false }
               - { name: cardPayment, label: "Paiement par carte SumUp activé", widget: boolean }
           - name: categories
             label: "Catégories (accueil)"
