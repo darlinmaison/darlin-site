@@ -184,6 +184,12 @@ collections:
               - { name: caption_fr, label: "Petite étiquette sur la photo (FR)", widget: string, required: false }
               - { name: caption_ar, label: "الملصق على الصورة (AR)", widget: string, required: false }
               - { name: caption_en, label: "Label on photo (EN)", widget: string, required: false }
+          - name: season
+            label: "Coin des saisons et événements"
+            widget: object
+            required: false
+            fields:
+              - { name: mode, label: "Événement affiché (auto = change tout seul selon la date)", widget: select, default: auto, options: [ {label: "Automatique", value: auto}, {label: "Black Friday", value: blackfriday}, {label: "Noël", value: noel}, {label: "Mois du blanc (janvier)", value: blanc}, {label: "Ramadan et Aïd", value: ramadan}, {label: "Saint-Valentin", value: valentin}, {label: "Printemps", value: printemps}, {label: "Fête des mères", value: meres}, {label: "Été", value: ete}, {label: "Rentrée", value: rentree}, {label: "Automne", value: automne}, {label: "Aucun", value: "off"} ] }
           - name: topbar
             label: "Bandeau du haut"
             widget: object
