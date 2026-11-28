@@ -6,11 +6,11 @@
   "email": "darlinmaison.amiens@gmail.com",
   "instagram": "https://www.instagram.com/darlinmaison/",
   "facebook": "https://www.facebook.com/darlinmaison",
-  "deliveryFee": 0,
-  "freeDeliveryFrom": 0,
+  "deliveryFee": 3,
+  "freeDeliveryFrom": 30,
   "cardPayment": true,
-  "relayFee": 0,
-  "relayFreeFrom": 0,
+  "relayFee": 5.9,
+  "relayFreeFrom": 30,
   "giftFrom": 0.01,
   "gift_fr": "lavette microfibre",
   "gift_en": "microfibre cloth",
@@ -45,19 +45,19 @@
  },
  "topbar": {
   "fr": [
-   "🚚 Livraison offerte partout en France",
+   "🚚 Livraison offerte dès 30 € partout en France",
    "🎁 Une lavette offerte avec chaque commande",
    "Paiement sécurisé par carte",
    "-10 % sur votre 1ère commande en vous inscrivant"
   ],
   "en": [
-   "🚚 Free delivery all over France",
+   "🚚 Free delivery from €30 all over France",
    "🎁 A free cloth with every order",
    "Secure card payment",
    "10% off your 1st order when you sign up"
   ],
   "ar": [
-   "🚚 توصيل مجاني لكل فرنسا",
+   "🚚 توصيل مجاني من 30 € لكل فرنسا",
    "🎁 ممسحة هدية مع كل طلب",
    "دفع آمن بالبطاقة",
    "خصم ١٠٪ على أول طلب لما تسجّل"

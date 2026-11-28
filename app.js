@@ -656,7 +656,7 @@ const SEASONS = [
   {id:"blackfriday", from:"11-20", to:"12-01", emoji:"🖤", dark:true, code:"BLACK15",
     eyebrow:{fr:"Black Friday", en:"Black Friday", ar:"بلاك فرايدي"},
     h:{fr:"Black Friday : -15 % sur tout le site", en:"Black Friday: 15% off everything", ar:"بلاك فرايدي: خصم ١٥٪ على كل الموقع"},
-    p:{fr:"Avec le code BLACK15 dès 25 € d'achat, jusqu'au lundi 1er décembre inclus. Livraison offerte.", en:"With code BLACK15 on orders from €25, until Monday 1 December. Free delivery.", ar:"بكود BLACK15 للطلبات من 25 €، لآخر يوم الإثنين 1/12. والتوصيل مجاني."},
+    p:{fr:"Avec le code BLACK15 dès 25 € d'achat, jusqu'au lundi 1er décembre inclus. Livraison offerte dès 30 €.", en:"With code BLACK15 on orders from €25, until Monday 1 December. Free delivery from €30.", ar:"بكود BLACK15 للطلبات من 25 €، لآخر يوم الإثنين 1/12. والتوصيل مجاني من 30 €."},
     pick: p => p.star || p.price >= 14},
   {id:"noel", from:"12-02", to:"12-25", emoji:"🎄", xmas:true,
     eyebrow:{fr:"Noël", en:"Christmas", ar:"عيد الميلاد"}, h:{fr:"Idées cadeaux de Noël", en:"Christmas gift ideas", ar:"أفكار هدايا للعيد"},
